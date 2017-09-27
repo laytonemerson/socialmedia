@@ -29,7 +29,7 @@
             <label for="input_pass2">Repeat Password</label>
             <input type="password" class="form-control" id="input_pass2" placeholder="Repeat Password">
         </div>
-        <button type="submit" class="btn btn-default">Login</button>
+        <button type="submit" class="btn btn-default">Sign Up</button>
     </form>
 
 </div>
