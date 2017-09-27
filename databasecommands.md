@@ -14,3 +14,12 @@ create table user_roles (
  role_name         varchar(15) not null,
  primary key (user_name, role_name)
 );
+
+create table friend_list (
+ user_name         varchar(15) not null,
+ friend_user_name  varchar(15) not null,
+ start_date        date,
+ primary key (user_name, friend_user_name)
+);
+
+create table movie_list (
