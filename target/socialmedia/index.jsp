@@ -1,7 +1,5 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="User Search Home Page" />
 <%@include file="head.jsp"%>
-
 <html>
     <body>
         <div id="wrap">
