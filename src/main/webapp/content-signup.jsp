@@ -2,7 +2,7 @@
 <div class="container">
     <h1>Create a Social Media Account</h1>
     <br>
-    <form class="form-horizontal" action="/addUser" method="GET">
+    <form class="form-horizontal" action="/performSignup" method="GET">
         <div class="form-group row">
             <label for="input_user_name" class="control-label col-sm-2" >User Name</label>
             <div class="col-xs-4">
