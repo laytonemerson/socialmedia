@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -29,27 +30,70 @@ import java.io.IOException;
     *@exception  ServletException  if there is a general servlet exception
     *@exception  IOException       if there is a general I/O exception
     */
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        HttpSession session = request.getSession();
 
-        User user = new User();
-        user.setUserName(request.getParameter("input_user_name"));
-        user.setEmailAddress(request.getParameter("input_email"));
-        user.setFirstName(request.getParameter("input_first_name"));
-        user.setLastName(request.getParameter("input_last_name"));
-        user.setPassword(request.getParameter("input_pass1"));
+        removeAttributes(session);
 
-        UserDao dao = new UserDao();
-        String userNameReturn  = dao.addUser(user);
+        String userName = request.getParameter("input_user_name");
+        String emailAddress = request.getParameter("input_email");
+        String firstName = request.getParameter("input_first_name");
+        String lastName = request.getParameter("input_last_name");
+        String password1 = request.getParameter("input_pass1");
+        String password2 = request.getParameter("input_pass2");
+
+        if (!password1.equals(password2)) {
+            session.setAttribute("passwordError", true);
+            session.setAttribute("userName", userName);
+            session.setAttribute("emailAddress", emailAddress);
+            session.setAttribute("firstName", firstName);
+            session.setAttribute("lastName", lastName);
+        } else {
+            User user = new User(userName,password1,emailAddress,firstName,lastName);
+            boolean userExists = performExistenceCheck(user.getUserName());
+            if (userExists) {
+                session.setAttribute("userTakenError", userExists);
+                session.setAttribute("userName", userName);
+                session.setAttribute("emailAddress", emailAddress);
+                session.setAttribute("firstName", firstName);
+                session.setAttribute("lastName", lastName);
+                session.setAttribute("password", password1);
+            } else {
+                UserDao dao = new UserDao();
+                String userNameReturn = dao.addUser(user);
+            }
+        }
 
         String url = "/signup.jsp";
-        request.setAttribute("pageTitle", "Create an account");
-
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
     }
+
+
+    private boolean performExistenceCheck(String userName) {
+        boolean found = true;
+        UserDao dao = new UserDao();
+        User user2 = dao.getUser(userName);
+        if (user2 == null) {
+            found = false;
+        }
+        return found;
+    }
+
+    private void removeAttributes(HttpSession session){
+        session.removeAttribute("userTakenError");
+        session.removeAttribute("passwordError");
+        session.removeAttribute("userName");
+        session.removeAttribute("emailAddress");
+        session.removeAttribute("firstName");
+        session.removeAttribute("lastName");
+        session.removeAttribute("password");
+
+    }
 }
+
 
 
 
