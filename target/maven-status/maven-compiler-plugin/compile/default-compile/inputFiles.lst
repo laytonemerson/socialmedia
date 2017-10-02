@@ -2,4 +2,5 @@
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/UserDao.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowLogin.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowSignup.java
