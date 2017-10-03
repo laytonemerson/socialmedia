@@ -44,21 +44,12 @@ import java.io.IOException;
         String password2 = request.getParameter("input_pass2");
 
         if (!password1.equals(password2)) {
-            session.setAttribute("passwordError", true);
-            session.setAttribute("userName", userName);
-            session.setAttribute("emailAddress", emailAddress);
-            session.setAttribute("firstName", firstName);
-            session.setAttribute("lastName", lastName);
+            setPasswordErrorAttributes(session, userName, emailAddress, firstName, lastName);
         } else {
             User user = new User(userName,password1,emailAddress,firstName,lastName);
             boolean userExists = performExistenceCheck(user.getUserName());
             if (userExists) {
-                session.setAttribute("userTakenError", userExists);
-                session.setAttribute("userName", userName);
-                session.setAttribute("emailAddress", emailAddress);
-                session.setAttribute("firstName", firstName);
-                session.setAttribute("lastName", lastName);
-                session.setAttribute("password", password1);
+                setUserTakenErrorAttributes(session, userName, emailAddress, firstName, lastName, password1);
             } else {
                 UserDao dao = new UserDao();
                 String userNameReturn = dao.addUser(user);
@@ -90,8 +81,27 @@ import java.io.IOException;
         session.removeAttribute("firstName");
         session.removeAttribute("lastName");
         session.removeAttribute("password");
-
     }
+
+    private void setPasswordErrorAttributes(HttpSession session, String userName, String emailAddress,
+                                            String firstName, String lastName) {
+        session.setAttribute("passwordError", true);
+        session.setAttribute("userName", userName);
+        session.setAttribute("emailAddress", emailAddress);
+        session.setAttribute("firstName", firstName);
+        session.setAttribute("lastName", lastName);
+    }
+
+    private void setUserTakenErrorAttributes(HttpSession session, String userName, String emailAddress,
+                                            String firstName, String lastName, String password) {
+        session.setAttribute("userTakenError", true);
+        session.setAttribute("userName", userName);
+        session.setAttribute("emailAddress", emailAddress);
+        session.setAttribute("firstName", firstName);
+        session.setAttribute("lastName", lastName);
+        session.setAttribute("password", password);
+    }
+
 }
 
 

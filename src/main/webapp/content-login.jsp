@@ -1,20 +1,19 @@
-<%@include file="taglib.jsp"%>
 <div class="container">
     <h2>Login to Social Media</h2>
     <br>
-    <form class="form-horizontal" action="/action_page.php" method="post">
+    <form class="form-horizontal" action="j_security_check" method="post">
         <div class="form-group">
-            <label class="control-label col-sm-2" for="input_user_name">User Name*</label>
+            <label class="control-label col-sm-2" for="j_username">User Name*</label>
             <div class="col-xs-4">
-                <input type="text" maxlength="15" class="form-control" name="input_user_name"
-                       id="input_user_name" placeholder="Enter User Name" required>
+                <input type="text" maxlength="15" class="form-control" name="j_username"
+                       id="j_username" placeholder="Enter User Name" required>
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2" for="input_pass">Password*</label>
+            <label class="control-label col-sm-2" for="j_password">Password*</label>
             <div class="col-xs-4">
-                <input type="password" maxlength="15" class="form-control" name=input_pass
-                       id="input_pass" placeholder="Password" required>
+                <input type="password" maxlength="15" class="form-control" name=j_password
+                       id="j_password" placeholder="Enter Password" required>
             </div>
         </div>
         <div class="form-group">

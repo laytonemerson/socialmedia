@@ -28,7 +28,7 @@ import javax.servlet.http.*;
             throws ServletException, IOException {
 
         String url = "/signup.jsp";
-        request.setAttribute("pageTitle", "Create an account");
+        request.setAttribute("title", "Sign up for SM");
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
