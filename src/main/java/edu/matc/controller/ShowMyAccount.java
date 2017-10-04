@@ -34,6 +34,8 @@ import java.io.IOException;
         String url = "/myaccount.jsp";
         request.setAttribute("title", "My SM Account");
         HttpSession session = request.getSession();
+        session.removeAttribute("newUser");
+        session.removeAttribute("newUserName");
         session.setAttribute("loggedIn", true);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

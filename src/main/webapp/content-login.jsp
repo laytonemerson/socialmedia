@@ -1,5 +1,11 @@
+<%@include file="taglib.jsp"%>
 <div class="container">
     <h2>Login to Social Media</h2>
+    <c:choose>
+        <c:when test="${newUser == true}">
+            <h5>Welcome to social media ${newUserName}. Please log in to start adding friends and inventory.</h5>
+        </c:when>
+    </c:choose>
     <br>
     <form class="form-horizontal" action="j_security_check" method="post">
         <div class="form-group">

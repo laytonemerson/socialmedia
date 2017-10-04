@@ -43,23 +43,29 @@ import java.io.IOException;
         String password1 = request.getParameter("input_pass1");
         String password2 = request.getParameter("input_pass2");
 
+
         if (!password1.equals(password2)) {
             setPasswordErrorAttributes(session, userName, emailAddress, firstName, lastName);
+            String url = "/signup.jsp";
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
         } else {
             User user = new User(userName,password1,emailAddress,firstName,lastName);
             boolean userExists = performExistenceCheck(user.getUserName());
             if (userExists) {
                 setUserTakenErrorAttributes(session, userName, emailAddress, firstName, lastName, password1);
+                String url = "/signup.jsp";
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+                dispatcher.forward(request, response);
             } else {
                 UserDao dao = new UserDao();
                 String userNameReturn = dao.addUser(user);
+                session.setAttribute("newUser",true);
+                session.setAttribute("newUserName",userName);
+                String url = "showMyAccount";
+                response.sendRedirect(url);
             }
         }
-
-        String url = "/signup.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
-
     }
 
 

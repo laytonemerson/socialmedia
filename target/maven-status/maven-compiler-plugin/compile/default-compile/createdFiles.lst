@@ -3,4 +3,5 @@ edu/matc/controller/ShowSignup.class
 edu/matc/persistence/UserDao.class
 edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/controller/ShowMyAccount.class
+edu/matc/controller/PerformSignout.class
 edu/matc/controller/PerformSignup.class

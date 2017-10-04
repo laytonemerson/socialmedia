@@ -2,7 +2,7 @@
 <div class="container">
     <h2>Create a Social Media Account</h2>
     <br>
-    <form class="form-horizontal" action="/performSignup" method="post">
+    <form class="form-horizontal" action="/socialmedia/performSignup" method="post">
 
         <c:choose>
             <c:when test="${userTakenError == true}">

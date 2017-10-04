@@ -1,5 +1,1 @@
-<%@ page session="true"%>
-
-User '<%=request.getRemoteUser()%>' has been logged out.
-
-<% session.invalidate(); %>
+<h3>User ${logoutUserName} has been logged out successfully.</h3>

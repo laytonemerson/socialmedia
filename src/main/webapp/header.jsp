@@ -13,7 +13,7 @@
                 <c:choose>
                     <c:when test="${loggedIn == true}">
                         <li><a href="showMyAccount"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
-                        <li><a href="logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                        <li><a href="performSignout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
                     </c:when>
                     <c:otherwise>
                         <li><a href="showSignup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
