@@ -12,7 +12,7 @@
                         <input type="text" maxlength="15" value="${userName}" class="form-control form-control-danger"
                                name="input_user_name" id="input_user_name_taken" placeholder="Up to 15 Chars" required>
                         <div class="help-block">
-                            Sorry, that username's taken.
+                            Sorry! That username is already taken.
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <input type="password" value="" maxlength="15" class="form-control" name=input_pass1
                                id="input_pass1" placeholder="Password" required>
                         <div class="help-block">
-                            Passwords don't match.
+                            Whoops. Those passwords didn't match.
                         </div>
                     </div>
                 </div>

@@ -27,12 +27,25 @@ import javax.servlet.http.*;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+        removeAttributes(session);
+
         String url = "/signup.jsp";
         request.setAttribute("title", "Sign up for SM");
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
+    }
+
+    private void removeAttributes(HttpSession session){
+        session.removeAttribute("userTakenError");
+        session.removeAttribute("passwordError");
+        session.removeAttribute("userName");
+        session.removeAttribute("emailAddress");
+        session.removeAttribute("firstName");
+        session.removeAttribute("lastName");
+        session.removeAttribute("password");
     }
 }
 

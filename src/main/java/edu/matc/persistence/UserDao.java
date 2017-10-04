@@ -26,6 +26,7 @@ public class UserDao {
         List<User> users = new ArrayList<User>();
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         users = session.createCriteria(User.class).list();
+        session.close();
         return users;
     }
 
