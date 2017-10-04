@@ -22,3 +22,7 @@ create table friend_list (
 );
 
 create table movie_list (
+ user_name         varchar(15) not null,
+ movie_id          varchar(15) not null,
+ add_date          date,
+ primary key (user_name, movie_id)
