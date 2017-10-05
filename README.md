@@ -13,8 +13,7 @@ Each user will keep their own inventory up to date which all of their friends wi
 ### Project Technologies/Techniques 
 
 * Security/Authentication
-  * Admin role: create/read/update/delete (crud) of all data
-  * User role: login to add inventory/friends.
+  * User role: login to full crud inventory/friends.
   * All: view contact information/about us/general pages
 * Database (MySQL and Hibernate)
   * Store users and roles
