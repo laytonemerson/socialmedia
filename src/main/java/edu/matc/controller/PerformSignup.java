@@ -32,42 +32,27 @@ import java.io.IOException;
     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session = request.getSession();
 
-        removeAttributes(session);
-
-        String userName = request.getParameter("input_user_name");
-        String emailAddress = request.getParameter("input_email");
-        String firstName = request.getParameter("input_first_name");
-        String lastName = request.getParameter("input_last_name");
-        String password1 = request.getParameter("input_pass1");
-        String password2 = request.getParameter("input_pass2");
+        String userName = request.getParameter("user-name");
+        String emailAddress = request.getParameter("email-address");
+        String firstName = request.getParameter("first-name");
+        String lastName = request.getParameter("last-name");
+        String password = request.getParameter("password");
 
 
-        if (!password1.equals(password2)) {
-            setPasswordErrorAttributes(session, userName, emailAddress, firstName, lastName);
+        User user = new User(userName,password,emailAddress,firstName,lastName);
+        boolean userExists = performExistenceCheck(user.getUserName());
+        if (userExists) {
             String url = "/signup.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
         } else {
-            User user = new User(userName,password1,emailAddress,firstName,lastName);
-            boolean userExists = performExistenceCheck(user.getUserName());
-            if (userExists) {
-                setUserTakenErrorAttributes(session, userName, emailAddress, firstName, lastName, password1);
-                String url = "/signup.jsp";
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-                dispatcher.forward(request, response);
-            } else {
-                UserDao dao = new UserDao();
-                String userNameReturn = dao.addUser(user);
-                session.setAttribute("newUser",true);
-                session.setAttribute("newUserName",userName);
-                String url = "showMyAccount";
-                response.sendRedirect(url);
-            }
+            UserDao dao = new UserDao();
+            String userNameReturn = dao.addUser(user);
+            String url = "showMyAccount";
+            response.sendRedirect(url);
         }
     }
-
 
     private boolean performExistenceCheck(String userName) {
         boolean found = true;
@@ -78,36 +63,6 @@ import java.io.IOException;
         }
         return found;
     }
-
-    private void removeAttributes(HttpSession session){
-        session.removeAttribute("userTakenError");
-        session.removeAttribute("passwordError");
-        session.removeAttribute("userName");
-        session.removeAttribute("emailAddress");
-        session.removeAttribute("firstName");
-        session.removeAttribute("lastName");
-        session.removeAttribute("password");
-    }
-
-    private void setPasswordErrorAttributes(HttpSession session, String userName, String emailAddress,
-                                            String firstName, String lastName) {
-        session.setAttribute("passwordError", true);
-        session.setAttribute("userName", userName);
-        session.setAttribute("emailAddress", emailAddress);
-        session.setAttribute("firstName", firstName);
-        session.setAttribute("lastName", lastName);
-    }
-
-    private void setUserTakenErrorAttributes(HttpSession session, String userName, String emailAddress,
-                                            String firstName, String lastName, String password) {
-        session.setAttribute("userTakenError", true);
-        session.setAttribute("userName", userName);
-        session.setAttribute("emailAddress", emailAddress);
-        session.setAttribute("firstName", firstName);
-        session.setAttribute("lastName", lastName);
-        session.setAttribute("password", password);
-    }
-
 }
 
 
