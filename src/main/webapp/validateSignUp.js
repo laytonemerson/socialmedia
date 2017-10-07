@@ -30,7 +30,7 @@ $(document).ready(function() {
                     remote: {
                         type: "POST",
                         url: 'checkAvailability',
-                        delay: 2000,
+                        delay: 500,
                         message: 'User name is already in use'
                     },
                     notEmpty: {

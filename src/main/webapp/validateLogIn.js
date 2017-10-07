@@ -8,14 +8,14 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            user_name: {
+            j_username: {
                 validators: {
                     notEmpty: {
                         message: 'Please supply your user name'
                     }
                 }
             },
-            password: {
+            j_password: {
                 validators: {
                     notEmpty: {
                         message: 'Please supply your password'

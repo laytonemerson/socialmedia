@@ -43,13 +43,12 @@ import java.io.IOException;
 
         UserDao dao = new UserDao();
         String userNameReturn = dao.addUser(user);
-        String url = "/showMyAccount";
-        request.setAttribute("newUser",true);
-        request.setAttribute("newUser",userNameReturn);
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
-
+        HttpSession session = request.getSession();
+        session.setAttribute("newUser",true);
+        session.setAttribute("newUserName",userName);
+        String url = "showMyAccount";
+        response.sendRedirect(url);
     }
 
 }

@@ -89,7 +89,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label"></label>
                     <div class="col-sm-5">
-                        <button type="submit" class="btn btn-primary" >Send <span class="glyphicon glyphicon-send"></span></button>
+                        <button type="submit" class="btn btn-primary" >Create Account <span class="glyphicon glyphicon-send"></span></button>
                     </div>
                 </div>
 
