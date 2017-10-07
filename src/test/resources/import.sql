@@ -31,7 +31,7 @@ CREATE TABLE `users` (  `user_name` varchar(15) NOT NULL,  `email_addr` varchar(
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','1');
+INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','1'),('laytonemerson2','laytonemerson@gmail.com','Layton','Emerson','1');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

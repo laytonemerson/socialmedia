@@ -33,36 +33,25 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userName = request.getParameter("user-name");
-        String emailAddress = request.getParameter("email-address");
-        String firstName = request.getParameter("first-name");
-        String lastName = request.getParameter("last-name");
+        String userName = request.getParameter("user_name");
+        String emailAddress = request.getParameter("email");
+        String firstName = request.getParameter("first_name");
+        String lastName = request.getParameter("last_name");
         String password = request.getParameter("password");
 
-
         User user = new User(userName,password,emailAddress,firstName,lastName);
-        boolean userExists = performExistenceCheck(user.getUserName());
-        if (userExists) {
-            String url = "/signup.jsp";
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
-        } else {
-            UserDao dao = new UserDao();
-            String userNameReturn = dao.addUser(user);
-            String url = "showMyAccount";
-            response.sendRedirect(url);
-        }
+
+        UserDao dao = new UserDao();
+        String userNameReturn = dao.addUser(user);
+        String url = "/showMyAccount";
+        request.setAttribute("newUser",true);
+        request.setAttribute("newUser",userNameReturn);
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(request, response);
+
     }
 
-    private boolean performExistenceCheck(String userName) {
-        boolean found = true;
-        UserDao dao = new UserDao();
-        User user2 = dao.getUser(userName);
-        if (user2 == null) {
-            found = false;
-        }
-        return found;
-    }
 }
 
 

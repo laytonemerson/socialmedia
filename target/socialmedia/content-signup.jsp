@@ -1,83 +1,100 @@
-<%@include file="taglib.jsp"%>
 <div class="container">
-    <h2>Create a Social Media Account</h2>
-    <br>
-    <form id="main" class="form-horizontal" action="performSignup" method="post" >
 
-        <%-- User Name --%>
+    <form class="form-horizontal" action="performSignup" method="post"  id="reg_form">
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="user-name">User Name*</label>
-            <div class="col-sm-4">
-                <input id="user-name" class="form-control" type="text" placeholder="Up to 15 Chars"
-                       name="user-name" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+        <fieldset>
 
+            <%-- Form Title --%>
 
-        <%-- Email Address --%>
+            <legend>Sign up for a Social Media Account</legend>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="email-address">Email Address*</label>
-            <div class="col-sm-4">
-                <input id="email-address" class="form-control" type="email" placeholder="emailaddress@email.com"
-                       name="email-address" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+                <%-- First Name --%>
 
-        <%-- First Name --%>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">First Name*</label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First Name" class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="first-name">First Name*</label>
-            <div class="col-sm-4">
-                <input id="first-name" class="form-control" type="text" placeholder="John"
-                       name="first-name" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+                <%-- Last Name --%>
 
-        <%-- Last Name --%>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Last Name*</label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="last-name">Last Name*</label>
-            <div class="col-sm-4">
-                <input id="last-name" class="form-control" type="text" placeholder="Smith"
-                       name="last-name" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+                <%-- Email Address --%>
 
-        <%-- Password --%>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">E-Mail*</label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="password">Password*</label>
-            <div class="col-sm-4">
-                <input id="password" class="form-control" type="password" placeholder="Password"
-                       name="password" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+                <%-- User Name --%>
 
-        <%-- Confirm Password --%>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">User Name*</label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="user_name" placeholder="User Name" class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label" for="Password-Confirmation">Confirm Password*</label>
-            <div class="col-sm-4">
-                <input id="Password-Confirmation" class="form-control" type="password"
-                       placeholder="Confirm Password" name="Password-Confirmation" >
-            </div>
-            <div class="col-sm-4 messages"></div>
-        </div>
+                <%-- Password --%>
 
-        <%--Submit Button --%>
+                <div class="form-group has-feedback">
+                    <label for="password"  class="col-sm-2 control-label">Password* </label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input class="form-control" id="password" type="password" placeholder="Password"
+                                   name="password" data-minLength="5"
+                                   data-error="some error"
+                                   required/>
+                            <span class="glyphicon form-control-feedback"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
+                <%-- Confirm Password --%>
+
+                <div class="form-group has-feedback">
+                    <label for="confirmPassword"  class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input class="form-control {$borderColor}" id="confirmPassword" type="password" placeholder="Confirm password"
+                                   name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                                   data-match-error="some error 2"
+                                   required/>
+                            <span class="glyphicon form-control-feedback"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <%-- Button --%>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary" >Send <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+
+        </fieldset>
     </form>
 </div>
+
 <script type="text/javascript" src="validateSignUp.js"></script>

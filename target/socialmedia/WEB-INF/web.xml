@@ -20,8 +20,6 @@ version="2.5">
     </security-constraint>
 
 
-
-
     <security-role>
         <role-name>user</role-name>
     </security-role>

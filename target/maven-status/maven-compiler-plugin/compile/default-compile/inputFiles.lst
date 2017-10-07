@@ -4,4 +4,5 @@
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMyAccount.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/CheckAvailability.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowSignup.java

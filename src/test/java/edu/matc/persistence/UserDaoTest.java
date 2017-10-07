@@ -22,7 +22,7 @@ public class UserDaoTest {
     @Test
     public void getAllUsers() throws Exception {
         List<User> users = dao.getAllUsers();
-        assertTrue(users.size() == 1);
+        assertTrue(users.size() == 2);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class UserDaoTest {
 
     @Test
     public void addUser() throws Exception {
-        User user = new User("laytonemerson","password","laytonemerson@gmail.com","Layton","Emerson");
+        User user = new User("laytonemerson3","password","laytonemerson@gmail.com","Layton","Emerson");
         String userName  = dao.addUser(user);
         assertTrue(userName.equals(user.getUserName()));
 
@@ -42,8 +42,8 @@ public class UserDaoTest {
     @Test
     public void deleteUser() throws Exception {
 
-        User user = dao.getUser("laytonemerson");
-        dao.deleteUser("laytonemerson");
+        User user = dao.getUser("laytonemerson2");
+        dao.deleteUser("laytonemerson2");
         List<User> users = dao.getAllUsers();
 
         assertFalse(users.contains(user));

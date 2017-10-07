@@ -10,6 +10,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 
+
+
 public class User {
 
     @Id
@@ -27,7 +29,6 @@ public class User {
 
     @Column(name = "last_name")
     private String lastName;
-
 
     /**
      * Instantiates a new User.
