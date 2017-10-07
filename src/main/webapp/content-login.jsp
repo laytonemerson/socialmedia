@@ -9,7 +9,7 @@
 
                 <c:choose>
                     <c:when test="${newUser == true}">
-                        <h5>Welcome to social media ${newUserName}. Please sign in to start adding friends and inventory.</h5>
+                        <h5>Welcome to Social Media ${newUserName}. Please sign in to start adding friends and inventory.</h5>
                         <br>
                     </c:when>
                 </c:choose>
@@ -46,7 +46,7 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label"></label>
                 <div class="col-sm-5">
-                    <button type="submit" class="btn btn-primay" >Sign In <span class="glyphicon glyphicon-log-in"></span></button>
+                    <button type="submit" class="btn btn-primary" >Sign In <span class="glyphicon glyphicon-log-in"></span></button>
                 </div>
             </div>
 

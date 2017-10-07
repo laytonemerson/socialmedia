@@ -71,7 +71,7 @@
                 <%-- Confirm Password --%>
 
                 <div class="form-group has-feedback">
-                    <label for="confirmPassword"  class="col-sm-2 control-label">Confirm Password</label>
+                    <label for="confirmPassword"  class="col-sm-2 control-label">Confirm Password*</label>
                     <div class="col-sm-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control {$borderColor}" id="confirmPassword" type="password" placeholder="Confirm password"

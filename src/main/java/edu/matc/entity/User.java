@@ -1,6 +1,8 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -11,24 +13,14 @@ import javax.persistence.*;
 @Table(name = "users")
 
 
+public class User implements java.io.Serializable {
 
-public class User {
-
-    @Id
-    @Column(name = "user_name")
     private String userName;
-
-    @Column(name = "user_pass")
     private String password;
-
-    @Column(name = "email_addr")
     private String emailAddress;
-
-    @Column(name = "first_name")
     private String firstName;
-
-    @Column(name = "last_name")
     private String lastName;
+    private Set<UserRole> roles = new HashSet<UserRole>(0);
 
     /**
      * Instantiates a new User.
@@ -57,6 +49,7 @@ public class User {
      * Gets first name.
      * @return the first name
      */
+    @Column(name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -73,6 +66,7 @@ public class User {
      * Gets last name.
      * @return the last name
      */
+    @Column(name = "last_name")
     public String getLastName() {
         return lastName;
     }
@@ -89,6 +83,8 @@ public class User {
      * Gets user name.
      * @return the user name
      */
+    @Id
+    @Column(name = "user_name")
     public String getUserName() {
         return userName;
     }
@@ -104,6 +100,7 @@ public class User {
      * Gets password.
      * @return the password
      */
+    @Column(name = "user_pass")
     public String getPassword() {
         return password;
     }
@@ -120,6 +117,7 @@ public class User {
      * Gets email address
      * @return the email address
      */
+    @Column(name = "email_addr")
     public String getEmailAddress() {
         return emailAddress;
     }
@@ -132,10 +130,16 @@ public class User {
         this.emailAddress = emailAddress;
     }
 
-    /**
-     * Return a string describing the object.
-     * @return the combined string to help identify the specific user object.
-     */
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    public Set<UserRole> getUserRoles() {
+        return this.roles;
+    }
+
+    public void setUserRoles(Set<UserRole> roles) {
+        this.roles = roles;
+    }
+
     @Override
     public String toString() {
         return "User{" +

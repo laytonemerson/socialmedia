@@ -39,13 +39,8 @@ import javax.servlet.http.*;
     }
 
     private void removeAttributes(HttpSession session){
-        session.removeAttribute("userTakenError");
-        session.removeAttribute("passwordError");
-        session.removeAttribute("userName");
-        session.removeAttribute("emailAddress");
-        session.removeAttribute("firstName");
-        session.removeAttribute("lastName");
-        session.removeAttribute("password");
+        session.removeAttribute("newUser");
+        session.removeAttribute("newUserName");
     }
 }
 

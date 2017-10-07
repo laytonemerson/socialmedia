@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.User;
+import edu.matc.entity.UserRole;
 import edu.matc.persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
@@ -39,8 +40,19 @@ import java.io.IOException;
         String lastName = request.getParameter("last_name");
         String password = request.getParameter("password");
 
+        //Stock stock = new Stock();
         User user = new User(userName,password,emailAddress,firstName,lastName);
 
+        //StockDailyRecord stockDailyRecords = new StockDailyRecord();
+        UserRole role = new UserRole(userName,"user");
+
+        //stockDailyRecords.setStock(stock);
+        role.setUser(user);
+
+        //stock.getStockDailyRecords().add(stockDailyRecords);
+        user.getUserRoles().add(role);
+
+        //session.save(stock);
         UserDao dao = new UserDao();
         String userNameReturn = dao.addUser(user);
 

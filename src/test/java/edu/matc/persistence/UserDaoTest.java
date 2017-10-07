@@ -1,10 +1,10 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.entity.UserRole;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;

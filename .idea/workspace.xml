@@ -7,19 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf44d887-33e6-4fa0-8ff7-6e3d7dabb54c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/import.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ShowSignup.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ShowSignup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/socialmedia.war" afterPath="$PROJECT_DIR$/target/socialmedia.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/socialmedia/WEB-INF/classes/edu/matc/controller/ShowSignup.class" afterPath="$PROJECT_DIR$/target/socialmedia/WEB-INF/classes/edu/matc/controller/ShowSignup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/40462d04-373c-4a63-8308-b045e99a9f6f.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/40462d04-373c-4a63-8308-b045e99a9f6f.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socialmedia.log" afterPath="$PROJECT_DIR$/socialmedia.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/content-login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/content-login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/content-signup.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/content-signup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/validateLogIn.js" afterPath="$PROJECT_DIR$/src/main/webapp/validateLogIn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/validateSignUp.js" afterPath="$PROJECT_DIR$/src/main/webapp/validateSignUp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/socialmedia/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/socialmedia/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/socialmedia/content-signup.jsp" afterPath="$PROJECT_DIR$/target/socialmedia/content-signup.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,31 +70,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <file leaf-file-name="ShowMyAccount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="294">
+              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/content-login.jsp">
+      <file leaf-file-name="PerformSignup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="15" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="58" column="51" lean-forward="false" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -105,21 +99,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowMyAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java">
+      <file leaf-file-name="user_roles" pinned="false" current-in-tab="false">
+        <entry file="das://table:/47e354b4/40462d04-373c-4a63-8308-b045e99a9f6f/smdb.user_roles">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRole.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="432">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerformSignup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="365">
+              <caret line="133" column="47" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#447#457#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socialmedia.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socialmedia.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8263">
+              <caret line="8201" column="152" lean-forward="false" selection-start-line="8201" selection-start-column="95" selection-end-line="8201" selection-end-column="155" />
               <folding />
             </state>
           </provider>
@@ -167,13 +183,11 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/SessionFactoryProvider.java" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowLogin.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/failed.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/40462d04-373c-4a63-8308-b045e99a9f6f/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/content-myaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" />
@@ -185,13 +199,8 @@
         <option value="$PROJECT_DIR$/Timelog.md" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/databasecommands.md" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/validate.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformUserCheck.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/custom.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/checkUserAvailability.js" />
@@ -201,12 +210,21 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/CheckAvailability.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/validateSignUp.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/content-signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/validateLogIn.js" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/content-signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/content-login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserDao.java" />
+        <option value="$PROJECT_DIR$/socialmedia.log" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/40462d04-373c-4a63-8308-b045e99a9f6f/console.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
       </list>
     </option>
   </component>
@@ -242,8 +260,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="56" />
     <option name="y" value="17" />
-    <option name="width" value="1865" />
-    <option name="height" value="1064" />
+    <option name="width" value="745" />
+    <option name="height" value="612" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -385,8 +403,8 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,22 +418,23 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/.." />
-      <recent name="$PROJECT_DIR$/../SocialMedia" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="edu.matc.entity" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.matc.controller" />
-      <recent name="edu.matc.persistence" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.matc.entity" />
+      <recent name="edu.matc.controller" />
+      <recent name="edu.matc.persistence" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$/../SocialMedia" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -761,7 +780,12 @@
       <workItem from="1507154820685" duration="1418000" />
       <workItem from="1507157895760" duration="5965000" />
       <workItem from="1507249573291" duration="11812000" />
-      <workItem from="1507293505688" duration="43541000" />
+      <workItem from="1507293505688" duration="43608000" />
+      <workItem from="1507383433854" duration="1942000" />
+      <workItem from="1507401274337" duration="11961000" />
+      <workItem from="1507415269316" duration="1604000" />
+      <workItem from="1507416988841" duration="326000" />
+      <workItem from="1507418923638" duration="651000" />
     </task>
     <servers />
   </component>
@@ -798,7 +822,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146604000" />
+    <option name="totallyTimeSpent" value="163155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="17" width="1865" height="1092" extended-state="6" />
@@ -811,22 +835,22 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19645733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15297906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39468303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42229038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33435583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21363392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -881,18 +905,20 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TomeeConfiguration">
         <watch expression="request.getParameter(&quot;user-name&quot;)" />
         <watch expression="request.getParameter(&quot;user&quot;)" />
+        <watch expression="userRoles" />
       </configuration>
       <configuration name="JUnit">
         <watch expression="users.size()" />
@@ -900,27 +926,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="76" lean-forward="false" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar!/org/hibernate/cfg/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="679" column="0" lean-forward="false" selection-start-line="679" selection-start-column="0" selection-end-line="679" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar!/org/hibernate/internal/CoreLogging.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -932,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/40462d04-373c-4a63-8308-b045e99a9f6f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -980,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socialmedia.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3036">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../week-4-exercise-hibernate-laytonemerson/src/test/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
@@ -1016,21 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/SessionFactoryProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/databasecommands.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1045,7 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,15 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,63 +1035,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformUserCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkUserAvailability.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Role.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformUserCheck.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkUserAvailability.js" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="25" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,23 +1052,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16500">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/validate.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="31" column="77" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,17 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,38 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/validateSignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/content-signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="91" column="85" lean-forward="false" selection-start-line="91" selection-start-column="85" selection-end-line="91" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/47e354b4/40462d04-373c-4a63-8308-b045e99a9f6f/smdb.user_roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/validateLogIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,14 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="63" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1266,6 +1122,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowSignup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/content-login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/SessionFactoryProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar!/org/hibernate/internal/SessionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="567" column="0" lean-forward="false" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/validateLogIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/validateSignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/content-signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/40462d04-373c-4a63-8308-b045e99a9f6f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="65" column="14" lean-forward="false" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socialmedia.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8263">
+          <caret line="8201" column="152" lean-forward="false" selection-start-line="8201" selection-start-column="95" selection-end-line="8201" selection-end-column="155" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/47e354b4/40462d04-373c-4a63-8308-b045e99a9f6f/smdb.users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1273,27 +1244,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ShowMyAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="294">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PerformSignup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="58" column="51" lean-forward="false" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/content-login.jsp">
+    <entry file="das://table:/47e354b4/40462d04-373c-4a63-8308-b045e99a9f6f/smdb.user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="110" />
-          <folding />
+        <state relative-caret-position="365">
+          <caret line="133" column="47" lean-forward="false" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

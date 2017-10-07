@@ -22,7 +22,7 @@
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (  `user_name` varchar(15) NOT NULL,  `email_addr` varchar(60) DEFAULT NULL,  `first_name` varchar(20) DEFAULT NULL,  `last_name` varchar(20) DEFAULT NULL,  `user_pass` varchar(15) DEFAULT NULL,  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `users` (`user_name` varchar(15) NOT NULL,`email_addr` varchar(60) DEFAULT NULL,`first_name` varchar(20) DEFAULT NULL, `last_name` varchar(20) DEFAULT NULL, `user_pass` varchar(15) DEFAULT NULL, PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -31,7 +31,6 @@ CREATE TABLE `users` (  `user_name` varchar(15) NOT NULL,  `email_addr` varchar(
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','1'),('laytonemerson2','laytonemerson@gmail.com','Layton','Emerson','1');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -44,6 +43,9 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+-- Dump completed on 2017-10-07 17:50:06
+
+
 --
 -- Table structure for table `user_roles`
 --
@@ -51,7 +53,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `user_roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_roles` (`user_name` varchar(15) NOT NULL,`role_name` varchar(15) NOT NULL,PRIMARY KEY (`user_name`,`role_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,`role_name` varchar(15) NOT NULL,PRIMARY KEY (`user_name`,`role_name`),CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,9 +62,5 @@ CREATE TABLE `user_roles` (`user_name` varchar(15) NOT NULL,`role_name` varchar(
 
 LOCK TABLES `user_roles` WRITE;
 /*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES ('laytonemerson','user');
 /*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
--- Dump completed on 2017-10-03 21:47:37

@@ -7286,3 +7286,1469 @@ org.hibernate.id.IdentifierGenerationException: ids for this class must be manua
 2017-10-07 00:00:04,442 3133 [http-nio-8080-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
 2017-10-07 00:00:04,447 3138 [http-nio-8080-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
 2017-10-07 00:00:04,443 3134 [http-nio-8080-exec-5] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 08:42:24,027 0    [http-nio-8080-exec-7] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 08:42:24,066 39   [http-nio-8080-exec-7] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 08:42:24,073 46   [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 08:42:24,080 53   [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 08:42:24,153 126  [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 08:42:24,153 126  [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 08:42:24,385 358  [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 08:42:24,689 662  [http-nio-8080-exec-7] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 08:42:24,718 691  [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 08:42:24,722 695  [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 08:42:24,722 695  [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 08:42:24,729 702  [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 08:42:26,003 1976 [http-nio-8080-exec-7] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 08:42:27,012 2985 [http-nio-8080-exec-7] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 08:42:27,040 3013 [http-nio-8080-exec-7] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 08:42:27,743 3716 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 08:42:27,747 3720 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 08:42:27,818 3791 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 08:42:27,900 3873 [http-nio-8080-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 08:42:27,900 3873 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 08:42:27,900 3873 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 08:42:27,901 3874 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 08:42:27,901 3874 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 08:42:27,976 3949 [http-nio-8080-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 08:42:28,068 4041 [http-nio-8080-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 08:42:28,078 4051 [http-nio-8080-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 14:36:41,330 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 14:36:41,354 24   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 14:36:41,368 38   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 14:36:41,373 43   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 14:36:41,454 124  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,456 126  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,455 125  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,456 126  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,462 132  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,462 132  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,464 134  [http-nio-8080-exec-5] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,465 135  [http-nio-8080-exec-5] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:41,736 406  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:41,740 410  [http-nio-8080-exec-5] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:41,743 413  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:41,756 426  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:42,360 1030 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:42,367 1037 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:42,407 1077 [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:42,765 1435 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:42,772 1442 [http-nio-8080-exec-5] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:42,772 1442 [http-nio-8080-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:42,767 1437 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:42,767 1437 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:42,790 1460 [http-nio-8080-exec-5] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:42,791 1461 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:42,791 1461 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:42,792 1462 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:42,792 1462 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:42,793 1463 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:42,793 1463 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:42,795 1465 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:42,797 1467 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:42,797 1467 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:42,798 1468 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:42,798 1468 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:42,798 1468 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:42,800 1470 [http-nio-8080-exec-5] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:42,814 1484 [http-nio-8080-exec-5] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:42,824 1494 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:42,825 1495 [http-nio-8080-exec-5] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:42,837 1507 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:42,837 1507 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:42,839 1509 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:44,674 3344 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:36:44,675 3345 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:36:44,679 3349 [http-nio-8080-exec-5] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:36:44,680 3350 [http-nio-8080-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:36:44,687 3357 [http-nio-8080-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:36:45,512 4182 [http-nio-8080-exec-3] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: la
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:36:45,518 4188 [http-nio-8080-exec-4] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: lay
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:36:45,518 4188 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: l
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:36:45,517 4187 [http-nio-8080-exec-6] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:36:45,512 4182 [http-nio-8080-exec-5] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: layt
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:36:53,149 11819 [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:36:53,151 11821 [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:36:53,188 11858 [http-nio-8080-exec-7] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:36:53,209 11879 [http-nio-8080-exec-7] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:36:53,209 11879 [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:36:53,214 11884 [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:36:53,215 11885 [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:36:53,215 11885 [http-nio-8080-exec-7] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:36:53,293 11963 [http-nio-8080-exec-7] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:42:15,431 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 14:42:15,510 79   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 14:42:15,543 112  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 14:42:15,571 140  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 14:42:15,891 460  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:42:15,893 462  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:42:16,181 750  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:42:16,672 1241 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:42:16,682 1251 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:42:16,686 1255 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:42:16,686 1255 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:42:16,692 1261 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:42:17,958 2527 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:42:18,615 3184 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:43:46,928 91497 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:43:46,991 91560 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:43:47,378 91947 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:43:47,607 92176 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:43:47,609 92178 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:43:47,611 92180 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:43:47,611 92180 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:43:47,612 92181 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:43:47,898 92467 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:51:56,396 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 14:51:56,423 27   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 14:51:56,437 41   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 14:51:56,442 46   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 14:51:56,520 124  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:51:56,522 126  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:51:56,845 449  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:51:57,499 1103 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:51:57,516 1120 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:51:57,517 1121 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:51:57,517 1121 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:51:57,529 1133 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:51:58,800 2404 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:51:59,473 3077 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:52:01,247 4851 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:52:01,258 4862 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:52:01,309 4913 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:52:01,328 4932 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:52:01,328 4932 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:52:01,329 4933 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:52:01,329 4933 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:52:01,329 4933 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:52:01,372 4976 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:59:07,080 1    [http-nio-8080-exec-8] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 14:59:07,109 30   [http-nio-8080-exec-8] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 14:59:07,115 36   [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 14:59:07,120 41   [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 14:59:07,219 140  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:59:07,219 140  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:59:07,427 348  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:59:07,883 804  [http-nio-8080-exec-8] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:59:07,919 840  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:59:07,920 841  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:59:07,920 841  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:59:07,929 850  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:59:08,964 1885 [http-nio-8080-exec-8] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 14:59:09,625 2546 [http-nio-8080-exec-8] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 14:59:10,714 3635 [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 14:59:10,718 3639 [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 14:59:10,773 3694 [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 14:59:10,816 3737 [http-nio-8080-exec-9] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 14:59:10,820 3741 [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 14:59:10,820 3741 [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 14:59:10,820 3741 [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 14:59:10,820 3741 [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 14:59:10,866 3787 [http-nio-8080-exec-9] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:05:10,083 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 15:05:10,151 68   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 15:05:10,199 116  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 15:05:10,239 156  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 15:05:10,442 359  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 15:05:10,444 361  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 15:05:10,764 681  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 15:05:11,176 1093 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 15:05:11,200 1117 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 15:05:11,201 1118 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 15:05:11,201 1118 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 15:05:11,212 1129 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 15:05:12,389 2306 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:05:13,444 3361 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 15:05:13,444 3361 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 15:05:13,446 3363 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.MappingException: Composite-id class must implement Serializable: edu.matc.entity.UserRole
+	at org.hibernate.mapping.RootClass.checkCompositeIdentifier(RootClass.java:290)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:279)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1360)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 15:05:14,891 4808 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 15:05:14,893 4810 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 15:05:14,927 4844 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 15:05:14,977 4894 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 15:05:14,977 4894 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 15:05:14,977 4894 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 15:05:14,977 4894 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 15:05:14,978 4895 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 15:05:15,066 4983 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:05:15,095 5012 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 15:05:15,096 5013 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 15:08:56,473 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 15:08:56,508 35   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 15:08:56,532 59   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 15:08:56,534 61   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 15:08:56,626 153  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 15:08:56,626 153  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 15:08:56,950 477  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 15:08:57,540 1067 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 15:08:57,562 1089 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 15:08:57,563 1090 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 15:08:57,563 1090 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 15:08:57,565 1092 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 15:08:58,764 2291 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:08:59,649 3176 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 15:08:59,651 3178 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 15:08:59,688 3215 [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 15:08:59,704 3231 [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 15:09:02,664 6191 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 15:09:02,667 6194 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 0, SQLState: S1009
+2017-10-07 15:09:02,668 6195 [http-nio-8080-exec-3] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Parameter index out of range (3 > number of parameters, which is 2).
+2017-10-07 15:09:02,680 6207 [http-nio-8080-exec-3] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.GenericJDBCException: could not insert: [edu.matc.entity.UserRole]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3144)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3321)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3306)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4021)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$1.doBind(VarcharTypeDescriptor.java:63)
+	at org.hibernate.type.descriptor.sql.BasicBinder.bind(BasicBinder.java:90)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:286)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:281)
+	at org.hibernate.type.ComponentType.nullSafeSet(ComponentType.java:344)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrateId(AbstractEntityPersister.java:2880)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrate(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3121)
+	... 37 more
+2017-10-07 15:15:04,068 0    [http-nio-8080-exec-10] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 15:15:04,100 32   [http-nio-8080-exec-10] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 15:15:04,120 52   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 15:15:04,133 65   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 15:15:04,209 141  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 15:15:04,209 141  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 15:15:04,450 382  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 15:15:05,116 1048 [http-nio-8080-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 15:15:05,176 1108 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 15:15:05,177 1109 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 15:15:05,177 1109 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 15:15:05,193 1125 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 15:15:06,052 1984 [http-nio-8080-exec-10] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:15:06,775 2707 [http-nio-8080-exec-10] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 15:15:06,775 2707 [http-nio-8080-exec-10] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 15:15:06,798 2730 [http-nio-8080-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 15:15:06,807 2739 [http-nio-8080-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 15:17:55,559 171491 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 15:17:55,562 171494 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 0, SQLState: S1009
+2017-10-07 15:17:55,563 171495 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Parameter index out of range (3 > number of parameters, which is 2).
+2017-10-07 15:21:56,071 412003 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.GenericJDBCException: could not insert: [edu.matc.entity.UserRole]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3144)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3321)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3306)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4021)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$1.doBind(VarcharTypeDescriptor.java:63)
+	at org.hibernate.type.descriptor.sql.BasicBinder.bind(BasicBinder.java:90)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:286)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:281)
+	at org.hibernate.type.ComponentType.nullSafeSet(ComponentType.java:344)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrateId(AbstractEntityPersister.java:2880)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrate(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3121)
+	... 37 more
+2017-10-07 15:24:08,703 0    [http-nio-8080-exec-10] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 15:24:08,752 49   [http-nio-8080-exec-10] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 15:24:08,764 61   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 15:24:08,774 71   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 15:24:08,875 172  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 15:24:08,879 176  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 15:24:09,233 530  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 15:24:09,682 979  [http-nio-8080-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 15:24:09,690 987  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 15:24:09,691 988  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 15:24:09,692 989  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 15:24:09,700 997  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 15:24:10,456 1753 [http-nio-8080-exec-10] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 15:24:11,114 2411 [http-nio-8080-exec-10] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 15:24:11,114 2411 [http-nio-8080-exec-10] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 15:24:11,200 2497 [http-nio-8080-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 15:24:11,249 2546 [http-nio-8080-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 15:24:13,863 5160 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 15:24:13,870 5167 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 0, SQLState: S1009
+2017-10-07 15:24:13,870 5167 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Parameter index out of range (3 > number of parameters, which is 2).
+2017-10-07 15:24:13,874 5171 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.GenericJDBCException: could not insert: [edu.matc.entity.UserRole]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3144)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3321)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3306)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4021)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$1.doBind(VarcharTypeDescriptor.java:63)
+	at org.hibernate.type.descriptor.sql.BasicBinder.bind(BasicBinder.java:90)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:286)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:281)
+	at org.hibernate.type.ComponentType.nullSafeSet(ComponentType.java:344)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrateId(AbstractEntityPersister.java:2880)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrate(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3121)
+	... 37 more
+2017-10-07 16:09:42,849 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:09:42,873 24   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:09:42,883 34   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:09:42,891 42   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:09:42,938 89   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:09:42,939 90   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:09:43,040 191  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:09:43,681 832  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:09:43,700 851  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:09:43,705 856  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:09:43,706 857  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:09:43,743 894  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:09:44,681 1832 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:09:45,447 2598 [http-nio-8080-exec-1] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 16:09:45,448 2599 [http-nio-8080-exec-1] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 16:09:45,473 2624 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 16:09:45,483 2634 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 16:12:02,894 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:12:02,919 25   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:12:02,930 36   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:12:02,937 43   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:12:03,029 135  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:12:03,029 135  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:12:03,553 659  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:12:04,298 1404 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:12:04,311 1417 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:12:04,315 1421 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:12:04,315 1421 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:12:04,324 1430 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:12:05,662 2768 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:12:06,679 3785 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 16:12:06,679 3785 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 16:12:06,697 3803 [http-nio-8080-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 16:12:06,719 3825 [http-nio-8080-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 16:12:09,334 6440 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 16:12:09,345 6451 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 0, SQLState: S1009
+2017-10-07 16:12:09,345 6451 [http-nio-8080-exec-4] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Parameter index out of range (3 > number of parameters, which is 2).
+2017-10-07 16:12:09,363 6469 [http-nio-8080-exec-4] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.GenericJDBCException: could not insert: [edu.matc.entity.UserRole]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3144)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:52)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3321)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3306)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4021)
+	at org.hibernate.type.descriptor.sql.VarcharTypeDescriptor$1.doBind(VarcharTypeDescriptor.java:63)
+	at org.hibernate.type.descriptor.sql.BasicBinder.bind(BasicBinder.java:90)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:286)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeSet(AbstractStandardBasicType.java:281)
+	at org.hibernate.type.ComponentType.nullSafeSet(ComponentType.java:344)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrateId(AbstractEntityPersister.java:2880)
+	at org.hibernate.persister.entity.AbstractEntityPersister.dehydrate(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3121)
+	... 37 more
+2017-10-07 16:23:29,391 0    [http-nio-8080-exec-8] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:23:29,410 19   [http-nio-8080-exec-8] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:23:29,413 22   [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:23:29,420 29   [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:23:29,514 123  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:23:29,515 124  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:23:29,734 343  [http-nio-8080-exec-8] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:23:30,149 758  [http-nio-8080-exec-8] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:23:30,161 770  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:23:30,161 770  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:23:30,161 770  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:23:30,166 775  [http-nio-8080-exec-8] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:23:31,268 1877 [http-nio-8080-exec-8] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:23:31,642 2251 [http-nio-8080-exec-8] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.MappingException: Foreign key (FK_k8d0f2n7n88w1a16yhua64onx:users [user_name])) must have same number of columns as the referenced primary key (users [user_name,userRoles_user_name,userRoles_role_name])
+	at org.hibernate.mapping.ForeignKey.alignColumns(ForeignKey.java:110)
+	at org.hibernate.mapping.ForeignKey.alignColumns(ForeignKey.java:93)
+	at org.hibernate.cfg.Configuration.secondPassCompileForeignKeys(Configuration.java:1818)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 16:23:35,739 6348 [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:23:35,741 6350 [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:23:35,779 6388 [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:23:35,803 6412 [http-nio-8080-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:23:35,803 6412 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:23:35,803 6412 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:23:35,806 6415 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:23:35,806 6415 [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:23:35,847 6456 [http-nio-8080-exec-10] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:27:07,826 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:27:07,855 29   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:27:07,863 37   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:27:07,866 40   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:27:07,924 98   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:27:07,924 98   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:27:08,005 179  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:27:08,392 566  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:27:08,398 572  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:27:08,401 575  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:27:08,401 575  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:27:08,405 579  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:27:09,387 1561 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:27:09,840 2014 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.MappingException: Foreign key (FK_k8d0f2n7n88w1a16yhua64onx:users [user_name])) must have same number of columns as the referenced primary key (users [user_name,userRoles_user_name,userRoles_role_name])
+	at org.hibernate.mapping.ForeignKey.alignColumns(ForeignKey.java:110)
+	at org.hibernate.mapping.ForeignKey.alignColumns(ForeignKey.java:93)
+	at org.hibernate.cfg.Configuration.secondPassCompileForeignKeys(Configuration.java:1818)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 16:27:12,343 4517 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:27:12,353 4527 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:27:12,416 4590 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:27:12,437 4611 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:27:12,455 4629 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:27:12,455 4629 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:27:12,455 4629 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:27:12,455 4629 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:27:12,697 4871 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:35:43,960 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:35:43,992 32   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:35:43,998 38   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:35:44,007 47   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:35:44,132 172  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:35:44,132 172  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:35:44,544 584  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:35:45,031 1071 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:35:45,046 1086 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:35:45,048 1088 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:35:45,049 1089 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:35:45,053 1093 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:35:45,971 2011 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:35:46,492 2532 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: @OneToOne or @ManyToOne on edu.matc.entity.User.userRoles references an unknown entity: java.util.Set
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:109)
+	at org.hibernate.cfg.Configuration.processEndOfQueue(Configuration.java:1598)
+	at org.hibernate.cfg.Configuration.processFkSecondPassInOrder(Configuration.java:1521)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1422)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 16:35:48,099 4139 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:35:48,100 4140 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:35:48,128 4168 [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:35:48,163 4203 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:35:48,172 4212 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:35:48,173 4213 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:35:48,173 4213 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:35:48,173 4213 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:35:48,217 4257 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:42:52,343 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:42:52,366 23   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:42:52,370 27   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:42:52,376 33   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:42:52,437 94   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:42:52,437 94   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:42:52,578 235  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:42:53,216 873  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:42:53,235 892  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:42:53,236 893  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:42:53,236 893  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:42:53,240 897  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:42:54,129 1786 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:42:54,722 2379 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 16:42:54,732 2389 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 16:42:56,563 4220 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1054, SQLState: 42S22
+2017-10-07 16:42:56,564 4221 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'user0_.role_user_name' in 'field list'
+2017-10-07 16:42:56,568 4225 [http-nio-8080-exec-1] INFO  org.hibernate.event.internal.DefaultLoadEventListener  - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2017-10-07 16:42:56,570 4227 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:91)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:449)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:202)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:137)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:102)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:186)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4126)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:503)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:468)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:213)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:275)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:151)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1106)
+	at org.hibernate.internal.SessionImpl.access$2000(SessionImpl.java:176)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2587)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:991)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:44)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'user0_.role_user_name' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:82)
+	... 42 more
+2017-10-07 16:42:56,625 4282 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
+2017-10-07 16:42:56,637 4294 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'user0_.role_user_name' in 'field list'
+2017-10-07 16:42:58,364 6021 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1054, SQLState: 42S22
+2017-10-07 16:42:58,366 6023 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'role_user_name' in 'field list'
+2017-10-07 16:42:58,366 6023 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 16:42:58,370 6027 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
+2017-10-07 16:42:58,370 6027 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'role_user_name' in 'field list'
+2017-10-07 16:42:58,370 6027 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:211)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'role_user_name' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
+	... 39 more
+2017-10-07 16:47:14,786 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:47:14,810 24   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:47:14,816 30   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:47:14,822 36   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:47:14,903 117  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:47:14,904 118  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:47:15,228 442  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:47:15,839 1053 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:47:15,859 1073 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:47:15,859 1073 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:47:15,860 1074 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:47:15,862 1076 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:47:17,052 2266 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:47:17,950 3164 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 16:47:17,990 3204 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 16:47:19,997 5211 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1054, SQLState: 42S22
+2017-10-07 16:47:20,011 5225 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'user0_.role_user_name' in 'field list'
+2017-10-07 16:47:20,014 5228 [http-nio-8080-exec-1] INFO  org.hibernate.event.internal.DefaultLoadEventListener  - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2017-10-07 16:47:20,014 5228 [http-nio-8080-exec-1] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:91)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:449)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:202)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:137)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:102)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:186)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4126)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:503)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:468)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:213)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:275)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:151)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1106)
+	at org.hibernate.internal.SessionImpl.access$2000(SessionImpl.java:176)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2587)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:991)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:44)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'user0_.role_user_name' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:82)
+	... 42 more
+2017-10-07 16:47:20,035 5249 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
+2017-10-07 16:47:20,035 5249 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'user0_.role_user_name' in 'field list'
+2017-10-07 16:47:22,075 7289 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1054, SQLState: 42S22
+2017-10-07 16:47:22,076 7290 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'role_user_name' in 'field list'
+2017-10-07 16:47:22,076 7290 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-10-07 16:47:22,080 7294 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
+2017-10-07 16:47:22,080 7294 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'role_user_name' in 'field list'
+2017-10-07 16:47:22,081 7295 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error saving user: User{firstName='Layton', lastName='Emerson'}
+org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:211)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:465)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:351)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1258)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at edu.matc.persistence.UserDao.addUser(UserDao.java:69)
+	at edu.matc.controller.PerformSignup.doPost(PerformSignup.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'role_user_name' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
+	... 39 more
+2017-10-07 16:52:11,388 0    [http-nio-8080-exec-10] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 16:52:11,439 51   [http-nio-8080-exec-10] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 16:52:11,450 62   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 16:52:11,453 65   [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 16:52:11,711 323  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:52:11,711 323  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:52:11,901 513  [http-nio-8080-exec-10] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:52:12,354 966  [http-nio-8080-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:52:12,368 980  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:52:12,370 982  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:52:12,370 982  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:52:12,382 994  [http-nio-8080-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:52:14,030 2642 [http-nio-8080-exec-10] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 16:52:14,554 3166 [http-nio-8080-exec-10] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: edu.matc.entity.User.userName
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1815)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:963)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:796)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 16:52:16,669 5281 [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 16:52:16,681 5293 [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 16:52:16,783 5395 [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 16:52:16,862 5474 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 16:52:16,869 5481 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 16:52:16,872 5484 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 16:52:16,872 5484 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 16:52:16,872 5484 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 16:52:16,940 5552 [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 18:32:49,616 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 18:32:49,642 26   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 18:32:49,645 29   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 18:32:49,652 36   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 18:32:49,733 117  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 18:32:49,733 117  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 18:32:50,033 417  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 18:32:50,333 717  [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 18:32:50,343 727  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 18:32:50,343 727  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 18:32:50,343 727  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 18:32:50,346 730  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 18:32:51,279 1663 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 18:32:52,133 2517 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-07 18:32:52,136 2520 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-07 18:32:52,201 2585 [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-07 18:32:52,254 2638 [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-07 18:39:29,034 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-07 18:39:29,044 10   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-07 18:39:29,048 14   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-07 18:39:29,052 18   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-07 18:39:29,092 58   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 18:39:29,093 59   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 18:39:29,164 130  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 18:39:29,460 426  [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 18:39:29,467 433  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 18:39:29,468 434  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 18:39:29,468 434  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 18:39:29,471 437  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 18:39:30,438 1404 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-07 18:39:31,312 2278 [http-nio-8080-exec-2] ERROR edu.matc.persistence.UserDao  - Error getting user with userName: laytonemerson
+org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: edu.matc.entity.UserRole.users in edu.matc.entity.User.userRoles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:769)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
+	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
+	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
+	at edu.matc.persistence.UserDao.getUser(UserDao.java:43)
+	at edu.matc.controller.CheckAvailability.doPost(CheckAvailability.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-07 18:39:33,009 3975 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-07 18:39:33,021 3987 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-07 18:39:33,047 4013 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-07 18:39:33,072 4038 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-07 18:39:33,073 4039 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-07 18:39:33,073 4039 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-07 18:39:33,073 4039 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-07 18:39:33,074 4040 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-07 18:39:33,107 4073 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
