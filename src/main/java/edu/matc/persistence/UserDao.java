@@ -58,14 +58,14 @@ public class UserDao {
      * @param user
      * @return the user name of the inserted record
      */
-    public String addUser(User user) {
-        String userName = null;
+    public int addUser(User user) {
+        int userId = 0;
         Transaction transaction = null;
         Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            userName = (String)session.save(user);
+            userId = (int)session.save(user);
             transaction.commit();
         } catch (HibernateException he){
             if (transaction != null) {
@@ -81,7 +81,7 @@ public class UserDao {
                 session.close();
             }
         }
-        return userName;
+        return userId;
     }
 
     /**

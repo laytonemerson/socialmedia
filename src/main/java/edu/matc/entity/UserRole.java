@@ -1,5 +1,7 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 /**
@@ -13,8 +15,17 @@ import javax.persistence.*;
 
 public class UserRole implements java.io.Serializable {
 
-    private String userName;
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy = "increment")
+    @Column(name = "user_role_id")
+    private int user_role_id;
+
+    @Column(name = "role_name")
     private String roleName;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_name", nullable = false)
     private User user;
 
     /**
@@ -24,41 +35,17 @@ public class UserRole implements java.io.Serializable {
     }
 
     /**
-     * Instantiates a new User.
-     *
-     * @param userName the first name
-
+     * Instantiates a new User Role
+     * @param roleName the role being created
      */
-    public UserRole(String userName, String roleName) {
-        this.userName = userName;
+    public UserRole(String roleName) {
         this.roleName = roleName;
-    }
-
-    /**
-     * Gets user name.
-     * @return the user name
-     */
-    @Id
-    @Column(name = "user_name")
-    public String getUserName() {
-        return userName;
-    }
-
-    /**CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,`role_name` varchar(15) NOT NULL,PRIMARY KEY (`user_name`,`role_name`),CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-     * Sets user name.
-     * @param userName the user name
-     */
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     /**
      * Gets role name.
      * @return the role name
      */
-    @Id
-    @Column(name = "role_name")
     public String getRoleName() {
         return roleName;
     }
@@ -71,27 +58,47 @@ public class UserRole implements java.io.Serializable {
         this.roleName = roleName;
     }
 
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_name", nullable = false)
+    /**
+     * Gets the user
+     * @return the user for this role
+     */
     public User getUser() {
         return this.user;
     }
 
+    /**
+     * Sets the user
+     * @param user the user for this role
+     */
     public void setUser(User user) {
         this.user = user;
     }
-
-
 
     /**
      * Return a string describing the object.
      * @return the combined string to help identify the specific user object.
      */
+
+    /**
+     * Gets user role id.
+     * @return the user role id
+     */
+    public int getUserRoleId() {
+        return user_role_id;
+    }
+
+    /**
+     * Sets user role id.
+     * @param user_role_id the user role id
+     */
+    public void setUserId(int user_role_id) {
+        this.user_role_id = user_role_id;
+    }
+
+
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
                 ", roleName='" + roleName + '\'' +
                 '}';
     }

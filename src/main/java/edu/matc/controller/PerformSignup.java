@@ -44,7 +44,7 @@ import java.io.IOException;
         User user = new User(userName,password,emailAddress,firstName,lastName);
 
         //StockDailyRecord stockDailyRecords = new StockDailyRecord();
-        UserRole role = new UserRole(userName,"user");
+        UserRole role = new UserRole("user");
 
         //stockDailyRecords.setStock(stock);
         role.setUser(user);
@@ -54,7 +54,7 @@ import java.io.IOException;
 
         //session.save(stock);
         UserDao dao = new UserDao();
-        String userNameReturn = dao.addUser(user);
+        int userId = dao.addUser(user);
 
         HttpSession session = request.getSession();
         session.setAttribute("newUser",true);
