@@ -33,8 +33,23 @@ public class UserDaoTest {
 
     @Test
     public void addUser() throws Exception {
+
+        //Stock stock = new Stock();
         User user = new User("laytonemerson3","password","laytonemerson@gmail.com","Layton","Emerson");
+
+        //StockDailyRecord stockDailyRecords = new StockDailyRecord();
+        UserRole role = new UserRole("laytonemerson3","user");
+
+        //stockDailyRecords.setStock(stock);
+        role.setUser(user);
+
+        //stock.getStockDailyRecords().add(stockDailyRecords);
+        user.getUserRoles().add(role);
+
+        //session.save(stock);
+        UserDao dao = new UserDao();
         String userName  = dao.addUser(user);
+
         assertTrue(userName.equals(user.getUserName()));
 
     }

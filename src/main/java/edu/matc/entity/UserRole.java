@@ -44,7 +44,8 @@ public class UserRole implements java.io.Serializable {
         return userName;
     }
 
-    /**
+    /**CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,`role_name` varchar(15) NOT NULL,PRIMARY KEY (`user_name`,`role_name`),CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
      * Sets user name.
      * @param userName the user name
      */
