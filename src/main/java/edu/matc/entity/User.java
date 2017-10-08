@@ -1,5 +1,8 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -130,8 +133,8 @@ public class User implements java.io.Serializable {
         this.emailAddress = emailAddress;
     }
 
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    @OneToMany(mappedBy = "user")
+    @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
     public Set<UserRole> getUserRoles() {
         return this.roles;
     }
