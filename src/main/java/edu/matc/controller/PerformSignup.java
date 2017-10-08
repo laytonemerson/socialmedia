@@ -54,7 +54,7 @@ import java.io.IOException;
 
         //session.save(stock);
         UserDao dao = new UserDao();
-        int userId = dao.addUser(user);
+        String name = dao.addUser(user);
 
         HttpSession session = request.getSession();
         session.setAttribute("newUser",true);

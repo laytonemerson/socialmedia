@@ -41,7 +41,7 @@ public class UserDaoTest {
         role.setUser(user);
         user.getUserRoles().add(role);
 
-        int id  = dao.addUser(user);
+        String name = dao.addUser(user);
 
         assertTrue(dao.getUser("laytonemerson3").equals(user));
 

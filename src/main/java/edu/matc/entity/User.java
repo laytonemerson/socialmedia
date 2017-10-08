@@ -20,11 +20,6 @@ import java.util.Set;
 public class User implements java.io.Serializable {
 
 
-    @GeneratedValue(generator="increment")
-    @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name = "user_id")
-    private int userid;
-
     @Id
     @Column(name = "user_name")
     private String userName;
@@ -146,22 +141,6 @@ public class User implements java.io.Serializable {
      */
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
-    }
-
-    /**
-     * Gets user id.
-     * @return the user id
-     */
-    public int getUserId() {
-        return userid;
-    }
-
-    /**
-     * Sets user id.
-     * @param userId the user name
-     */
-    public void setUserId(int userId) {
-        this.userid = userid;
     }
 
     /**

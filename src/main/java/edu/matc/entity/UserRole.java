@@ -15,15 +15,12 @@ import javax.persistence.*;
 
 public class UserRole implements java.io.Serializable {
 
-    @Id
-    @GeneratedValue(generator="increment")
-    @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name = "user_role_id")
-    private int user_role_id;
 
+    @Id
     @Column(name = "role_name")
     private String roleName;
 
+    @Id
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
@@ -78,23 +75,6 @@ public class UserRole implements java.io.Serializable {
      * Return a string describing the object.
      * @return the combined string to help identify the specific user object.
      */
-
-    /**
-     * Gets user role id.
-     * @return the user role id
-     */
-    public int getUserRoleId() {
-        return user_role_id;
-    }
-
-    /**
-     * Sets user role id.
-     * @param user_role_id the user role id
-     */
-    public void setUserId(int user_role_id) {
-        this.user_role_id = user_role_id;
-    }
-
 
     @Override
     public String toString() {

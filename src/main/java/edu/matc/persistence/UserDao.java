@@ -58,22 +58,22 @@ public class UserDao {
      * @param user
      * @return the user name of the inserted record
      */
-    public int addUser(User user) {
-        int userId = 0;
+    public String addUser(User user) {
+        String userName = null;
         Transaction transaction = null;
         Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            userId = (int)session.save(user);
+            userName = (String)session.save(user);
             transaction.commit();
         } catch (HibernateException he){
             if (transaction != null) {
                 try {
-                    log.error("Error saving user: " + user, he);
+                    log.error("Error saving user: " + userName, he);
                     transaction.rollback();
                 } catch (HibernateException he2) {
-                    log.error("Error rolling back save of user: " + user, he2);
+                    log.error("Error rolling back save of user: " + userName, he2);
                 }
             }
         } finally {
@@ -81,7 +81,7 @@ public class UserDao {
                 session.close();
             }
         }
-        return userId;
+        return userName;
     }
 
     /**
