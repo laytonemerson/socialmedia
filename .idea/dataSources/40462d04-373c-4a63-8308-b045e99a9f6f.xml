@@ -44,6 +44,8 @@
       <RefSchemaName>smdb</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>user_name</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="18" parent="11" name="user_name">
       <Position>1</Position>

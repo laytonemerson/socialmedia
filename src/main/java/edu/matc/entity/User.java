@@ -19,12 +19,13 @@ import java.util.Set;
 
 public class User implements java.io.Serializable {
 
-    @Id
+
     @GeneratedValue(generator="increment")
     @GenericGenerator(name="increment", strategy = "increment")
     @Column(name = "user_id")
     private int userid;
 
+    @Id
     @Column(name = "user_name")
     private String userName;
 
