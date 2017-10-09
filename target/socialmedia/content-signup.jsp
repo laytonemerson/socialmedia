@@ -11,8 +11,8 @@
                 <%-- First Name --%>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">First Name*</label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label class="col-md-2 control-label">First Name*</label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="first_name" placeholder="First Name" class="form-control"  type="text">
                         </div>
@@ -22,8 +22,8 @@
                 <%-- Last Name --%>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Last Name*</label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label class="col-md-2 control-label">Last Name*</label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
                         </div>
@@ -33,8 +33,8 @@
                 <%-- Email Address --%>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">E-Mail*</label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label class="col-md-2 control-label">E-Mail*</label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                             <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
                         </div>
@@ -44,8 +44,8 @@
                 <%-- User Name --%>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">User Name*</label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label class="col-md-2 control-label">User Name*</label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="user_name" placeholder="User Name" class="form-control"  type="text">
                         </div>
@@ -55,8 +55,8 @@
                 <%-- Password --%>
 
                 <div class="form-group has-feedback">
-                    <label for="password"  class="col-sm-2 control-label">Password* </label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label for="password"  class="col-md-2 control-label">Password* </label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control" id="password" type="password" placeholder="Password"
                                    name="password" data-minLength="5"
@@ -71,8 +71,8 @@
                 <%-- Confirm Password --%>
 
                 <div class="form-group has-feedback">
-                    <label for="confirmPassword"  class="col-sm-2 control-label">Confirm Password*</label>
-                    <div class="col-sm-5  inputGroupContainer">
+                    <label for="confirmPassword"  class="col-md-2 control-label">Confirm Password*</label>
+                    <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control {$borderColor}" id="confirmPassword" type="password" placeholder="Confirm password"
                                    name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
@@ -87,8 +87,8 @@
                 <%-- Button --%>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label"></label>
-                    <div class="col-sm-5">
+                    <label class="col-md-2 control-label"></label>
+                    <div class="col-md-5">
                         <button type="submit" class="btn btn-primary" >Create Account <span class="glyphicon glyphicon-send"></span></button>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>myaccount</web-resource-name>
+            <web-resource-name>ShowMyAccount</web-resource-name>
             <url-pattern>/showMyAccount</url-pattern>
         </web-resource-collection>
         <auth-constraint>

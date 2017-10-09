@@ -38,7 +38,7 @@ import java.io.IOException;
         session.invalidate();
 
         session = request.getSession();
-        session.setAttribute("logoutUserName", request.getRemoteUser());
+        session.setAttribute("logoutUserName", userName);
         String url = "/logout.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

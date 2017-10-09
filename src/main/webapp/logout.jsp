@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Login to SM" />
+<c:set var="title" value="Social Media" />
 <%@include file="head.jsp"%>
 <html>
     <body>

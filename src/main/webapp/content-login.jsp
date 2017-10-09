@@ -17,8 +17,8 @@
             <%-- User Name --%>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">User Name*</label>
-                <div class="col-sm-5  inputGroupContainer">
+                <label class="col-md-2 control-label">User Name*</label>
+                <div class="col-md-5  inputGroupContainer">
                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input name="j_username" placeholder="User Name" class="form-control" id="j_username" type="text">
                     </div>
@@ -28,8 +28,8 @@
             <%-- Password --%>
 
             <div class="form-group has-feedback">
-                <label for="j_password"  class="col-sm-2 control-label">Password* </label>
-                <div class="col-sm-5  inputGroupContainer">
+                <label for="j_password"  class="col-md-2 control-label">Password* </label>
+                <div class="col-md-5  inputGroupContainer">
                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                         <input class="form-control" id="j_password" type="password" placeholder="Password"
                                name="j_password" data-minLength="5"
@@ -44,8 +44,8 @@
             <%-- Button --%>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label"></label>
-                <div class="col-sm-5">
+                <label class="col-md-2 control-label"></label>
+                <div class="col-md-5">
                     <button type="submit" class="btn btn-primary" >Sign In <span class="glyphicon glyphicon-log-in"></span></button>
                 </div>
             </div>
