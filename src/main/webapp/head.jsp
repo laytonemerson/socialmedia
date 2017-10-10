@@ -9,7 +9,7 @@
     <title>${title}</title>
 
     <!-- Latest compiled and minified CSS -->
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -24,6 +24,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
             crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+
 
     <!-- The next two items are to support jQuery datatables. Learn more about datatables here:https://datatables.net -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">

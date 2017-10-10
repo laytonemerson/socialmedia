@@ -76,8 +76,7 @@
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control {$borderColor}" id="confirmPassword" type="password" placeholder="Confirm password"
                                    name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
-                                   data-match-error="some error 2"
-                                   required/>
+                                   data-match-error="some error 2" required/>
                             <span class="glyphicon form-control-feedback"></span>
                             <span class="help-block with-errors"></span>
                         </div>
