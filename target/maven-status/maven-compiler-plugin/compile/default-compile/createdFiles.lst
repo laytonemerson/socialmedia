@@ -1,9 +1,10 @@
+edu/matc/controller/updateAccount.class
+edu/matc/controller/CheckAvailability.class
+edu/matc/controller/PerformSignup.class
 edu/matc/entity/User.class
 edu/matc/controller/ShowSignup.class
 edu/matc/persistence/UserDao.class
-edu/matc/controller/CheckAvailability.class
 edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/controller/ShowMyAccount.class
 edu/matc/entity/UserRole.class
 edu/matc/controller/PerformSignout.class
-edu/matc/controller/PerformSignup.class

@@ -1,10 +1,8 @@
 package edu.matc.controller;
 
 import edu.matc.entity.User;
-import edu.matc.entity.UserRole;
 import edu.matc.persistence.UserDao;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,9 +18,9 @@ import java.io.IOException;
  *@author lemerson
  */
 @WebServlet(
-        name = "performSignup",
-        urlPatterns = {"/performSignup"}
-) public class PerformSignup extends HttpServlet {
+        name = "updateAccount",
+        urlPatterns = {"/updateAccount"}
+) public class updateAccount extends HttpServlet {
     /**
     *  Handles HTTP GET requests.
     *
@@ -41,16 +39,9 @@ import java.io.IOException;
         String password = request.getParameter("password");
 
         User user = new User(userName,password,emailAddress,firstName,lastName);
-        UserRole role = new UserRole("user");
-        role.setUser(user);
-        user.getUserRoles().add(role);
-
         UserDao dao = new UserDao();
-        String name = dao.addUser(user);
+        dao.updateUser(user);
 
-        HttpSession session = request.getSession();
-        session.setAttribute("newUser",true);
-        session.setAttribute("newUserName",userName);
         String url = "showMyAccount";
         response.sendRedirect(url);
 

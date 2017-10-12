@@ -51,7 +51,6 @@ $(document).ready(function() {
                     }
                 }
             },
-
             password: {
                 validators: {
                     stringLength: {
@@ -81,8 +80,8 @@ $(document).ready(function() {
     })
 
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-            $('#reg_form').data('bootstrapValidator').resetForm();
+            $('#success_message').slideDown({ opacity: "show" }, "slow")
+            $('#account_edit_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
