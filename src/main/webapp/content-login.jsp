@@ -7,12 +7,12 @@
 
             <legend>Sign in to your Social Media Account</legend>
 
-                <c:choose>
-                    <c:when test="${newUser == true}">
-                        <h5>Welcome to Social Media ${newUserName}. Please sign in to start adding friends and inventory.</h5>
-                        <br>
-                    </c:when>
-                </c:choose>
+            <c:choose>
+                <c:when test="${newUser == true}">
+                    <h5>Welcome to Social Media ${newUserName}. Please sign in to start adding friends and inventory.</h5>
+                    <br>
+                </c:when>
+            </c:choose>
 
             <%-- User Name --%>
 

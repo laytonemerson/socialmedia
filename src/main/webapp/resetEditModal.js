@@ -1,6 +1,9 @@
-$(document).ready(function() {
-    $('#editAccountModal').on('hidden.bs.modal', function () {
-        $(this).find('form').reset();
-    });
+$(document).ready(function()
+{
+    // codes works on all bootstrap modal windows in application
+    $('.modal').on('hidden.bs.modal', function(e)
+    {
+        $(this).removeData();
+    }) ;
 
 });

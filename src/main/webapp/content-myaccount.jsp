@@ -46,15 +46,18 @@
 
                 <div class="modal-body">
 
-                    <form class="form-horizontal" action="updateAccount" method="post"  id="account_edit_form">
+                    <form class="form-horizontal" action="updateAccount" method="post"  id="edit_form">
+
+                        <fieldset>
 
                             <%-- User Name --%>
 
                             <div class="form-group">
-                                <label class="col-md-3 control-label">User Name</label>
-                                <div class="col-md-9  inputGroupContainer">
+                                <label class="col-md-3 control-label">User Name*</label>
+                                <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="user_name" class="form-control" type="text" readonly value='${user.userName}'  >
+                                        <input name="user_name" placeholder="User Name" class="form-control"  type="text"
+                                               value="${user.userName}">
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +68,8 @@
                                 <label class="col-md-3 control-label">First Name*</label>
                                 <div class="col-md-9  inputGroupContainer">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="first_name" class="form-control" type="text" value='${user.firstName}'>
+                                        <input name="first_name" placeholder="First Name" class="form-control"  type="text"
+                                               value="${user.firstName}">
                                     </div>
                                 </div>
                             </div>
@@ -74,9 +78,10 @@
 
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Last Name*</label>
-                                <div class="col-md-9  inputGroupContainer">
+                                <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="last_name" class="form-control" type="text" value='${user.lastName}'>
+                                        <input name="last_name" placeholder="Last Name" class="form-control"  type="text"
+                                               value="${user.lastName}">
                                     </div>
                                 </div>
                             </div>
@@ -85,22 +90,25 @@
 
                             <div class="form-group">
                                 <label class="col-md-3 control-label">E-Mail*</label>
-                                <div class="col-md-9  inputGroupContainer">
+                                <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input name="email" class="form-control" type="text" value='${user.emailAddress}' >
+                                        <input name="email" placeholder="E-Mail Address" class="form-control"  type="text"
+                                               value="${user.emailAddress}">
                                     </div>
                                 </div>
                             </div>
+
 
                             <%-- Password --%>
 
                             <div class="form-group has-feedback">
                                 <label for="password"  class="col-md-3 control-label">Password* </label>
-                                <div class="col-md-9  inputGroupContainer">
+                                <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input class="form-control" id="password" type="text" placeholder="Password"
-                                               name="password" data-minLength="5" required
-                                               data-error="some error" value='${user.password}'/>
+                                        <input class="form-control" id="password" type="password" placeholder="Password"
+                                               name="password" data-minLength="5"
+                                               data-error="some error"
+                                                value="${user.password}"  />
                                         <span class="glyphicon form-control-feedback"></span>
                                         <span class="help-block with-errors"></span>
                                     </div>
@@ -111,26 +119,27 @@
 
                             <div class="form-group has-feedback">
                                 <label for="confirmPassword"  class="col-md-3 control-label">Confirm*</label>
-                                <div class="col-md-9  inputGroupContainer">
+                                <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input class="form-control {$borderColor}" id="confirmPassword" type="text" placeholder="Confirm password"
+                                        <input class="form-control {$borderColor}" id="confirmPassword" type="password" placeholder="Confirm password"
                                                name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
-                                               data-match-error="some error 2" required value='${user.password}' />
+                                               data-match-error="some error 2"  value="${user.password}"  />
                                         <span class="glyphicon form-control-feedback"></span>
                                         <span class="help-block with-errors"></span>
                                     </div>
                                 </div>
                             </div>
 
-                            <%-- Save Button --%>
+                            <%-- Button --%>
 
                             <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
-                                <div class="col-md-9">
-                                    <button type="submit" class="btn btn-primary" >Save Changes <span class="glyphicon glyphicon-send"></span></button>
+                                <div class="col-md-5">
+                                    <button type="submit" class="btn btn-primary" >Update Account <span class="glyphicon glyphicon-send"></span></button>
                                 </div>
                             </div>
 
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -139,4 +148,3 @@
 </div> <!-- End Container -->
 
 <script type="text/javascript" src="validateAccountEdit.js"></script>
-

@@ -1,7 +1,6 @@
 
-
 $(document).ready(function() {
-    $('#account_edit_form').bootstrapValidator({
+    $('#edit_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -18,6 +17,18 @@ $(document).ready(function() {
                     },
                     notEmpty: {
                         message: 'Please supply your first name'
+                    }
+                }
+            },
+            user_name: {
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        max: 15,
+                        message: 'The user name must be between 2 and 15 characters long'
+                    },
+                    notEmpty: {
+                        message: 'Please supply your user name'
                     }
                 }
             },
@@ -51,12 +62,16 @@ $(document).ready(function() {
                     }
                 }
             },
+
             password: {
                 validators: {
                     stringLength: {
                         min: 5,
                         max: 15,
                         message: 'The password must be between 5 and 15 characters long'
+                    },
+                    notEmpty: {
+                        message: 'Please supply your password'
                     },
                     identical: {
                         field: 'confirmPassword',
@@ -70,6 +85,9 @@ $(document).ready(function() {
                         min: 5,
                         max: 15,
                     },
+                    notEmpty: {
+                        message: 'Please confirm your password'
+                    },
                     identical: {
                         field: 'password',
                         message: 'Incorrect password confirmation'
@@ -80,8 +98,8 @@ $(document).ready(function() {
     })
 
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow")
-            $('#account_edit_form').data('bootstrapValidator').resetForm();
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+            $('#edit_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
