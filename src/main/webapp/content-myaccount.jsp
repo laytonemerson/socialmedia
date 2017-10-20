@@ -29,10 +29,40 @@
                 <h3>Media Management</h3>
                 <img src="Images/movie.png" class="img-fluid" alt="Movie image">
             </center>
+            <br>
+            <ul class="list-group list-group-flush">
+                <center>
+                <li class="list-group-item"><strong>Number of movies: </strong> 2
+                    <div id="movieCarousel" class="carousel slide" style="width: 185px; margin: 0 auto">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="https://image.tmdb.org/t/p/w185/dHQMAj9E2G2ewjN1aCOPubsZaj1.jpg" alt="Chicago">
+                            </div>
+                            <div class="item">
+                                <img src="https://image.tmdb.org/t/p/w185/nZirljb8XYbKTWsRQTplDGhx39Q.jpg" alt="Chicago" >
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#movieCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#movieCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </center>
+                </li>
+                <li class="list-group-item"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></li>
+                <li class="list-group-item"><span><button type="button" class="btn btn-primary" >Add Movies</button></span></li>
+            </ul>
         </div>
+
     </div>
 
-    <!-- Modal -->
+    <!-- Edit Modal -->
     <div id="editAccountModal" class="modal fade" role="dialog">
 
         <div class="modal-dialog">
@@ -56,7 +86,7 @@
                                 <label class="col-md-3 control-label">User Name*</label>
                                 <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="user_name" placeholder="User Name" class="form-control"  type="text"
+                                        <input name="user_name" placeholder="User Name" class="form-control"  type="text" readonly
                                                value="${user.userName}">
                                     </div>
                                 </div>
@@ -145,6 +175,52 @@
             </div>
         </div>
     </div><!-- modal -->
+
+
+    <!-- Delete Modal -->
+    <div id="deleteAccountModal" class="modal fade" role="dialog">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete Account</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete your account?</p>
+
+                    <form class="form-horizontal" action="deleteAccount" method="post"  id="delete_form">
+
+                        <%-- User Name --%>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">User Name*</label>
+                            <div class="col-md-9  ">
+                                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="user_name" placeholder="User Name" class="form-control"  type="text" readonly
+                                           value="${user.userName}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <%-- Button --%>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-5">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                <button type="submit" class="btn btn-danger" >Yes </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div><!-- modal -->
+
 </div> <!-- End Container -->
 
 <script type="text/javascript" src="validateAccountEdit.js"></script>

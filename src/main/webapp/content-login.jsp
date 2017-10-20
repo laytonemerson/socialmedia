@@ -55,3 +55,4 @@
 </div>
 
 <script type="text/javascript" src="validateLogIn.js"></script>
+<script type="text/javascript" src="togglePW.js"></script>
