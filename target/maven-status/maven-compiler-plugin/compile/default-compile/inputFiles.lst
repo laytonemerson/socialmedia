@@ -1,9 +1,12 @@
-/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignup.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/UserDao.java
+/home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/Response.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignout.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/UserRole.java
-/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
+/home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/ResultsItem.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignup.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMovieSearch.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMyAccount.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/CheckAvailability.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/updateAccount.java

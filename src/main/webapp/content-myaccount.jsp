@@ -56,7 +56,7 @@
                 </center>
                 </li>
                 <li class="list-group-item"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></li>
-                <li class="list-group-item"><span><button type="button" class="btn btn-primary" >Add Movies</button></span></li>
+                <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Search & Add Movies</button></span>
             </ul>
         </div>
 
