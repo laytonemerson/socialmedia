@@ -1,4 +1,5 @@
 <%@include file="taglib.jsp"%>
+<c:set var="count" value="0" scope="page" />
 <div class="container-fluid">
 
     <div class="row">
@@ -10,7 +11,7 @@
 
     <div class="row">
 
-        <form class="form-horizontal" action="performSignup" method="post" id="search_form">
+        <form class="form-horizontal" action="performMovieSearch" method="post" id="search_form">
             <fieldset>
 
                 <%-- Keyword --%>
@@ -30,7 +31,7 @@
                     <label class="col-md-2 control-label">Year</label>
                     <div class="col-md-2  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                            <input name="year" placeholder="Release Year" class="form-control" type="text">
+                            <input name="year" placeholder="Optional Year" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -48,6 +49,39 @@
         </form>
     </div>
 
+    <div class="row">
+        <c:choose>
+            <c:when test="${searchPerformed == true}">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Movie ID</th>
+                        <th>Movie Title</th>
+                        <th>Release Date</th>
+                        <th>Plot</th>
+                    </tr>
+                    <c:forEach var="current" items="${movies}">
+                        <tr>
+                            <td>${current.getId()}</td>
+                            <td>${current.getTitle()}</td>
+                            <td>${current.getReleaseDate()}</td>
+                            <td>${current.getOverview()}</td>
+                        </tr>
+                        <c:set var="count" value="${count + 1}" scope="page"/>
+                    </c:forEach>
+                </table>
+                <c:choose>
+                    <c:when test="${count eq 1}">
+                        <p>Displaying ${count} result.</p>
+                    </c:when>
+                    <c:otherwise>
+                        <p>Displaying ${count} results.</p>
+                    </c:otherwise>
+                </c:choose>
+            </c:when>
+        </c:choose>
+    </div>
+
 
 </div> <!-- End Container -->
 <script type="text/javascript" src="validateMovieSearch.js"></script>
+
