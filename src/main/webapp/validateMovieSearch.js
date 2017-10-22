@@ -14,13 +14,6 @@ $(document).ready(function() {
                         message: 'Please supply a keyword search'
                     }
                 }
-            },
-            year: {
-                validators: {
-                    integer: {
-                        message: 'Please supply a valid year'
-                    }
-                }
             }
         }
     })

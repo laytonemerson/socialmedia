@@ -1,15 +1,14 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 /**
- * A class to represent a user role.
+ * A class to represent a user movie
  *
  * @author lemerson
  */
 @Entity
-@Table(name = "user_roles")
+@Table(name = "user_movies")
 
 
 public class Movie implements java.io.Serializable {
@@ -20,12 +19,9 @@ public class Movie implements java.io.Serializable {
     private Integer movieId;
 
     @Id
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
-
-    @Column(name = "added_date")
-    private LocalDate addedDate;
 
     /**
      * Instantiates a new Movie.
@@ -36,11 +32,9 @@ public class Movie implements java.io.Serializable {
     /**
      * Instantiates a
      * @param movieId  f
-     * @param addedDate f
      */
-    public Movie(Integer movieId, LocalDate addedDate) {
+    public Movie(Integer movieId) {
         this.movieId = movieId;
-        this.addedDate = addedDate;
     }
 
     /**
@@ -59,25 +53,10 @@ public class Movie implements java.io.Serializable {
         this.movieId = movieId;
     }
 
-    /**
-     * Gets addedDate
-     * @return addedDate
-     */
-    public LocalDate getAddedDate() {
-        return addedDate;
-    }
-
-    /**
-     * Sets addedDate
-     * @param addedDate the
-     */
-    public void setAddedDate(LocalDate addedDate) {
-        this.addedDate = addedDate;
-    }
 
     /**
      * Gets the user
-     * @return the user for this role
+     * @return the user for this
      */
     public User getUser() {
         return this.user;
@@ -85,7 +64,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets the user
-     * @param user the user for this role
+     * @param user the user for this
      */
     public void setUser(User user) {
         this.user = user;

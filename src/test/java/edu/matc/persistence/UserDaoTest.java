@@ -1,10 +1,12 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.entity.UserRole;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
@@ -35,15 +37,19 @@ public class UserDaoTest {
     public void addUser() throws Exception {
 
 
-        User user = new User("laytonemerson3","password","laytonemerson@gmail.com","Layton","Emerson");
+        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson");
 
         UserRole role = new UserRole("user");
+        Movie movie = new Movie(12345);
         role.setUser(user);
+        movie.setUser(user);
+
         user.getUserRoles().add(role);
+        user.getUserMovies().add(movie);
 
         String name = dao.addUser(user);
 
-        assertTrue(dao.getUser("laytonemerson3").equals(user));
+        assertTrue(dao.getUser("laytonemerson4").equals("laytonemerson4"));
 
 
     }
@@ -59,14 +65,24 @@ public class UserDaoTest {
     }
 
     @Test
+    @Transactional
     public void updateUser() throws Exception {
 
-        User user = dao.getUser("laytonemerson");
+
+        User user = dao.getUser("laytonemerson4");
 
         user.setFirstName("Not Layton");
+
+        Movie movie = new Movie(123456789);
+        movie.setUser(user);
+        user.getUserMovies().add(movie);
+
+
+
+
         dao.updateUser(user);
 
-        User user2 = dao.getUser("laytonemerson");
+        User user2 = dao.getUser("laytonemerson4");
         assertTrue(user.getFirstName().equals(user2.getFirstName()));
 
     }

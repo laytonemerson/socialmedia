@@ -19,7 +19,7 @@ public class UserRole implements java.io.Serializable {
     private String roleName;
 
     @Id
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
 

@@ -35,7 +35,6 @@ import java.io.IOException;
             throws ServletException, IOException {
 
 
-
         request.setAttribute("title", "Movie Search");
         String url = "/movieSearch.jsp";
 

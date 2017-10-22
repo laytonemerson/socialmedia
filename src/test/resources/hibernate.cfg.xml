@@ -21,12 +21,13 @@
         <property name="show_sql">true</property>
 
         <!-- reload the db before each test -->
-        <property name="hbm2ddl.auto">create-drop</property>
+        <!--<property name="hbm2ddl.auto">create-drop</property> -->
         <!--NOTE: to load data before each test, also add import.sql to test resources where
             import.sql is your db dump -->
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.User"/>
+        <mapping class="edu.matc.entity.Movie"/>
         <mapping class="edu.matc.entity.UserRole"/>
 
 

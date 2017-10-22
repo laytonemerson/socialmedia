@@ -16,27 +16,46 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `users`
+-- Table structure for table `user_movies`
 --
+
+DROP TABLE IF EXISTS `user_movies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+
+DROP TABLE IF EXISTS `user_roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255) DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  PRIMARY KEY (`user_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255) DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `users`
---
+CREATE TABLE `user_movies` (  `user_name` varchar(255) NOT NULL,  `movie_id` int(11) NOT NULL,  PRIMARY KEY (`user_name`,`movie_id`),  CONSTRAINT `user_movies_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345'),('User1','laytonemerson@gmail.com','User1','Smith','12345'),('user2','laytonemerson@gmail.com','User2','Emerson','12345'),('user3','laytonemerson@gmail.com','User3','Emerson','12345');
+INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+
+LOCK TABLES `user_roles` WRITE;
+/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
+INSERT INTO `user_roles` VALUES ('laytonemerson','user');
+/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
@@ -45,29 +64,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-08 16:04:36
 
 
-
---
--- Table structure for table `user_roles`
---
-
-DROP TABLE IF EXISTS `user_roles`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_roles` (
-  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),
-  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_roles`
---
-
-LOCK TABLES `user_roles` WRITE;
-/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES ('laytonemerson','user'),('User1','user'),('user2','user'),('user3','user');
-/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
-UNLOCK TABLES;

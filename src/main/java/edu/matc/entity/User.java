@@ -39,6 +39,10 @@ public class User implements java.io.Serializable {
     @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
     private Set<UserRole> roles = new HashSet<UserRole>(0);
 
+    @OneToMany(mappedBy = "user")
+    @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
+    private Set<Movie> movies = new HashSet<Movie>(0);
+
     /**
      * Instantiates a new User.
      */
@@ -156,6 +160,22 @@ public class User implements java.io.Serializable {
      */
     public void setUserRoles(Set<UserRole> roles) {
         this.roles = roles;
+    }
+
+    /**
+     * Gets the list of movies for the user
+     * @return movies the set of movies for the user
+     */
+    public Set<Movie> getUserMovies() {
+        return this.movies;
+    }
+
+    /**
+     * Sets the set of movies for the user
+     * @param movies the set of movies for the user
+     */
+    public void setUserMovies(Set<Movie> movies) {
+        this.movies = movies;
     }
 
     @Override
