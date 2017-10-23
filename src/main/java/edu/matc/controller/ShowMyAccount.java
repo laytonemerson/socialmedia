@@ -1,8 +1,13 @@
 package edu.matc.controller;
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.themoviedb.MovieResponse;
+import org.themoviedb.Response;
+import org.themoviedb.ResultsItem;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,7 +16,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * This is the ShowEmployeeSearchServlet. It will set the page title and forward
@@ -45,6 +58,24 @@ import java.io.IOException;
         UserDao dao = new UserDao();
         User user = dao.getUser(request.getRemoteUser());
         request.setAttribute("user",user);
+
+        List posterLinks = new ArrayList();
+        Set<Movie> userMovies = user.getUserMovies();
+        for (Movie userMovie: userMovies) {
+
+            String searchString = "https://api.themoviedb.org/3/movie/" + userMovie.getMovieId().toString() +
+                    "?api_key=946112c161527a3ca57ea2a7ba0f1766&language=en-US";
+
+            Client client = ClientBuilder.newClient();
+            WebTarget target = client.target(searchString);
+            String jsonResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
+            ObjectMapper mapper = new ObjectMapper();
+            MovieResponse movie = mapper.readValue(jsonResponse,MovieResponse.class);
+            posterLinks.add("https://image.tmdb.org/t/p/w185" + movie.getPosterPath());
+        }
+
+        request.setAttribute("posterCount",posterLinks.size());
+        request.setAttribute("posterLinks",posterLinks);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);

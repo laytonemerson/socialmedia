@@ -7,7 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.transaction.Transactional;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -29,7 +31,7 @@ public class UserDaoTest {
 
     @Test
     public void getUser() throws Exception {
-        User user = dao.getUser("laytonemerson");
+        User user = dao.getUser("laytonemerson4");
         assertTrue(user.getEmailAddress().equals("laytonemerson@gmail.com"));
     }
 
@@ -65,22 +67,20 @@ public class UserDaoTest {
     }
 
     @Test
-    @Transactional
     public void updateUser() throws Exception {
 
 
         User user = dao.getUser("laytonemerson4");
+        user.setFirstName("Not Layton3");
 
-        user.setFirstName("Not Layton");
-
-        Movie movie = new Movie(123456789);
+        Movie movie = new Movie(1234567890);
         movie.setUser(user);
         user.getUserMovies().add(movie);
 
-
-
-
         dao.updateUser(user);
+
+
+
 
         User user2 = dao.getUser("laytonemerson4");
         assertTrue(user.getFirstName().equals(user2.getFirstName()));

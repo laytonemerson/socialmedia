@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.entity.Movie;
+import edu.matc.entity.User;
+import edu.matc.persistence.UserDao;
 import org.themoviedb.Response;
 import org.themoviedb.ResultsItem;
 
@@ -21,6 +24,7 @@ import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -55,10 +59,14 @@ import java.util.List;
 
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(searchString);
+
+        String userName = request.getRemoteUser();
+        UserDao dao = new UserDao();
+        User user = dao.getUser(userName);
         String jsonResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper = new ObjectMapper();
-        Response apiResponse = mapper.readValue(jsonResponse,Response.class);
-        List<ResultsItem> movieList = apiResponse.getResults();
+
+        List<ResultsItem> movieList;
+                movieList = createMovieList(jsonResponse, user);
 
         request.setAttribute("movies", movieList);
         request.setAttribute("searchPerformed",true);
@@ -67,6 +75,26 @@ import java.util.List;
         request.setAttribute("title", "Movie Search");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
+
+    }
+
+    private  List<ResultsItem> createMovieList (String jsonResponse, User user) throws IOException {
+
+        ObjectMapper mapper = new ObjectMapper();
+        Response apiResponse = mapper.readValue(jsonResponse,Response.class);
+        List<ResultsItem> movieList = apiResponse.getResults();
+        Set<Movie> userMovies = user.getUserMovies();
+
+        for (ResultsItem movie : movieList) {
+            movie.setUserHas(false);
+            for (Movie userMovie: userMovies) {
+                if (userMovie.getMovieId() == movie.getId()){
+                    movie.setUserHas(true);
+                }
+            }
+        }
+
+        return movieList;
 
     }
 }

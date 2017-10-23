@@ -50,6 +50,10 @@ public class ResultsItem {
 	@JsonProperty("vote_count")
 	private int voteCount;
 
+	@JsonProperty("user_has")
+	private boolean userHas;
+
+
 	public void setOverview(String overview){
 		this.overview = overview;
 	}
@@ -150,8 +154,16 @@ public class ResultsItem {
 		this.adult = adult;
 	}
 
+	public void setUserHas(boolean userHas){
+		this.userHas = userHas;
+	}
+
 	public boolean isAdult(){
 		return adult;
+	}
+
+	public boolean userHas(){
+		return userHas;
 	}
 
 	public void setVoteCount(int voteCount){
