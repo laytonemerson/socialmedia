@@ -33,37 +33,44 @@
             <ul class="list-group list-group-flush">
 
                 <li class="list-group-item"><strong>Number of movies: </strong> ${posterCount}
-                <center>
-                     <div id="movieCarousel" class="carousel slide" style="width: 185px; margin: 0 auto">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <c:forEach var="current" items="${posterLinks}" varStatus="stat">
-                                <c:if test="${stat.first}">
-                                    <div class="item active">
-                                        <img src="${current}">
+
+                    <c:choose>
+                        <c:when test="${posterCount gt 0}">
+                            <br>
+                            <center>
+                                <div id="movieCarousel" class="carousel slide" style="width: 185px; margin: 0 auto">
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <c:forEach var="current" items="${posterLinks}" varStatus="stat">
+                                            <c:if test="${stat.first}">
+                                                <div class="item active">
+                                                    <img src="${current}" height="185">
+                                                </div>
+                                            </c:if>
+                                            <c:if test="${!stat.first}">
+                                                <div class="item">
+                                                    <img src="${current}" height="185">
+                                                </div>
+                                            </c:if>
+                                        </c:forEach>
                                     </div>
-                                </c:if>
-                                <c:if test="${!stat.first}">
-                                    <div class="item">
-                                        <img src="${current}">
-                                    </div>
-                                </c:if>
-                            </c:forEach>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#movieCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#movieCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </center>
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#movieCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#movieCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </center>
+                        </c:when>
+                </c:choose>
+
                 </li>
+                <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Search/Add Movies</button></span></a>
                 <li class="list-group-item"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></li>
-                <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Search & Add Movies</button></span></a>
             </ul>
         </div>
 

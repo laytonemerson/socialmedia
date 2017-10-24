@@ -71,7 +71,12 @@ import java.util.Set;
             String jsonResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
             ObjectMapper mapper = new ObjectMapper();
             MovieResponse movie = mapper.readValue(jsonResponse,MovieResponse.class);
-            posterLinks.add("https://image.tmdb.org/t/p/w185" + movie.getPosterPath());
+            String poster = movie.getPosterPath();
+            if (poster == null || poster.equals("")) {
+                posterLinks.add("Images/noimagemd.png");
+            } else {
+                posterLinks.add("https://image.tmdb.org/t/p/w185" + poster);
+            }
         }
 
         request.setAttribute("posterCount",posterLinks.size());
