@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.19, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.20, for Linux (x86_64)
 --
 -- Host: 127.0.0.1    Database: smdb
 -- ------------------------------------------------------
--- Server version	5.7.19-0ubuntu0.16.04.1
+-- Server version	5.7.20-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,7 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `user_movies`
+-- Drop
 --
 
 DROP TABLE IF EXISTS `user_movies`;
@@ -31,31 +31,50 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 
+--
+-- Create
+--
 
-CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255) DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255)DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
 
 CREATE TABLE `user_movies` (  `user_name` varchar(255) NOT NULL,  `movie_id` int(11) NOT NULL,  PRIMARY KEY (`user_name`,`movie_id`),  CONSTRAINT `user_movies_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),
+  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+
+--
+-- Insert
+--
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345');
+INSERT INTO `users` VALUES ('12345','email@email.com','12345','12345','12345'),('54321','1@1.com','54321','54321','54321'),('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345'),('lilbitknits','danielilbitknits@gmail.com','Danie','Emerson','shorty02');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
+LOCK TABLES `user_movies` WRITE;
+/*!40000 ALTER TABLE `user_movies` DISABLE KEYS */;
+INSERT INTO `user_movies` VALUES ('12345',10115),('12345',13187),('12345',45890),('12345',277834),('12345',335797),('12345',346364),('12345',437322),('54321',13203),('laytonemerson',9536),('laytonemerson',10115),('laytonemerson',10208),('laytonemerson',10437),('laytonemerson',10439),('laytonemerson',10874),('laytonemerson',11176),('laytonemerson',11528),('laytonemerson',11774),('laytonemerson',11899),('laytonemerson',13885),('laytonemerson',14900),('laytonemerson',20910),('laytonemerson',22798),('laytonemerson',27190),('laytonemerson',27870),('laytonemerson',37924),('laytonemerson',45890),('laytonemerson',64328),('laytonemerson',90845),('laytonemerson',104934),('laytonemerson',114671),('laytonemerson',145220),('laytonemerson',152741),('laytonemerson',159173),('laytonemerson',210056),('laytonemerson',240000),('laytonemerson',261728),('laytonemerson',268516),('laytonemerson',277834),('laytonemerson',346364),('laytonemerson',403865),('laytonemerson',436091),('laytonemerson',477433),('lilbitknits',10439),('lilbitknits',104150),('lilbitknits',110372);
+/*!40000 ALTER TABLE `user_movies` ENABLE KEYS */;
+UNLOCK TABLES;
 
 LOCK TABLES `user_roles` WRITE;
 /*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES ('laytonemerson','user');
+INSERT INTO `user_roles` VALUES ('12345','user'),('54321','user'),('laytonemerson','user'),('lilbitknits','user');
 /*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
+--
+
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
@@ -64,5 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-
-
+-- Dump completed on 2017-10-23 21:30:45

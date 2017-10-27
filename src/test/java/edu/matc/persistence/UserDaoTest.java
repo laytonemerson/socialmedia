@@ -42,7 +42,7 @@ public class UserDaoTest {
         User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson");
 
         UserRole role = new UserRole("user");
-        Movie movie = new Movie(12345);
+        Movie movie = new Movie(1234567890,"1","2","3","4");
         role.setUser(user);
         movie.setUser(user);
 
@@ -73,7 +73,7 @@ public class UserDaoTest {
         User user = dao.getUser("laytonemerson4");
         user.setFirstName("Not Layton3");
 
-        Movie movie = new Movie(1234567890);
+        Movie movie = new Movie(1234567890,"1","2","3","4");
         movie.setUser(user);
         user.getUserMovies().add(movie);
 

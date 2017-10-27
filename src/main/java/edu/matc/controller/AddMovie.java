@@ -40,12 +40,22 @@ import java.io.PrintWriter;
 
         String userName = request.getRemoteUser();
         Integer movieId = Integer.parseInt(request.getParameter("movie_id"));
+        String movieTitle = request.getParameter("movie_title");
+        String moviePlot = request.getParameter("movie_plot");
+        String movieDate = request.getParameter("movie_date");
+        String posterPath = request.getParameter("poster_path");
+        String largerSize = posterPath.replace("/w92/","/w185/");
 
         UserDao dao = new UserDao();
         User user = dao.getUser(userName);
 
-        Movie movie = new Movie(movieId);
+        Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, largerSize);
+        if (largerSize == null || largerSize.equals("")) {
+            movie.setmoviePoster("Images/noimagesm.png");
+        }
+
         movie.setUser(user);
+
         user.getUserMovies().add(movie);
         dao.updateUser(user);
 

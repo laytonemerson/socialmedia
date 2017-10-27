@@ -3,6 +3,7 @@ edu/matc/entity/Movie.class
 edu/matc/controller/AddMovie.class
 edu/matc/controller/updateAccount.class
 edu/matc/controller/CheckAvailability.class
+edu/matc/controller/ShowMyMovies.class
 edu/matc/controller/PerformSignup.class
 edu/matc/controller/DeleteAccount.class
 edu/matc/entity/User.class

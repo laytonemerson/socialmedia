@@ -4,23 +4,24 @@
     $(document).ready( function () {
 
         $('#movieTable').dataTable( {
-            "columns": [
-                { "width": "5%" },
-                { "width": "5%" },
-                { "width": "15%" },
-                { "width": "5%" },
-                { "width": "65%" },
-                { "width": "5%" }
-            ],
             "aoColumnDefs": [
                 { "bSortable": false, "aTargets": [ 1, 4, 5 ] }
             ],
+
+            "columns": [
+                { "width": "5%" },
+                { "width": "5%" },
+                { "width": "20%" },
+                { "width": "15%" },
+                { "width": "50%" },
+                { "width": "5%" },
+            ],
             "aaSorting": [],
-            "bPaginate": false,
-            "searching": false
+            "bPaginate": true,
+            "searching": true
         } );
 
-        $(".btnadd").click(function () {
+        $('#movieTable tbody').on('click', '.btnadd', function () {
             var id = $(this).closest("tr").find("td:eq(0)").text();
             var poster = $(this).closest("tr").find("img").attr("src");
             var title = $(this).closest("tr").find("td:eq(2)").text();
@@ -38,8 +39,8 @@
             mymodal.find('#poster_path').val(poster);
 
             $('#addMovieModal').modal('show');
-
         });
+
     } );
 
 </script>
@@ -106,7 +107,7 @@
         <c:choose>
             <c:when test="${searchPerformed == true}">
                 <h4>Showing results for "${keyword}"</h4>
-                <table id="movieTable" class="display" cellspacing="0">
+                <table id="movieTable" class="display" cellspacing="0" width="100%">
                     <thead>
                         <th>Movie ID</th>
                         <th></th>
@@ -158,7 +159,7 @@
                 </div>
                 <div class="modal-body" style="padding: 10px;">
                     <form class="form-horizontal" action="addMovie" method="post"  id="add_form">
-                        <input type="HIDDEN" name="poster_path">
+                        <input type="HIDDEN" name="poster_path" id="poster_path">
                         <div class="row">
                             <label class="col-md-2 control-label">Poster</label>
                             <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;" style="padding-top: 10px;">

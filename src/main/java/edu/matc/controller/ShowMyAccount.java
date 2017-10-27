@@ -61,26 +61,10 @@ import java.util.Set;
 
         List posterLinks = new ArrayList();
         Set<Movie> userMovies = user.getUserMovies();
-        for (Movie userMovie: userMovies) {
 
-            String searchString = "https://api.themoviedb.org/3/movie/" + userMovie.getMovieId().toString() +
-                    "?api_key=946112c161527a3ca57ea2a7ba0f1766&language=en-US";
 
-            Client client = ClientBuilder.newClient();
-            WebTarget target = client.target(searchString);
-            String jsonResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
-            ObjectMapper mapper = new ObjectMapper();
-            MovieResponse movie = mapper.readValue(jsonResponse,MovieResponse.class);
-            String poster = movie.getPosterPath();
-            if (poster == null || poster.equals("")) {
-                posterLinks.add("Images/noimagemd.png");
-            } else {
-                posterLinks.add("https://image.tmdb.org/t/p/w185" + poster);
-            }
-        }
-
-        request.setAttribute("posterCount",posterLinks.size());
-        request.setAttribute("posterLinks",posterLinks);
+        request.setAttribute("movieCount",userMovies.size());
+        request.setAttribute("movies",userMovies);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);

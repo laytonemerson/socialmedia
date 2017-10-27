@@ -6,6 +6,7 @@
 /home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/ResultsItem.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/AddMovie.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMyMovies.java
 /home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/MovieResponse.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignup.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/Movie.java

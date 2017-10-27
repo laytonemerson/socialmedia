@@ -32,26 +32,29 @@
             <br>
             <ul class="list-group list-group-flush">
 
-                <li class="list-group-item"><strong>Number of movies: </strong> ${posterCount}
+                <li class="list-group-item"><strong>Number of movies: </strong> ${movieCount}
 
                     <c:choose>
-                        <c:when test="${posterCount gt 0}">
+                        <c:when test="${movieCount gt 0}">
                             <br>
                             <center>
                                 <div id="movieCarousel" class="carousel slide" style="width: 185px; margin: 0 auto">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
-                                        <c:forEach var="current" items="${posterLinks}" varStatus="stat">
-                                            <c:if test="${stat.first}">
-                                                <div class="item active">
-                                                    <img src="${current}" height="185">
-                                                </div>
-                                            </c:if>
-                                            <c:if test="${!stat.first}">
-                                                <div class="item">
-                                                    <img src="${current}" height="185">
-                                                </div>
-                                            </c:if>
+                                        <c:forEach var="current" items="${movies}" varStatus="stat">
+                                            <c:choose>
+                                                <c:when test="${stat.first}">
+                                                    <div class="item active">
+                                                        <img src="${current.getmoviePoster()}" >
+                                                    </div>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    <div class="item">
+                                                        <img src="${current.getmoviePoster()}" >
+                                                    </div>
+                                                </c:otherwise>
+                                            </c:choose>
+
                                         </c:forEach>
                                     </div>
                                     <!-- Left and right controls -->
@@ -70,7 +73,8 @@
 
                 </li>
                 <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Search/Add Movies</button></span></a>
-                <li class="list-group-item"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></li>
+                <li class="list-group-item"><a href="showMyMovies"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></a>
+                </li>
             </ul>
         </div>
 

@@ -18,10 +18,23 @@ public class Movie implements java.io.Serializable {
     @Column(name = "movie_id")
     private Integer movieId;
 
+    @Column(name = "movie_title")
+    private String movieTitle;
+
+    @Column(name = "movie_date")
+    private String movieDate;
+
+    @Column(name = "movie_poster")
+    private String moviePoster;
+
+    @Column(name = "movie_plot")
+    private String moviePlot;
+
     @Id
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
+
 
     /**
      * Instantiates a new Movie.
@@ -32,9 +45,18 @@ public class Movie implements java.io.Serializable {
     /**
      * Instantiates a
      * @param movieId  f
+     * @param movieDate
+     * @param moviePlot
+     * @param movieTitle
+     * @param moviePoster
      */
-    public Movie(Integer movieId) {
+    public Movie(Integer movieId, String movieDate, String moviePlot, String movieTitle, String moviePoster) {
+
         this.movieId = movieId;
+        this.movieDate = movieDate;
+        this.moviePlot = moviePlot;
+        this.movieTitle = movieTitle;
+        this.moviePoster = moviePoster;
     }
 
     /**
@@ -53,6 +75,69 @@ public class Movie implements java.io.Serializable {
         this.movieId = movieId;
     }
 
+    /**
+     * Gets movieTitle
+     * @return movieTitle
+     */
+    public String getMovieTitle() {
+        return movieTitle;
+    }
+
+    /**
+     * Sets movieTitle
+     * @param movieTitle the
+     */
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
+    }
+
+    /**
+     * Gets moviePlot
+     * @return moviePlot
+     */
+    public String getmoviePlot() {
+        return moviePlot;
+    }
+
+    /**
+     * Sets moviePlot
+     * @param moviePlot the
+     */
+    public void setmoviePlot(String moviePlot) {
+        this.moviePlot = moviePlot;
+    }
+
+    /**
+     * Gets movieDate
+     * @return movieDate
+     */
+    public String getmovieDate() {
+        return movieDate;
+    }
+
+    /**
+     * Sets movieDate
+     * @param movieDate the
+     */
+    public void setmovieDate(String movieDate) {
+        this.movieDate = movieDate;
+    }
+
+    /**
+     * Gets moviePoster
+     * @return moviePoster
+     */
+    public String getmoviePoster() {
+        return moviePoster;
+    }
+
+    /**
+     * Sets moviePoster
+     * @param moviePoster the
+     */
+    public void setmoviePoster(String moviePoster) {
+        this.moviePoster = moviePoster;
+    }
 
     /**
      * Gets the user
