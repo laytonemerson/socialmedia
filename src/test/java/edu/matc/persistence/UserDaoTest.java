@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Friend;
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.entity.UserRole;
@@ -7,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -31,15 +33,32 @@ public class UserDaoTest {
 
     @Test
     public void getUser() throws Exception {
-        User user = dao.getUser("laytonemerson4");
+        User user = dao.getUser("12345");
         assertTrue(user.getEmailAddress().equals("laytonemerson@gmail.com"));
+    }
+
+    @Test
+    public void getFriends() throws Exception {
+        User loggedIn = dao.getUser("12345");
+
+        Set<Friend> friendSet = loggedIn.getUserFriends();
+        List<User> friends = new ArrayList<User>();
+        for (Friend current: friendSet) {
+            User makeUser = dao.getUser(current.getFriendUserName());
+            friends.add(makeUser);
+        }
+
+        List<User> nonFriends = dao.getAllUsers();
+        nonFriends.removeAll(friends);
+        nonFriends.remove(loggedIn);
+
     }
 
     @Test
     public void addUser() throws Exception {
 
 
-        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson");
+        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson","","hi");
 
         UserRole role = new UserRole("user");
         Movie movie = new Movie(1234567890,"1","2","3","4");
@@ -70,7 +89,7 @@ public class UserDaoTest {
     public void updateUser() throws Exception {
 
 
-        User user = dao.getUser("laytonemerson4");
+        User user = dao.getUser("12345");
         user.setFirstName("Not Layton3");
 
         Movie movie = new Movie(1234567890,"1","2","3","4");

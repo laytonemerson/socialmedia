@@ -63,6 +63,15 @@ $(document).ready(function() {
                 }
             },
 
+            bio: {
+                validators: {
+                    stringLength: {
+                        max: 250,
+                        message:'Please enter no more than 250 characters'
+                    }
+                }
+            },
+
             password: {
                 validators: {
                     stringLength: {

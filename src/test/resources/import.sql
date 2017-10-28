@@ -16,8 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Drop
+-- Drops
 --
+
+DROP TABLE IF EXISTS `user_friends`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 
 DROP TABLE IF EXISTS `user_movies`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -31,45 +35,73 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 
---
--- Create
---
 
-CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255)DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `users` (
+  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255) DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  `user_picture` varchar(250) DEFAULT NULL,  PRIMARY KEY (`user_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
-
-CREATE TABLE `user_movies` (  `user_name` varchar(255) NOT NULL,  `movie_id` int(11) NOT NULL,  PRIMARY KEY (`user_name`,`movie_id`),  CONSTRAINT `user_movies_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
-CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),
-  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
-
---
--- Insert
---
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('12345','email@email.com','12345','12345','12345'),('54321','1@1.com','54321','54321','54321'),('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345'),('lilbitknits','danielilbitknits@gmail.com','Danie','Emerson','shorty02');
+INSERT INTO `users` VALUES ('11111','111@111.com','111','111','11111',''),('12345','email@email.com','12345','12345','12345',''),('54321','1@1.com','54321','54321','54321',NULL),('laytonemerson','laytonemerson@gmail.com','Layton','Emerson','12345',NULL),('lilbitknits','danielilbitknits@gmail.com','Danie','Emerson','shorty02',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
+CREATE TABLE `user_friends` (
+  `user_name` varchar(255) NOT NULL,
+  `friend_user_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_name`,`friend_user_name`),
+  CONSTRAINT `user_friends_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+LOCK TABLES `user_friends` WRITE;
+/*!40000 ALTER TABLE `user_friends` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_friends` ENABLE KEYS */;
+UNLOCK TABLES;
+
+CREATE TABLE `user_movies` (
+  `user_name` varchar(255) NOT NULL,
+  `movie_id` int(11) NOT NULL,
+  `movie_plot` varchar(2000) DEFAULT NULL,
+  `movie_date` varchar(10) DEFAULT NULL,
+  `movie_poster` varchar(100) DEFAULT NULL,
+  `movie_title` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`user_name`,`movie_id`),
+  CONSTRAINT `user_movies_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 LOCK TABLES `user_movies` WRITE;
 /*!40000 ALTER TABLE `user_movies` DISABLE KEYS */;
-INSERT INTO `user_movies` VALUES ('12345',10115),('12345',13187),('12345',45890),('12345',277834),('12345',335797),('12345',346364),('12345',437322),('54321',13203),('laytonemerson',9536),('laytonemerson',10115),('laytonemerson',10208),('laytonemerson',10437),('laytonemerson',10439),('laytonemerson',10874),('laytonemerson',11176),('laytonemerson',11528),('laytonemerson',11774),('laytonemerson',11899),('laytonemerson',13885),('laytonemerson',14900),('laytonemerson',20910),('laytonemerson',22798),('laytonemerson',27190),('laytonemerson',27870),('laytonemerson',37924),('laytonemerson',45890),('laytonemerson',64328),('laytonemerson',90845),('laytonemerson',104934),('laytonemerson',114671),('laytonemerson',145220),('laytonemerson',152741),('laytonemerson',159173),('laytonemerson',210056),('laytonemerson',240000),('laytonemerson',261728),('laytonemerson',268516),('laytonemerson',277834),('laytonemerson',346364),('laytonemerson',403865),('laytonemerson',436091),('laytonemerson',477433),('lilbitknits',10439),('lilbitknits',104150),('lilbitknits',110372);
+INSERT INTO `user_movies` VALUES ('12345',239,'Two musicians witness a mob hit and struggle to find a way out of the city before they are found by the gangsters. Their only opportunity is to join an all-girl band as they leave on a tour. To make their getaway they must first disguise themselves as women, then keep their identities secret and deal with the problems this brings - such as an attractive bandmate and a very determined suitor.','1959-03-18','/pxc9EFCMYkItESpqqrI783yl8Gh.jpg','Some Like It Hot'),('12345',2800,'Sarah Huttinger\'s return home with her fiance convinces her that the sedate, proper, country-club lifestyle of her family isn\'t for her ? and that maybe the Huttinger family isn\'t even hers ? as she uncovers secrets that suggest the Huttingers are neither sedate nor proper.','2005-12-23','/6Hj5mFf1nv6gsYhGpz0xetPGYbg.jpg','Rumor Has It...'),('12345',10050,'When Berke Landers, a popular high school basketball star, gets dumped by his life-long girlfriend, Allison, he soon begins to lose it. But with the help of his best friend Felix\'s sister Kelly, he follows his ex into the school\'s spring musical. Thus ensues a love triangle loosely based upon Shakespeare\'s \"A Midsummer Night\'s Dream\", where Berke is only to find himself getting over Allison and beginning to fall for Kelly.','2001-03-08','/7EeNtzBjB0PJoW6RbaK3rvNrrkz.jpg','Get Over It'),('12345',10115,'Haley is a naturally gifted athlete but, with her social behavior, the teen seems intent on squandering her abilities. After a final brush with the law, a judge sentences her to an elite gymnastics academy run by a legendary, hard-nosed coach. Once there, Haley\'s rebellious attitude wins her both friends and enemies.','2006-04-21','/8EgxN4HcI0KUWuL6Qn1PG432Wsv.jpg','Stick It'),('12345',10647,'Like some other kids, 12-year-old Trevor McKinney believed in the goodness of human nature. Like many other kids, he was determined to change the world for the better. Unlike most other kids, he succeeded.','2000-10-12','/l5diVKdxKMUkn4jOAxASbbGtSl1.jpg','Pay It Forward'),('12345',16791,'A Psammead is \'It\', an ancient, irritable, ugly sand fairy, which five children find one day in a gravel pit. As a reward for finding him, It grants the children one wish a day, the results of which will last until sunset.','2004-10-15','/8pwS9DSeAfNKeXC6ssTEHjxDH94.jpg','Five Children and It'),('12345',22798,'In Bodeen, Texas, Land Of The Dragon, an indie-rock loving misfit finds a way of dealing with her small-town misery after she discovers a roller derby league in nearby Austin.','2009-09-13','/At7kxW4HK54kALuD9qDhFgsxkKM.jpg','Whip It'),('12345',31232,'After a warehouse fire, museum director Groof and assistant Pimm find everything destroyed, only one statue withstood the fire mysteriously undamaged. Suddenly Groof is lying dead on the ground, killed by the statue? Pimm finds out that the cursed statue has been created by Rabbi Loew in 16th century and will withstand every human attempt to destroy it. Pimm decides to use it to his own advantage.','1966-03-17','/xbJE4J3hrXVomT9VEKAPnQ4tjoa.jpg','It!'),('12345',50546,'A plastic surgeon, romancing a much younger schoolteacher, enlists his loyal assistant to pretend to be his soon to be ex-wife, in order to cover up a careless lie. When more lies backfire, the assistant\'s kids become involved, and everyone heads off for a weekend in Hawaii that will change all their lives.','2011-02-10','/4sJDqzBaqBprkEy0aLjIGl7TrHx.jpg','Just Go with It'),('12345',82690,'Wreck-It Ralph is the 9-foot-tall, 643-pound villain of an arcade video game named Fix-It Felix Jr., in which the game\'s titular hero fixes buildings that Ralph destroys. Wanting to prove he can be a good guy and not just a villain, Ralph escapes his game and lands in Hero\'s Duty, a first-person shooter where he helps the game\'s hero battle against alien invaders. He later enters Sugar Rush, a kart racing game set on tracks made of candies, cookies and other sweets. There, Ralph meets Vanellope von Schweetz who has learned that her game is faced with a dire threat that could affect the entire arcade, and one that Ralph may have inadvertently started.','2012-11-01','/93FsllrXXWncp7BQYTdOU1XMRXo.jpg','Wreck-It Ralph'),('12345',270303,'For 19-year-old Jay, fall should be about school, boys and weekends out at the lake. But a seemingly innocent physical encounter turns sour and gives her the inescapable sense that someone, or something, is following her. Faced with this burden, Jay and her teenage friends must find a way to escape the horror that seems to be only a few steps behind.','2015-02-04','/4MrwJZr0R9LbyOgZqwLNmtzzxbu.jpg','It Follows'),('12345',346364,'In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.','2017-09-05','/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg','It'),('12345',395991,'Members of the Granite Mountain Hotshots battle deadly wildfires to save an Arizona town.','2017-10-19','/lC7WdUNLOJI3sllaDGNdFy2GT8g.jpg','Only the Brave'),('12345',418078,'Secure within a desolate home as an unnatural threat terrorizes the world, a man has established a tenuous domestic order with his wife and son, but this will soon be put to test when a desperate young family arrives seeking refuge.','2017-06-09','/h9VOirT4dKXzVyVzZZxPfAghmRV.jpg','It Comes at Night');
 /*!40000 ALTER TABLE `user_movies` ENABLE KEYS */;
 UNLOCK TABLES;
 
+CREATE TABLE `user_roles` (
+  `user_name` varchar(15) NOT NULL,
+  `role_name` varchar(15) NOT NULL,
+  PRIMARY KEY (`user_name`,`role_name`),
+  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 LOCK TABLES `user_roles` WRITE;
 /*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES ('12345','user'),('54321','user'),('laytonemerson','user'),('lilbitknits','user');
+INSERT INTO `user_roles` VALUES ('11111','user'),('12345','user'),('54321','user'),('laytonemerson','user'),('lilbitknits','user');
 /*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
+--
+-- Table structure for table `users`
+--
 
+
+
+--
+-- Dumping data for table `users`
 --
 
 
@@ -83,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-23 21:30:45
+-- Dump completed on 2017-10-27 21:15:02

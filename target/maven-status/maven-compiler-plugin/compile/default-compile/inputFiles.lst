@@ -1,3 +1,4 @@
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/DeleteFriend.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/UserDao.java
 /home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/Response.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignout.java
@@ -7,13 +8,17 @@
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/AddMovie.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMyMovies.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/Friend.java
 /home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/MovieResponse.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/PerformSignup.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/Movie.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/DeleteMovie.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMovieSearch.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMyAccount.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/CheckAvailability.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/updateAccount.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/AddFriend.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/DeleteAccount.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowFriendManager.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowSignup.java

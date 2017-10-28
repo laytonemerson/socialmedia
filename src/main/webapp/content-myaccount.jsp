@@ -14,6 +14,7 @@
                 <li class="list-group-item"><strong>Last Name: </strong>  ${user.lastName}</li>
                 <li class="list-group-item"><strong>Email Address: </strong> ${user.emailAddress}</li>
                 <li class="list-group-item"><strong>Password: </strong>  *******</li>
+                <li class="list-group-item"><strong>Profile Picture: </strong><img src="${user.userPicture}" class="img-responsive"></li>
                 <li class="list-group-item"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editAccountModal">Edit account information</button></span></li>
                 <li class="list-group-item"><span><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccountModal">Delete Account</button></span></li>
             </ul>
@@ -23,6 +24,12 @@
                 <h3>Friend Management</h3>
                 <img src="Images/friend.png" class="img-fluid" alt="Friend image">
             </center>
+            <br>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Number of friends: </strong> ${friendCount}</li>
+                <li class="list-group-item"><a href="showFriendManager"><span><button type="button" class="btn btn-primary">Manage Friends</button></span></a></li>
+                <li class="list-group-item"><a href="searchFriendInventory"><span><button type="button" class="btn btn-primary" >Search your friends inventory</button></span></a></li>
+            </ul>
         </div>
         <div class="col-md-2 col-md-offset-2">
             <center>
@@ -42,19 +49,28 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <c:forEach var="current" items="${movies}" varStatus="stat">
+
+                                            <c:choose>
+                                                <c:when test="${empty current.moviePoster}">
+                                                    <c:set var="poster" value = "Images/noimagemd.png"/>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    <c:set var="poster" value="https://image.tmdb.org/t/p/w185${current.moviePoster}"/>
+                                                </c:otherwise>
+                                            </c:choose>
+
                                             <c:choose>
                                                 <c:when test="${stat.first}">
                                                     <div class="item active">
-                                                        <img src="${current.getmoviePoster()}" >
+                                                        <img src="${poster}"/>
                                                     </div>
                                                 </c:when>
                                                 <c:otherwise>
                                                     <div class="item">
-                                                        <img src="${current.getmoviePoster()}" >
+                                                        <img src="${poster}"/>
                                                     </div>
                                                 </c:otherwise>
                                             </c:choose>
-
                                         </c:forEach>
                                     </div>
                                     <!-- Left and right controls -->
@@ -72,7 +88,7 @@
                 </c:choose>
 
                 </li>
-                <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Search/Add Movies</button></span></a>
+                <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Add to My Collection</button></span></a>
                 <li class="list-group-item"><a href="showMyMovies"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></a>
                 </li>
             </ul>
@@ -175,6 +191,30 @@
                                         <span class="glyphicon form-control-feedback"></span>
                                         <span class="help-block with-errors"></span>
                                     </div>
+                                </div>
+                            </div>
+
+                            <%-- User Bio --%>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">User Bio</label>
+                                <div class="col-md-9  inputGroupContainer">
+                                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
+                                        <textarea style="resize:vertical;" class="form-control" rows="5" name="bio" >${user.userBio}</textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <%-- Profile Picture --%>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Profile Picture</label>
+                                <div class="col-md-9  ">
+                                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                        <input name="picurl" placeholder="" class="form-control"  type="text"
+                                               value="${user.userPicture}"  />
+                                    </div>
+                                    <span class="help-block">Provide the URL to your profile picture</span>
                                 </div>
                             </div>
 

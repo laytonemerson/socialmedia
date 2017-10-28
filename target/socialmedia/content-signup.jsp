@@ -83,6 +83,30 @@
                     </div>
                 </div>
 
+                <%-- User Bio --%>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">User Bio</label>
+                    <div class="col-md-5  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
+                            <textarea style="resize:vertical;" class="form-control" rows="5" name="bio" ></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+            <%-- Profile Picture --%>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Profile Picture</label>
+                    <div class="col-md-5  ">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                            <input name="picurl" placeholder="" class="form-control"  type="text">
+                        </div>
+                        <span class="help-block">Provide the URL to your profile picture</span>
+                    </div>
+                </div>
+
                 <%-- Button --%>
 
                 <div class="form-group">

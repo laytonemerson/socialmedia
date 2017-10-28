@@ -37,8 +37,10 @@ import java.io.IOException;
         String firstName = request.getParameter("first_name");
         String lastName = request.getParameter("last_name");
         String password = request.getParameter("password");
+        String picUrl = request.getParameter("picurl");
+        String bio = request.getParameter("bio");
 
-        User user = new User(userName,password,emailAddress,firstName,lastName);
+        User user = new User(userName,password,emailAddress,firstName,lastName,picUrl,bio);
         UserDao dao = new UserDao();
         dao.updateUser(user);
 

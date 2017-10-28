@@ -23,7 +23,8 @@
 
         $('#movieTable tbody').on('click', '.btnadd', function () {
             var id = $(this).closest("tr").find("td:eq(0)").text();
-            var poster = $(this).closest("tr").find("img").attr("src");
+            var poster_url = $(this).closest("tr").find("img").attr("src");
+            var poster_path = $(this).closest("tr").find("img").attr("alt");
             var title = $(this).closest("tr").find("td:eq(2)").text();
             var date = $(this).closest("tr").find("td:eq(3)").text();
             var plot = $(this).closest("tr").find("td:eq(4)").text();
@@ -31,12 +32,12 @@
 
             mymodal.find('.modal-title').text("Would you like to add '" + title + "'?");
             mymodal.find('#movie_id').val(id);
-            $('#movie_poster').attr('src',poster);
+            $('#movie_poster').attr('src',poster_url);
             mymodal.find('#movie_title').val(title);
             mymodal.find('#movie_date').val(date);
             mymodal.find('#movie_plot').val(plot);
 
-            mymodal.find('#poster_path').val(poster);
+            mymodal.find('#poster_path').val(poster_path);
 
             $('#addMovieModal').modal('show');
         });
@@ -92,8 +93,7 @@
                 <%-- Button --%>
 
                 <div class="form-group">
-                    <label class="col-md-2 control-label"></label>
-                    <div class="col-md-5">
+                    <div class="col-md-1 col-md-offset-2">
                         <button type="submit" class="btn btn-primary" >Search <span class="glyphicon glyphicon-search"></span></button>
                     </div>
                 </div>
@@ -123,10 +123,10 @@
                                 <td>${current.getId()}</td>
                                 <c:choose>
                                     <c:when test="${empty current.getPosterPath()}">
-                                        <td><img src="Images/noimagesm.png" ></td>
+                                        <td><img src="Images/noimagesm.png" alt=""></td>
                                     </c:when>
                                     <c:otherwise>
-                                        <td><img src="https://image.tmdb.org/t/p/w92${current.getPosterPath()}"></td>
+                                        <td><img src="https://image.tmdb.org/t/p/w92${current.getPosterPath()}" alt="${current.getPosterPath()}"></td>
                                     </c:otherwise>
                                 </c:choose>
                                 <td>${current.getTitle()}</td>

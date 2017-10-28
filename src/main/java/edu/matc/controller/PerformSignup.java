@@ -39,8 +39,10 @@ import java.io.IOException;
         String firstName = request.getParameter("first_name");
         String lastName = request.getParameter("last_name");
         String password = request.getParameter("password");
+        String picUrl = request.getParameter("picurl");
+        String userBio = request.getParameter("bio");
 
-        User user = new User(userName,password,emailAddress,firstName,lastName);
+        User user = new User(userName,password,emailAddress,firstName,lastName,picUrl,userBio);
         UserRole role = new UserRole("user");
         role.setUser(user);
         user.getUserRoles().add(role);
@@ -48,9 +50,7 @@ import java.io.IOException;
         UserDao dao = new UserDao();
         String name = dao.addUser(user);
 
-        HttpSession session = request.getSession();
-        session.setAttribute("newUser",true);
-        session.setAttribute("newUserName",userName);
+        request.login(userName,password);
         String url = "showMyAccount";
         response.sendRedirect(url);
 

@@ -4,6 +4,7 @@ import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
+import java.sql.Blob;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,10 +15,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "users")
-
-
 public class User implements java.io.Serializable {
-
 
     @Id
     @Column(name = "user_name")
@@ -35,13 +33,23 @@ public class User implements java.io.Serializable {
     @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "user_picture")
+    private String userPicture;
+
+    @Column(name = "user_bio")
+    private String userBio;
+
     @OneToMany(mappedBy = "user")
     @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
     private Set<UserRole> roles = new HashSet<UserRole>(0);
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", orphanRemoval=true)
     @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
     private Set<Movie> movies = new HashSet<Movie>(0);
+
+    @OneToMany(mappedBy = "user", orphanRemoval=true)
+    @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
+    private Set<Friend> friends = new HashSet<Friend>(0);
 
     /**
      * Instantiates a new User.
@@ -58,12 +66,15 @@ public class User implements java.io.Serializable {
      * @param firstName the first name
      * @param lastName  the last name
      */
-    public User(String userName, String password, String emailAddress, String firstName, String lastName) {
+    public User(String userName, String password, String emailAddress, String firstName, String lastName,
+                String userPicture, String userBio) {
         this.userName = userName;
         this.password = password;
         this.emailAddress = emailAddress;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.userPicture = userPicture;
+        this.userBio = userBio;
     }
 
     /**
@@ -147,6 +158,38 @@ public class User implements java.io.Serializable {
     }
 
     /**
+     * Gets user picture url
+     * @return the user picture url
+     */
+    public String getUserPicture() {
+        return userPicture;
+    }
+
+    /**
+     * Sets userpicture
+     * @param userPicture the url picture address of the user
+     */
+    public void setUserPicture (String userPicture) {
+        this.userPicture = userPicture;
+    }
+
+    /**
+     * Gets user bio
+     * @return the user bio
+     */
+    public String getUserBio() {
+        return userBio;
+    }
+
+    /**
+     * Sets userBio
+     * @param userBio the bio of the user
+     */
+    public void setUserBio (String userBio) {
+        this.userBio = userBio;
+    }
+
+    /**
      * Gets the set of roles for the user
      * @return roles the set of roles for the user
      */
@@ -178,12 +221,55 @@ public class User implements java.io.Serializable {
         this.movies = movies;
     }
 
+    /**
+     * Gets the list of friends for the user
+     * @return the set of friends for the user
+     */
+    public Set<Friend> getUserFriends() {
+        return this.friends;
+    }
+
+    /**
+     * Sets the set of friends for the user
+     * @param friends the set of friends for the user
+     */
+    public void setUserFriends(Set<Friend> friends) {
+        this.friends = friends;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+
+        if (!userName.equals(userName)) return false;
+        if (!firstName.equals(user.firstName)) return false;
+        if (!lastName.equals(user.lastName)) return false;
+        if (!emailAddress.equals(user.emailAddress)) return false;
+        if (!password.equals(user.password)) return false;
+        return userName.equals(user.userName);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName.hashCode();
+        result = 31 * result + lastName.hashCode();
+        result = 31 * result + userName.hashCode();
+        result = 31 * result + emailAddress.hashCode();
+        result = 31 * result + password.hashCode();
+        result = 31 * result + userName.hashCode();
+        return result;
     }
 
 }

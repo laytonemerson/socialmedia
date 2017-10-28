@@ -2,6 +2,7 @@ package edu.matc.controller;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.entity.Friend;
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
@@ -59,11 +60,10 @@ import java.util.Set;
         User user = dao.getUser(request.getRemoteUser());
         request.setAttribute("user",user);
 
-        List posterLinks = new ArrayList();
         Set<Movie> userMovies = user.getUserMovies();
 
-
         request.setAttribute("movieCount",userMovies.size());
+        request.setAttribute("friendCount",user.getUserFriends().size());
         request.setAttribute("movies",userMovies);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

@@ -44,21 +44,17 @@ import java.io.PrintWriter;
         String moviePlot = request.getParameter("movie_plot");
         String movieDate = request.getParameter("movie_date");
         String posterPath = request.getParameter("poster_path");
-        String largerSize = posterPath.replace("/w92/","/w185/");
+
 
         UserDao dao = new UserDao();
         User user = dao.getUser(userName);
 
-        Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, largerSize);
-        if (largerSize == null || largerSize.equals("")) {
-            movie.setmoviePoster("Images/noimagesm.png");
-        }
+        Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, posterPath);
 
         movie.setUser(user);
 
         user.getUserMovies().add(movie);
         dao.updateUser(user);
-
 
 
     }
