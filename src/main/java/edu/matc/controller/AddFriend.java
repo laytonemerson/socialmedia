@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * This is the ShowEmployeeSearchServlet. It will set the page title and forward
@@ -36,7 +39,7 @@ import java.io.IOException;
             throws ServletException, IOException {
 
         String userName = request.getRemoteUser();
-        String friendUserName = request.getParameter("friend");
+        String friendUserName = request.getParameter("user_name_add");
 
         UserDao dao = new UserDao();
         User user = dao.getUser(userName);
@@ -46,6 +49,23 @@ import java.io.IOException;
 
         user.getUserFriends().add(friend);
         dao.updateUser(user);
+
+
+        Set<Friend> friendSet = user.getUserFriends();
+
+        List<User> nonFriends = dao.getAllUsers();
+        nonFriends.remove(user);
+        List<User> friends = new ArrayList<User>();
+
+        for (Friend current: friendSet) {
+            User makeUser = dao.getUser(current.getFriendUserName());
+            friends.add(makeUser);
+            nonFriends.remove(makeUser);
+        }
+
+        request.setAttribute("friends",friends);
+        request.setAttribute("nonFriends",nonFriends);
+        request.setAttribute("title", "Friend Manager");
 
         String url = "/friendManager.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

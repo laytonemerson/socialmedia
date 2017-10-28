@@ -27,7 +27,7 @@
             var first_name = $(this).closest("tr").find("td:eq(2)").text();
             var last_name = $(this).closest("tr").find("td:eq(3)").text();
             var bio = $(this).closest("tr").find("td:eq(4)").text();
-            var btn = $('#' + id);
+            var btn = $('#' + user_name);
             var btn_class = btn.attr('class');
 
             if (btn_class === "btnfriend btn btn-xs btn-danger") {
@@ -49,7 +49,7 @@
                 mymodal.find('#user_bio_add').val(bio);
                 mymodal.modal('show');
             }
-                        
+
         });
 
     } );
@@ -128,25 +128,25 @@
                     <form class="form-horizontal" action="deleteFriend" method="post"  id="delete_form">
                         <div class="row">
                             <label class="col-md-2 control-label">Profile Picture</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;" style="padding-top: 10px;">
-                                <img src="" name="user_pic_del" id="user_pic_del">
+                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                                <img src="" name="user_pic_del" id="user_pic_del" class="img-responsive">
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">User Name</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;" style="padding-top: 10px;">
                                 <input id="user_name_del" name ="user_name_del" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">First Name</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;">
                                 <input id="user_first_del" name ="user_first_del" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">Last Name</label>
-                            <div class="col-lg-9 col-md-9 col-sm-9" style="padding-bottom: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;">
                                 <input id="user_last_del" name ="user_last_del" class="form-control"  type="text" readonly>
                             </div>
                         </div>
@@ -180,25 +180,25 @@
                     <form class="form-horizontal" action="addFriend" method="post"  id="add_form">
                         <div class="row">
                             <label class="col-md-2 control-label">Profile Picture</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;" style="padding-top: 10px;">
-                                <img src="" name="user_pic_add" id="user_pic_add">
+                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                                <img src="" name="user_pic_add" id="user_pic_add" class="img-responsive">
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">User Name</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;" style="padding-top: 10px;">
                                 <input id="user_name_add" name ="user_name_add" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">First Name</label>
-                            <div class="col-lg-2 col-md-2 col-sm-2" style="padding-bottom: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;">
                                 <input id="user_first_add" name ="user_first_add" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-md-2 control-label">Last Name</label>
-                            <div class="col-lg-9 col-md-9 col-sm-9" style="padding-bottom: 10px;">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 10px;">
                                 <input id="user_last_add" name ="user_last_add" class="form-control"  type="text" readonly>
                             </div>
                         </div>

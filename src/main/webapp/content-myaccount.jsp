@@ -15,7 +15,7 @@
                 <li class="list-group-item"><strong>Email Address: </strong> ${user.emailAddress}</li>
                 <li class="list-group-item"><strong>Password: </strong>  *******</li>
                 <li class="list-group-item"><strong>Profile Picture: </strong><img src="${user.userPicture}" class="img-responsive"></li>
-                <li class="list-group-item"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editAccountModal">Edit account information</button></span></li>
+                <li class="list-group-item"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editAccountModal">Edit Account Information</button></span></li>
                 <li class="list-group-item"><span><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccountModal">Delete Account</button></span></li>
             </ul>
         </div>
@@ -28,7 +28,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>Number of friends: </strong> ${friendCount}</li>
                 <li class="list-group-item"><a href="showFriendManager"><span><button type="button" class="btn btn-primary">Manage Friends</button></span></a></li>
-                <li class="list-group-item"><a href="searchFriendInventory"><span><button type="button" class="btn btn-primary" >Search your friends inventory</button></span></a></li>
+                <li class="list-group-item"><a href="searchFriendInventory"><span><button type="button" class="btn btn-primary" >Search Friends' Inventory</button></span></a></li>
             </ul>
         </div>
         <div class="col-md-2 col-md-offset-2">
