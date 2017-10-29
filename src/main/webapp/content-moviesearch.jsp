@@ -74,33 +74,30 @@
         </div>
     </div>
 
-    <div class="row">
+    <form class="form-horizontal" action="performMovieSearch" method="post" id="search_form">
+        <fieldset>
 
-        <form class="form-horizontal" action="performMovieSearch" method="post" id="search_form">
-            <fieldset>
+            <%-- Keyword --%>
 
-                <%-- Keyword --%>
-
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Keyword*</label>
-                    <div class="col-md-5  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                            <input name="keyword" placeholder="Keyword Text" required class="form-control" type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Keyword*</label>
+                <div class="col-md-5  inputGroupContainer">
+                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                        <input name="keyword" placeholder="Keyword Text" required class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <%-- Button --%>
+            <%-- Button --%>
 
-                <div class="form-group">
-                    <div class="col-md-1 col-md-offset-2">
-                        <button type="submit" class="btn btn-primary" >Search <span class="glyphicon glyphicon-search"></span></button>
-                    </div>
+            <div class="form-group">
+                <div class="col-md-1 col-md-offset-2">
+                    <button type="submit" class="btn btn-primary" >Search <span class="glyphicon glyphicon-search"></span></button>
                 </div>
+            </div>
 
-            </fieldset>
-        </form>
-    </div>
+        </fieldset>
+    </form>
 
     <div class="row">
 
