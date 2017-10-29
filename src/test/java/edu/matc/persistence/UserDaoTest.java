@@ -38,6 +38,14 @@ public class UserDaoTest {
     }
 
     @Test
+    public void sendEmail() throws Exception {
+        Mailer.send("socialmedia.entjava@gmail.com","entjavaf2017","laytonemerson@gmail.com","Subject","Body");
+        assertTrue(1==1);
+
+
+    }
+
+    @Test
     public void getFriends() throws Exception {
         User loggedIn = dao.getUser("12345");
 

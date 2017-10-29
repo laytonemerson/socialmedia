@@ -6,8 +6,10 @@ edu/matc/controller/ShowMyMovies.class
 edu/matc/controller/DeleteAccount.class
 edu/matc/entity/User.class
 org/themoviedb/ResultsItem.class
+edu/matc/persistence/Mailer.class
 edu/matc/controller/ShowFriendManager.class
 edu/matc/controller/DeleteMovie.class
+edu/matc/controller/SendEmail.class
 edu/matc/controller/ShowMyAccount.class
 edu/matc/entity/UserRole.class
 org/themoviedb/MovieResponse.class
@@ -16,6 +18,7 @@ edu/matc/controller/updateAccount.class
 edu/matc/controller/ShowFriendMovies.class
 edu/matc/controller/AddFriend.class
 edu/matc/controller/PerformSignup.class
+edu/matc/persistence/Mailer$1.class
 edu/matc/controller/ShowSignup.class
 edu/matc/persistence/UserDao.class
 edu/matc/persistence/SessionFactoryProvider.class

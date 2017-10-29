@@ -52,6 +52,7 @@ import java.util.Set;
         }
 
         request.setAttribute("friends",friends);
+        request.setAttribute("user",user);
         request.setAttribute("title", "My Friends' Movies");
         String url = "/friendMovies.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

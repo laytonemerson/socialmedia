@@ -14,8 +14,10 @@
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/CheckAvailability.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/AddFriend.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowSignup.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/SendEmail.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/UserRole.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
+/home/student/IntelliJ/socialmedia/src/main/java/edu/matc/persistence/Mailer.java
 /home/student/IntelliJ/socialmedia/src/main/java/org/themoviedb/MovieResponse.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/controller/ShowMovieSearch.java
 /home/student/IntelliJ/socialmedia/src/main/java/edu/matc/entity/User.java
