@@ -13,6 +13,7 @@ edu/matc/entity/UserRole.class
 org/themoviedb/MovieResponse.class
 org/themoviedb/Response.class
 edu/matc/controller/updateAccount.class
+edu/matc/controller/ShowFriendMovies.class
 edu/matc/controller/AddFriend.class
 edu/matc/controller/PerformSignup.class
 edu/matc/controller/ShowSignup.class

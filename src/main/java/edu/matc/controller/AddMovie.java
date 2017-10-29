@@ -54,6 +54,7 @@ import java.io.PrintWriter;
         movie.setUser(user);
 
         user.getUserMovies().add(movie);
+        user.setMovieCount(user.getMovieCount() + 1);
         dao.updateUser(user);
 
 

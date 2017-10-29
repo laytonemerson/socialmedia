@@ -53,6 +53,7 @@ import java.util.Set;
         }
 
         user.getUserMovies().remove(deleteMovie);
+        user.setMovieCount(user.getMovieCount() - 1);
         dao.updateUser(user);
         request.setAttribute("movies",user.getUserMovies());
 

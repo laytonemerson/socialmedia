@@ -5,15 +5,16 @@
 
         $('#userTable').dataTable( {
             "aoColumnDefs": [
-                { "bSortable": false, "aTargets": [ 1, 4, 5 ] }
+                { "bSortable": false, "aTargets": [ 1, 5, 6 ] }
             ],
             "columns": [
-                { "width": "11%" },
-                { "width": "11%" },
-                { "width": "11%" },
-                { "width": "11%" },
-                { "width": "50%" },
-                { "width": "6%" }
+                { "width": "10%" },
+                { "width": "10%" },
+                { "width": "10%" },
+                { "width": "10%" },
+                { "width": "10%" },
+                { "width": "45%" },
+                { "width": "5%" }
             ],
             "aaSorting": [],
             "bPaginate": true,
@@ -26,26 +27,29 @@
             var pic_url = $(this).closest("tr").find("img").attr("src");
             var first_name = $(this).closest("tr").find("td:eq(2)").text();
             var last_name = $(this).closest("tr").find("td:eq(3)").text();
-            var bio = $(this).closest("tr").find("td:eq(4)").text();
+            var movie_count = $(this).closest("tr").find("td:eq(4)").text();
+            var bio = $(this).closest("tr").find("td:eq(5)").text();
             var btn = $('#' + user_name);
             var btn_class = btn.attr('class');
 
             if (btn_class === "btnfriend btn btn-xs btn-danger") {
                 var mymodal = $('#deleteFriendModal');
-                mymodal.find('.modal-title').text("Would you like to delete " + first_name + " " + last_name + " ?");
+                mymodal.find('.modal-title').text("Would you like to delete " + first_name + " " + last_name + " from your friend list?");
                 mymodal.find('#user_name_del').val(user_name);
                 $('#user_pic_del').attr('src',pic_url);
                 mymodal.find('#user_first_del').val(first_name);
                 mymodal.find('#user_last_del').val(last_name);
+                mymodal.find('#user_count_del').val(movie_count);
                 mymodal.find('#user_bio_del').val(bio);
                 mymodal.modal('show');
             } else {
                 var mymodal = $('#addFriendModal');
-                mymodal.find('.modal-title').text("Would you like to add " + first_name + " " + last_name + " ?");
+                mymodal.find('.modal-title').text("Would you like to add " + first_name + " " + last_name + " as a friend?");
                 mymodal.find('#user_name_add').val(user_name);
                 $('#user_pic_add').attr('src',pic_url);
                 mymodal.find('#user_first_add').val(first_name);
                 mymodal.find('#user_last_add').val(last_name);
+                mymodal.find('#user_count_add').val(movie_count);
                 mymodal.find('#user_bio_add').val(bio);
                 mymodal.modal('show');
             }
@@ -73,6 +77,7 @@
             <th></th>
             <th>First Name</th>
             <th>Last Name</th>
+            <th>Movie Count</th>
             <th>Bio</th>
             <th></th>
             </thead>
@@ -91,6 +96,7 @@
                     </c:choose>
                     <td>${current.firstName}</td>
                     <td>${current.lastName}</td>
+                    <td>${current.movieCount}</td>
                     <td>${current.userBio}</td>
                     <td><button type="button" id="${current.userName}" class="btnfriend btn btn-xs btn-danger"><span class="glyphicon glyphicon-minus"></span></button></td>
                 </tr>
@@ -108,6 +114,7 @@
                     </c:choose>
                     <td>${current.firstName}</td>
                     <td>${current.lastName}</td>
+                    <td>${current.movieCount}</td>
                     <td>${current.userBio}</td>
                     <td><button type="button" id="${current.userName}" class="btnfriend btn btn-xs btn-success"><span class="glyphicon glyphicon-plus"></span></button></td>
                 </tr>
@@ -130,6 +137,12 @@
                             <label class="col-md-2 control-label">Profile Picture</label>
                             <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
                                 <img src="" name="user_pic_del" id="user_pic_del" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2 control-label">Movie Count</label>
+                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                                <input id="user_count_del" name ="user_count_del" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">
@@ -182,6 +195,12 @@
                             <label class="col-md-2 control-label">Profile Picture</label>
                             <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
                                 <img src="" name="user_pic_add" id="user_pic_add" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2 control-label">Movie Count</label>
+                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;" style="padding-top: 10px;">
+                                <input id="user_count_add" name ="user_count_add" class="form-control"  type="text" readonly>
                             </div>
                         </div>
                         <div class="row">

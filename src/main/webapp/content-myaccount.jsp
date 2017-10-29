@@ -28,7 +28,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>Number of friends: </strong> ${friendCount}</li>
                 <li class="list-group-item"><a href="showFriendManager"><span><button type="button" class="btn btn-primary">Manage Friends</button></span></a></li>
-                <li class="list-group-item"><a href="searchFriendInventory"><span><button type="button" class="btn btn-primary" >Search Friends' Inventory</button></span></a></li>
+                <li class="list-group-item"><a href="showFriendMovies"><span><button type="button" class="btn btn-primary" >Search Friends' Inventory</button></span></a></li>
             </ul>
         </div>
         <div class="col-md-2 col-md-offset-2">
@@ -39,11 +39,10 @@
             <br>
             <ul class="list-group list-group-flush">
 
-                <li class="list-group-item"><strong>Number of movies: </strong> ${movieCount}
-
-                    <c:choose>
-                        <c:when test="${movieCount gt 0}">
-                            <br>
+                <li class="list-group-item"><strong>Number of movies: </strong> ${movieCount}</li>
+                <c:choose>
+                    <c:when test="${movieCount gt 0}">
+                        <li class="list-group-item">
                             <center>
                                 <div id="movieCarousel" class="carousel slide" style="width: 185px; margin: 0 auto">
                                     <!-- Wrapper for slides -->
@@ -84,10 +83,9 @@
                                     </a>
                                 </div>
                             </center>
-                        </c:when>
+                        </li>
+                    </c:when>
                 </c:choose>
-
-                </li>
                 <li class="list-group-item"><a href="showMovieSearch"><span><button type="button" class="btn btn-primary">Add to My Collection</button></span></a>
                 <li class="list-group-item"><a href="showMyMovies"><span><button type="button" class="btn btn-primary" >View/Edit My Collection</button></span></a>
                 </li>

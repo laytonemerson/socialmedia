@@ -40,8 +40,15 @@ import java.io.IOException;
         String picUrl = request.getParameter("picurl");
         String bio = request.getParameter("bio");
 
-        User user = new User(userName,password,emailAddress,firstName,lastName,picUrl,bio);
         UserDao dao = new UserDao();
+        User user = dao.getUser(userName);
+        user.setEmailAddress(emailAddress);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setPassword(password);
+        user.setUserPicture(picUrl);
+        user.setUserBio(bio);
+        user.setMovieCount(user.getMovieCount());
         dao.updateUser(user);
 
         String url = "showMyAccount";

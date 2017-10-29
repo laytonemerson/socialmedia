@@ -58,7 +58,7 @@ public class UserDaoTest {
     public void addUser() throws Exception {
 
 
-        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson","","hi");
+        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson","","hi",0);
 
         UserRole role = new UserRole("user");
         Movie movie = new Movie(1234567890,"1","2","3","4");

@@ -135,7 +135,12 @@ role_name</ColNames>
       <Position>7</Position>
       <DataType>varchar(250)|0</DataType>
     </column>
-    <key id="38" parent="14" name="PRIMARY">
+    <column id="38" parent="14" name="user_movies">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="39" parent="14" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_name</ColNames>
       <Primary>1</Primary>

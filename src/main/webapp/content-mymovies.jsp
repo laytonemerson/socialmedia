@@ -14,7 +14,7 @@
                 { "width": "20%" },
                 { "width": "15%" },
                 { "width": "50%" },
-                { "width": "5%" },
+                { "width": "5%" }
             ],
             "aaSorting": [],
             "bPaginate": true,
@@ -71,19 +71,19 @@
             <tbody>
             <c:forEach var="current" items="${movies}">
                 <tr>
-                    <td>${current.getMovieId()}</td>
+                    <td>${current.movieId}</td>
                     <c:choose>
-                        <c:when test="${empty current.getmoviePoster()}">
+                        <c:when test="${empty current.moviePoster}">
                             <td><img src="Images/noimagesm.png" ></td>
                         </c:when>
                         <c:otherwise>
-                            <td><img src="https://image.tmdb.org/t/p/w92${current.getmoviePoster()}"></td>
+                            <td><img src="https://image.tmdb.org/t/p/w92${current.moviePoster}"></td>
                         </c:otherwise>
                     </c:choose>
-                    <td>${current.getMovieTitle()}</td>
-                    <td>${current.getmovieDate()}</td>
-                    <td>${current.getmoviePlot()}</td>
-                    <td><button type="button" id="${current.getMovieId()}" class="btndel btn btn-xs btn-danger"><span class="glyphicon glyphicon-minus"></span></button></td>
+                    <td>${current.movieTitle}</td>
+                    <td>${current.movieDate}</td>
+                    <td>${current.moviePlot}</td>
+                    <td><button type="button" id="${current.movieId}" class="btndel btn btn-xs btn-danger"><span class="glyphicon glyphicon-minus"></span></button></td>
                 </tr>
             </c:forEach>
             </tbody>

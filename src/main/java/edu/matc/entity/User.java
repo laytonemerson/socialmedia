@@ -39,6 +39,9 @@ public class User implements java.io.Serializable {
     @Column(name = "user_bio")
     private String userBio;
 
+    @Column(name = "user_movies")
+    private Integer movieCount;
+
     @OneToMany(mappedBy = "user")
     @Cascade({CascadeType.SAVE_UPDATE, CascadeType.DELETE})
     private Set<UserRole> roles = new HashSet<UserRole>(0);
@@ -67,7 +70,7 @@ public class User implements java.io.Serializable {
      * @param lastName  the last name
      */
     public User(String userName, String password, String emailAddress, String firstName, String lastName,
-                String userPicture, String userBio) {
+                String userPicture, String userBio, Integer movieCount) {
         this.userName = userName;
         this.password = password;
         this.emailAddress = emailAddress;
@@ -75,6 +78,7 @@ public class User implements java.io.Serializable {
         this.lastName = lastName;
         this.userPicture = userPicture;
         this.userBio = userBio;
+        this.movieCount = movieCount;
     }
 
     /**
@@ -187,6 +191,22 @@ public class User implements java.io.Serializable {
      */
     public void setUserBio (String userBio) {
         this.userBio = userBio;
+    }
+
+    /**
+     * Gets user movie count
+     * @return the user movie count
+     */
+    public Integer getMovieCount() {
+        return movieCount;
+    }
+
+    /**
+     * Sets userMovieCount
+     * @param movieCount the movie count of the user
+     */
+    public void setMovieCount (Integer movieCount) {
+        this.movieCount = movieCount;
     }
 
     /**

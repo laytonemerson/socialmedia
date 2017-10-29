@@ -42,7 +42,7 @@ import java.io.IOException;
         String picUrl = request.getParameter("picurl");
         String userBio = request.getParameter("bio");
 
-        User user = new User(userName,password,emailAddress,firstName,lastName,picUrl,userBio);
+        User user = new User(userName,password,emailAddress,firstName,lastName,picUrl,userBio,0);
         UserRole role = new UserRole("user");
         role.setUser(user);
         user.getUserRoles().add(role);
