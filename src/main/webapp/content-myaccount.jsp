@@ -118,7 +118,7 @@
                                 <label class="col-md-3 control-label">User Name*</label>
                                 <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="user_name" placeholder="User Name" class="form-control"  type="text" readonly
+                                        <input name="user_name" id="user_name" placeholder="User Name" class="form-control"  type="text" readonly
                                                value="${user.userName}">
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@
                                 <label class="col-md-3 control-label">First Name*</label>
                                 <div class="col-md-9  inputGroupContainer">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="first_name" placeholder="First Name" class="form-control"  type="text"
+                                        <input name="first_name" id="first_name" placeholder="First Name" class="form-control"  type="text"
                                                value="${user.firstName}">
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@
                                 <label class="col-md-3 control-label">Last Name*</label>
                                 <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="last_name" placeholder="Last Name" class="form-control"  type="text"
+                                        <input name="last_name" id="last_name" placeholder="Last Name" class="form-control"  type="text"
                                                value="${user.lastName}">
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@
                                 <label class="col-md-3 control-label">E-Mail*</label>
                                 <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input name="email" placeholder="E-Mail Address" class="form-control"  type="text"
+                                        <input name="email" id="email" placeholder="E-Mail Address" class="form-control"  type="text"
                                                value="${user.emailAddress}">
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                                 <label class="col-md-3 control-label">User Bio</label>
                                 <div class="col-md-9  inputGroupContainer">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
-                                        <textarea style="resize:vertical;" class="form-control" rows="5" name="bio" >${user.userBio}</textarea>
+                                        <textarea style="resize:vertical;" class="form-control" rows="5" name="bio" id="bio">${user.userBio}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                 <label class="col-md-3 control-label">Profile Picture</label>
                                 <div class="col-md-9  ">
                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                        <input name="picurl" placeholder="" class="form-control"  type="text"
+                                        <input name="picurl" id="picurl" placeholder="" class="form-control"  type="text"
                                                value="${user.userPicture}"  />
                                     </div>
                                     <span class="help-block">Provide the URL to your profile picture</span>

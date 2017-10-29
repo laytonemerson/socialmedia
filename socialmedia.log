@@ -23076,3 +23076,136 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-10-29 13:31:51,104 7110 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
 2017-10-29 13:31:51,134 7140 [http-nio-8080-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-10-29 13:31:51,151 7157 [http-nio-8080-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 13:53:27,023 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 13:53:27,082 59   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 13:53:27,091 68   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 13:53:27,103 80   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 13:53:27,202 179  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 13:53:27,213 190  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 13:53:27,670 647  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 13:53:29,009 1986 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 13:53:29,049 2026 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 13:53:29,053 2030 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 13:53:29,054 2031 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 13:53:29,061 2038 [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 13:53:30,110 3087 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 13:53:31,403 4380 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 13:53:31,405 4382 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 13:53:31,406 4383 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 13:53:31,406 4383 [http-nio-8080-exec-2] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 13:53:31,569 4546 [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 13:53:31,670 4647 [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 14:01:21,868 0    [http-nio-8080-exec-6] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 14:01:21,908 40   [http-nio-8080-exec-6] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 14:01:21,919 51   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 14:01:21,925 57   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 14:01:22,049 181  [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 14:01:22,057 189  [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 14:01:22,402 534  [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 14:01:22,843 975  [http-nio-8080-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 14:01:22,859 991  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 14:01:22,861 993  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 14:01:22,862 994  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 14:01:22,870 1002 [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 14:01:24,099 2231 [http-nio-8080-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 14:01:25,276 3408 [http-nio-8080-exec-6] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 14:01:25,278 3410 [http-nio-8080-exec-6] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 14:01:25,286 3418 [http-nio-8080-exec-6] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 14:01:25,293 3425 [http-nio-8080-exec-6] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 14:01:25,343 3475 [http-nio-8080-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 14:01:25,358 3490 [http-nio-8080-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 14:21:05,140 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 14:21:05,227 87   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 14:21:05,242 102  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 14:21:05,258 118  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 14:21:05,703 563  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 14:21:05,708 568  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 14:21:06,178 1038 [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 14:21:06,947 1807 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 14:21:06,981 1841 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 14:21:06,981 1841 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 14:21:06,985 1845 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 14:21:06,994 1854 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 14:21:08,854 3714 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 14:21:10,535 5395 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 14:21:10,535 5395 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 14:21:10,536 5396 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 14:21:10,536 5396 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 14:21:10,605 5465 [http-nio-8080-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 14:21:10,640 5500 [http-nio-8080-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 14:30:28,847 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 14:30:28,908 61   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 14:30:28,928 81   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 14:30:28,940 93   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 14:30:29,163 316  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 14:30:29,166 319  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 14:30:29,684 837  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 14:30:30,450 1603 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 14:30:30,471 1624 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 14:30:30,478 1631 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 14:30:30,478 1631 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 14:30:30,482 1635 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 14:30:31,422 2575 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 14:30:32,145 3298 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 14:30:32,145 3298 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 14:30:32,146 3299 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 14:30:32,146 3299 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 14:30:32,183 3336 [http-nio-8080-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 14:30:32,205 3358 [http-nio-8080-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 14:35:13,989 0    [http-nio-8080-exec-4] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 14:35:14,053 64   [http-nio-8080-exec-4] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 14:35:14,074 85   [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 14:35:14,093 104  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 14:35:14,248 259  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 14:35:14,249 260  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 14:35:14,654 665  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 14:35:15,445 1456 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 14:35:15,482 1493 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 14:35:15,483 1494 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 14:35:15,490 1501 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 14:35:15,495 1506 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 14:35:16,988 2999 [http-nio-8080-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 14:35:18,576 4587 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 14:35:18,576 4587 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 14:35:18,577 4588 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 14:35:18,578 4589 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 14:35:18,614 4625 [http-nio-8080-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 14:35:18,632 4643 [http-nio-8080-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 16:31:22,381 0    [http-nio-8080-exec-4] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 16:31:22,453 72   [http-nio-8080-exec-4] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 16:31:22,468 87   [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 16:31:22,483 102  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 16:31:22,739 358  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 16:31:22,750 369  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 16:31:23,276 895  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 16:31:24,039 1658 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 16:31:24,079 1698 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 16:31:24,081 1700 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 16:31:24,085 1704 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 16:31:24,100 1719 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 16:31:27,653 5272 [http-nio-8080-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 16:31:30,053 7672 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 16:31:30,062 7681 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 16:31:30,076 7695 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 16:31:30,077 7696 [http-nio-8080-exec-4] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 16:31:30,206 7825 [http-nio-8080-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 16:31:30,320 7939 [http-nio-8080-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-29 16:36:17,397 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-29 16:36:17,515 118  [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-29 16:36:17,540 143  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-29 16:36:17,548 151  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-29 16:36:17,853 456  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-29 16:36:17,855 458  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-29 16:36:18,339 942  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-29 16:36:19,386 1989 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-29 16:36:19,413 2016 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/smdb]
+2017-10-29 16:36:19,413 2016 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-29 16:36:19,415 2018 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-29 16:36:19,427 2030 [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-29 16:36:21,729 4332 [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-29 16:36:25,675 8278 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.Movie
+2017-10-29 16:36:25,691 8294 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.Movie
+2017-10-29 16:36:25,696 8299 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000038: Composite-id class does not override equals(): edu.matc.entity.UserRole
+2017-10-29 16:36:25,696 8299 [http-nio-8080-exec-3] WARN  org.hibernate.mapping.RootClass  - HHH000039: Composite-id class does not override hashCode(): edu.matc.entity.UserRole
+2017-10-29 16:36:25,970 8573 [http-nio-8080-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-29 16:36:26,355 8958 [http-nio-8080-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory

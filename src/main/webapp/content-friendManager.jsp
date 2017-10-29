@@ -88,10 +88,10 @@
                     <td>${current.userName}</td>
                     <c:choose>
                         <c:when test="${empty current.userPicture}">
-                            <td><img src="Images/noimagesm.png" class="img-responsive"></td>
+                            <td><img src="Images/noimagesm.png" width=185 height=150 class="img-responsive"></td>
                         </c:when>
                         <c:otherwise>
-                            <td><img src="${current.userPicture}" class="img-responsive"></td>
+                            <td><img src="${current.userPicture}" width=185 height=150 class="img-responsive"></td>
                         </c:otherwise>
                     </c:choose>
                     <td>${current.firstName}</td>
