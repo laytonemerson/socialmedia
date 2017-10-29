@@ -1,12 +1,24 @@
 <%@include file="taglib.jsp"%>
 
 <script type="text/javascript" class="init">
-    $(document).ready( function () {
 
-        $('#movieTable').dataTable( {
-            "aoColumnDefs": [
-                { "bSortable": false, "aTargets": [ 0, 1, 4, 6 ] }
-            ],
+    $.fn.dataTable.ext.search.push(
+        function( settings, data, dataIndex ) {
+            var e = document.getElementById("friendSelect");
+            var strUser = e.options[e.selectedIndex].value;
+            var user = data[5];  // use data for the age column;
+
+            if ( strUser === user || strUser === "") {
+                return true;
+            }
+            return false;
+        }
+    );
+
+    $(document).ready(function() {
+        var table = $('#movieTable').DataTable({  "aoColumnDefs": [
+            { "bSortable": false, "aTargets": [ 0, 1, 4, 6 ] }
+        ],
 
             "columns": [
                 { "width": "5%" },
@@ -23,13 +35,20 @@
             "searching": true
         } );
 
+        // Event listener to the two range filtering inputs to redraw on input
+        $('#friendSelect').click( function() {
+            table.draw();
+        } );
+
         $('#movieTable tbody').on('click', '.btnask', function () {
             var id = $(this).closest("tr").find("td:eq(0)").text();
-            alert("I want to borrow " + id);
+            var user = $(this).closest("tr").find("td:eq(5)").text();
+            alert("Hey " + user + ", can I borrow " + id + "?");
         });
-
     } );
+
 </script>
+
 
 <div class="container-fluid">
 
@@ -41,16 +60,20 @@
     </div>
 
     <div class="row">
-        <div class="form-group">
-              <label for="friendSelect">View movies from only:</label>
-              <select class="form-control" id="friendSelect">
-                <c:forEach var="currentFriend" items="${friends}">
-                    <option>${currentFriend.userName}</option>
-                </c:forEach>
-              </select>
+        <div class="col-md-2 ">
+            <div class="form-group">
+                <label for="friendSelect">Only View Movies From:</label>
+                <select class="form-control" id="friendSelect">
+                    <option value="">All</option>
+                    <c:forEach var="currentFriend" items="${friends}">
+                        <option>${currentFriend.userName}</option>
+                    </c:forEach>
+                </select>
+            </div>
         </div>
-        <br>
     </div>
+
+    <br>
 
     <div class="row">
         <table id="movieTable" class="display" cellspacing="0" width="100%">
