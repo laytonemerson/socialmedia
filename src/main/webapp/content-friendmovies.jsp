@@ -162,7 +162,7 @@
                         <div class="row">
                             <label class="col-md-2 control-label">Body</label>
                             <div class="col-lg-9 col-md-9 col-sm-9" style="padding-bottom: 10px;">
-                                <textarea style="resize:vertical;" class="form-control" rows="8" name="email_body" id="email_body" ></textarea>
+                                <textarea style="resize:vertical;" class="form-control" rows="10" name="email_body" id="email_body" ></textarea>
                             </div>
                         </div>
                         <div class="row">
