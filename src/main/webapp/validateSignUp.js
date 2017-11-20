@@ -24,8 +24,12 @@ $(document).ready(function() {
                 validators: {
                     stringLength: {
                         min: 2,
-                        max: 15,
-                        message: 'The user name must be between 2 and 15 characters long'
+                        max: 25,
+                        message: 'The user name must be between 2 and 25 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[^*|\":<>[\]{}`\\()';@&$]+$/,
+                        message: 'User name contains special characters '
                     },
                     remote: {
                         type: "POST",

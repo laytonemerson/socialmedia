@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="container">
+    <br><br><br>
     <form class="form-horizontal" action="j_security_check" method="post" id="login_form">
         <fieldset>
 

@@ -36,23 +36,10 @@ import java.util.Set;
             throws ServletException, IOException {
 
         String userName = request.getRemoteUser();
-        Integer movieId = Integer.parseInt(request.getParameter("movie_id"));
-
         UserDao dao = new UserDao();
         User user = dao.getUser(userName);
 
-        //TODO override equals so I dont have to mess with this
-        Set<Movie> userMovies = user.getUserMovies();
-        Movie deleteMovie = new Movie();
-
-        for(Movie current : userMovies) {
-            if (current.getMovieId().equals( movieId)) {
-                deleteMovie = current;
-            }
-
-        }
-
-        user.getUserMovies().remove(deleteMovie);
+        user.getUserMovies().remove(movieToDelete(request));
         user.setMovieCount(user.getMovieCount() - 1);
         dao.updateUser(user);
         request.setAttribute("movies",user.getUserMovies());
@@ -61,6 +48,18 @@ import java.util.Set;
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
+    }
+
+    private Movie movieToDelete(HttpServletRequest request) {
+
+        Integer movieId = Integer.parseInt(request.getParameter("movie_id"));
+        String movieTitle = request.getParameter("movie_title");
+        String moviePlot = request.getParameter("movie_plot");
+        String movieDate = request.getParameter("movie_date");
+        String posterPath = request.getParameter("poster_path");
+        Movie deleteMovie = new Movie(movieId,movieDate,moviePlot,movieTitle,posterPath);
+
+        return deleteMovie;
 
     }
 }

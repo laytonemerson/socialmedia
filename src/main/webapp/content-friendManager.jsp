@@ -62,9 +62,10 @@
 
 <div class="container-fluid">
 
+    <br><br><br>
     <div class="row">
         <div class="col-md-2">
-            <h2>Manage my Friends</h2>
+            <h2>Manage My Friends</h2>
             <br>
         </div>
     </div>

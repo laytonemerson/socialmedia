@@ -16,7 +16,7 @@ $(document).ready(function() {
                         message: 'The first name must be between 2 and 20 characters long'
                     },
                     notEmpty: {
-                        message: 'Please supply your first name'
+                        message: 'Please enter your first name'
                     }
                 }
             },
@@ -28,7 +28,7 @@ $(document).ready(function() {
                         message: 'The user name must be between 2 and 15 characters long'
                     },
                     notEmpty: {
-                        message: 'Please supply your user name'
+                        message: 'Please enter your user name'
                     }
                 }
             },
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
                     },
                     notEmpty: {
-                        message: 'Please supply your last name'
+                        message: 'Please enter your last name'
                     }
                 }
             },
@@ -55,10 +55,10 @@ $(document).ready(function() {
 
                     },
                     notEmpty: {
-                        message: 'Please supply your email address'
+                        message: 'Please enter your email address'
                     },
                     emailAddress: {
-                        message: 'Please supply a valid email address'
+                        message: 'Please enter a valid email address'
                     }
                 }
             },
@@ -80,7 +80,7 @@ $(document).ready(function() {
                         message: 'The password must be between 5 and 15 characters long'
                     },
                     notEmpty: {
-                        message: 'Please supply your password'
+                        message: 'Please enter your password'
                     },
                     identical: {
                         field: 'confirmPassword',

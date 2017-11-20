@@ -49,9 +49,11 @@
 
 <div class="container-fluid">
 
+    <br><br><br>
+
     <div class="row">
         <div class="col-md-2">
-            <h2>My movies</h2>
+            <h2>My Movies</h2>
             <br>
         </div>
     </div>
@@ -77,7 +79,7 @@
                             <td><img src="Images/noimagesm.png" ></td>
                         </c:when>
                         <c:otherwise>
-                            <td><img src="https://image.tmdb.org/t/p/w92${current.moviePoster}"></td>
+                            <td><img src="https://image.tmdb.org/t/p/w92${current.moviePoster}" alt="${current.moviePoster}"></td>
                         </c:otherwise>
                     </c:choose>
                     <td>${current.movieTitle}</td>

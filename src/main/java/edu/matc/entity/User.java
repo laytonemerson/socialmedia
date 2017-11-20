@@ -273,7 +273,7 @@ public class User implements java.io.Serializable {
 
         User user = (User) o;
 
-        if (!userName.equals(userName)) return false;
+        if (!userName.equals(user.userName)) return false;
         if (!firstName.equals(user.firstName)) return false;
         if (!lastName.equals(user.lastName)) return false;
         if (!emailAddress.equals(user.emailAddress)) return false;

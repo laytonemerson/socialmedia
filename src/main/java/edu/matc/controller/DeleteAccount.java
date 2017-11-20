@@ -1,9 +1,6 @@
 package edu.matc.controller;
 
-import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,16 +31,14 @@ import java.io.IOException;
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-        String userName = request.getRemoteUser();
         session.invalidate();
 
         UserDao dao = new UserDao();
+        String userName = request.getRemoteUser();
         dao.deleteUser(request.getParameter("user_name"));
 
         String url = "/";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
-
+        response.sendRedirect(url);
 
     }
 }

@@ -1,10 +1,11 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="SM Login Failure" />
+<%@include file="head.jsp"%>
 <html>
-<head>
-    <title>you failed</title>
-</head>
 <body>
-
+<div id="wrap">
+    <c:import url="header.jsp" />
+    <c:import url="content-failed.jsp" />
+</div>
 </body>
 </html>

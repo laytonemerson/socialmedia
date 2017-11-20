@@ -10,9 +10,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "user_movies")
 
-
 public class Movie implements java.io.Serializable {
-
 
     @Id
     @Column(name = "movie_id")
@@ -35,7 +33,6 @@ public class Movie implements java.io.Serializable {
     @JoinColumn(name = "user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
 
-
     /**
      * Instantiates a new Movie.
      */
@@ -44,14 +41,13 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Instantiates a
-     * @param movieId  f
+     * @param movieId
      * @param movieDate
      * @param moviePlot
      * @param movieTitle
      * @param moviePoster
      */
     public Movie(Integer movieId, String movieDate, String moviePlot, String movieTitle, String moviePoster) {
-
         this.movieId = movieId;
         this.movieDate = movieDate;
         this.moviePlot = moviePlot;
@@ -155,14 +151,43 @@ public class Movie implements java.io.Serializable {
         this.user = user;
     }
 
+
     /**
      * Return a string describing the object.
      * @return the combined string to help identify the specific user object.
      */
-
     @Override
     public String toString() {
-        return "User";
+        return "Movie{" +
+                "movieId='" + movieId + '\'' +
+                ", movieDate='" + movieDate + '\'' +
+                ", moviePlot='" + moviePlot + '\'' +
+                ", movieTitle='" + movieTitle + '\'' +
+                ", moviePoster='" + moviePoster + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Movie movie = (Movie) o;
+        if (!movieDate.equals(movie.movieDate)) return false;
+        if (!moviePlot.equals(movie.moviePlot)) return false;
+        if (!movieTitle.equals(movie.movieTitle)) return false;
+        if (!moviePoster.equals(movie.moviePoster)) return false;
+        return movieId.equals(movie.movieId);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = movieId.hashCode();
+        result = 31 * result + movieDate.hashCode();
+        result = 31 * result + moviePlot.hashCode();
+        result = 31 * result + movieTitle.hashCode();
+        result = 31 * result + moviePoster.hashCode();
+        return result;
     }
 
 }

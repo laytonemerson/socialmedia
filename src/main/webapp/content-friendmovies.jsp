@@ -6,7 +6,7 @@
         function( settings, data, dataIndex ) {
             var e = document.getElementById("friendSelect");
             var strUser = e.options[e.selectedIndex].value;
-            var user = data[5];  // use data for the age column;
+            var user = data[5];
 
             if ( strUser === user || strUser === "") {
                 return true;
@@ -81,6 +81,7 @@
 
 <div class="container-fluid">
 
+    <br><br><br>
 
     <div class="row">
         <div class="col-md-2">

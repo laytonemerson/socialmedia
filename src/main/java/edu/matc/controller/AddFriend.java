@@ -50,7 +50,6 @@ import java.util.Set;
         user.getUserFriends().add(friend);
         dao.updateUser(user);
 
-
         Set<Friend> friendSet = user.getUserFriends();
 
         List<User> nonFriends = dao.getAllUsers();

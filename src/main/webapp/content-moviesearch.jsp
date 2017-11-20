@@ -65,8 +65,7 @@
 </script>
 
 <div class="container-fluid">
-
-
+    <br><br><br>
     <div class="row">
         <div class="col-md-5 col-md-offset-1">
             <h2>Search for movies with a keyword</h2>
