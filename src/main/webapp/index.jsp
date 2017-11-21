@@ -9,7 +9,7 @@
         color: #777;
     }
 
-    .bgimg {
+    .bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5{
         position: relative;
         opacity: 0.85;
         background-attachment: fixed;
@@ -19,10 +19,32 @@
 
     }
 
-    .bgimg {
+    .bgimg1 {
         background-image: url("Images/bg.jpg");
+        min-height: 800px;
+    }
+
+    .bgimg2 {
+        background-image: url("Images/bg2.jpg");
         min-height: 600px;
     }
+
+    .bgimg3 {
+        background-image: url("Images/bg3.jpg");
+        min-height: 600px;
+    }
+
+    .bgimg4 {
+        background-image: url("Images/bg4.jpg");
+        min-height: 600px;
+    }
+
+    .bgimg5 {
+        background-image: url("Images/bg5.jpg");
+        min-height: 600px;
+    }
+
+
 
     .caption {
         position: absolute;
@@ -61,7 +83,7 @@
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg {
+        .bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5 {
             background-attachment: scroll;
         }
     }
