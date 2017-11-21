@@ -1,6 +1,6 @@
 <div class="container">
 
-    <br><br><br>
+    <br><br><br><br>
 
     <form class="form-horizontal" action="performSignup" method="post"  id="reg_form">
 
