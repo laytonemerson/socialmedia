@@ -1,4 +1,4 @@
-
+<%@include file="taglib.jsp"%>
 <div class="bgimg1">
     <div class="caption">
         <span class="border">SOCIAL MEDIA</span>
@@ -40,6 +40,13 @@
 
 <div class="bgimg5">
     <div class="caption">
-        <span class="border"><a href="showSignup">Join In Now</a></span>
+        <c:choose>
+            <c:when test="${loggedIn == true}">
+                <span class="border"><a href="showMyAccount">My Account</a></span>
+            </c:when>
+            <c:otherwise>
+                <span class="border"><a href="showSignup">Join In Now</a></span>
+            </c:otherwise>
+        </c:choose>
     </div>
 </div>

@@ -102,6 +102,7 @@
 
         <c:choose>
             <c:when test="${searchPerformed == true}">
+                <br>
                 <h4>Showing results for "${keyword}"</h4>
                 <table id="movieTable" class="display" cellspacing="0" width="100%">
                     <thead>
