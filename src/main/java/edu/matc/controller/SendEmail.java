@@ -1,18 +1,17 @@
 package edu.matc.controller;
 
-import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.Mailer;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Set;
 
 /**
  * Thi
@@ -23,13 +22,16 @@ import java.util.Set;
         name = "sendEmail",
         urlPatterns = {"/sendEmail"}
 ) public class SendEmail extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
-     * Handles HTTP GET requests.
+     * Handles HTTP POST requests.
      *
      * @param request  the HttpRequest
      * @param response the HttpResponse
      * @throws ServletException if there is a general servlet exception
-     * @throws IOException      if there is a general I/O exception
+     * @throws IOException if there is a general I/O exception
      */
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,12 +40,18 @@ import java.util.Set;
         String subject = request.getParameter("email_subject");
         String body = request.getParameter("email_body");
         String toUserName = request.getParameter("to_user");
+        String toEmail = "";
 
-        UserDao dao = new UserDao();
-        User toUser = dao.getUser(toUserName);
-        String toEmail = toUser.getEmailAddress();
-
-        Mailer.send("socialmedia.entjava@gmail.com","entjavaf2017",toEmail,subject,body);
-
+        try {
+            UserDao dao = new UserDao();
+            User toUser = dao.getUser(toUserName);
+            toEmail = toUser.getEmailAddress();
+            Mailer.send("socialmedia.entjava@gmail.com","entjavaf2017",toEmail,subject,body);
+        } catch (Exception e) {
+            log.error("Error while attempting to send email to " + toEmail, e);
+            HttpSession session = request.getSession();
+            session.setAttribute("Error Location","Email1");
+            session.setAttribute("Error Message","Error while attempting to send email to " + toEmail);
+        }
     }
 }

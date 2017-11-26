@@ -4,6 +4,8 @@ import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.entity.UserRole;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 import org.json.JSONObject;
 
 import javax.servlet.RequestDispatcher;
@@ -26,6 +28,9 @@ import java.io.PrintWriter;
         name = "addMovie",
         urlPatterns = {"/addMovie"}
 ) public class AddMovie extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
      * Handles HTTP GET requests.
      *
@@ -45,18 +50,19 @@ import java.io.PrintWriter;
         String movieDate = request.getParameter("movie_date");
         String posterPath = request.getParameter("poster_path");
 
-
-        UserDao dao = new UserDao();
-        User user = dao.getUser(userName);
-
-        Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, posterPath);
-
-        movie.setUser(user);
-
-        user.getUserMovies().add(movie);
-        user.setMovieCount(user.getMovieCount() + 1);
-        dao.updateUser(user);
-
-
+        try {
+            UserDao dao = new UserDao();
+            User user = dao.getUser(userName);
+            Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, posterPath);
+            movie.setUser(user);
+            user.getUserMovies().add(movie);
+            user.setMovieCount(user.getMovieCount() + 1);
+            dao.updateUser(user);
+        }
+        catch (HibernateException e) {
+            log.error("Error while attempting to save movie " + movieId, e);
+            HttpSession session = request.getSession();
+            session.setAttribute("Error Message","Error while attempting to save movie " + movieId);
+        }
     }
 }

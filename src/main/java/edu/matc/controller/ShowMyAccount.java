@@ -6,6 +6,8 @@ import edu.matc.entity.Friend;
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 import org.themoviedb.MovieResponse;
 import org.themoviedb.Response;
 import org.themoviedb.ResultsItem;
@@ -37,6 +39,9 @@ import java.util.Set;
         name = "showMyAccount",
         urlPatterns = {"/showMyAccount"}
 ) public class ShowMyAccount extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
     *  Handles HTTP GET requests.
     *
@@ -51,21 +56,21 @@ import java.util.Set;
         String url = "/myaccount.jsp";
         request.setAttribute("title", "My SM Account");
         HttpSession session = request.getSession();
-
-        session.removeAttribute("newUser");
-        session.removeAttribute("newUserName");
         session.setAttribute("loggedIn", true);
 
-        UserDao dao = new UserDao();
-        User user = dao.getUser(request.getRemoteUser());
+        User user = null;
+        try {
+            UserDao dao = new UserDao();
+            user = dao.getUser(request.getRemoteUser());
+        } catch (HibernateException e) {
+            log.error("Error while attempting to load account details for " + request.getRemoteUser(), e);
+            session.setAttribute("Error Message","Error while attempting to load account details for " + request.getRemoteUser());
+        }
+
         request.setAttribute("user",user);
-
-        Set<Movie> userMovies = user.getUserMovies();
-
-        request.setAttribute("movieCount",userMovies.size());
+        request.setAttribute("movieCount",user.getUserMovies().size());
         request.setAttribute("friendCount",user.getUserFriends().size());
-        request.setAttribute("movies",userMovies);
-
+        request.setAttribute("movies",user.getUserMovies());
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

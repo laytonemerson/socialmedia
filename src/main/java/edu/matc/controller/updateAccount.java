@@ -2,6 +2,7 @@ package edu.matc.controller;
 
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +22,9 @@ import java.io.IOException;
         name = "updateAccount",
         urlPatterns = {"/updateAccount"}
 ) public class updateAccount extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
     *  Handles HTTP GET requests.
     *

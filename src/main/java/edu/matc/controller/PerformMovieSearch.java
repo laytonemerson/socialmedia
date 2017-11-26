@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 import org.themoviedb.Response;
 import org.themoviedb.ResultsItem;
 
@@ -37,6 +38,9 @@ import java.util.Set;
         name = "performMovieSearch",
         urlPatterns = {"/performMovieSearch"}
 ) public class PerformMovieSearch extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
      *  Handles HTTP GET requests.
      *

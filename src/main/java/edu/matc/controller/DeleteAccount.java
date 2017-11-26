@@ -1,6 +1,8 @@
 package edu.matc.controller;
 
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +21,9 @@ import java.io.IOException;
         name = "deleteAccount",
         urlPatterns = {"/deleteAccount"}
 ) public class DeleteAccount extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
     *  Handles HTTP GET requests.
     *

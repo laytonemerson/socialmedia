@@ -16,7 +16,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
 
     .bgimg1 {
@@ -43,8 +42,6 @@
         background-image: url("Images/bg5.jpg");
         min-height: 600px;
     }
-
-
 
     .caption {
         position: absolute;

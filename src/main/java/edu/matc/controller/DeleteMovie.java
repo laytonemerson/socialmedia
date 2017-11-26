@@ -3,6 +3,7 @@ package edu.matc.controller;
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,6 +24,9 @@ import java.util.Set;
         name = "deleteMovie",
         urlPatterns = {"/deleteMovie"}
 ) public class DeleteMovie extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
      * Handles HTTP GET requests.
      *

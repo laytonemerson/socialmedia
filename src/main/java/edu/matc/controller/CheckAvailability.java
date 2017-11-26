@@ -2,7 +2,7 @@ package edu.matc.controller;
 
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
-import org.json.JSONObject;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,6 +22,9 @@ import java.io.PrintWriter;
         name = "checkAvailability",
         urlPatterns = {"/checkAvailability"}
 ) public class CheckAvailability extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
      *  Handles HTTP GET requests.
      *
@@ -35,25 +38,16 @@ import java.io.PrintWriter;
             throws ServletException, IOException {
 
         response.setContentType("application/json");
-
         PrintWriter out = response.getWriter();
-        JSONObject json = new JSONObject();
 
         try {
             UserDao dao = new UserDao();
             User user2 = dao.getUser(request.getParameter("user_name"));
-
-
             if (user2 == null) {
-
                 out.print("{\"valid\" : true }");
-                json.put("valid", true);
             } else {
-
                 out.print("{\"valid\" : false }");
-                json.put("valid", false);
             }
-
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {

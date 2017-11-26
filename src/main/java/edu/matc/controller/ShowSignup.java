@@ -1,6 +1,8 @@
 package edu.matc.controller;
 
 
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.annotation.*;
@@ -16,6 +18,9 @@ import javax.servlet.http.*;
         name = "showSignup",
         urlPatterns = {"/showSignup"}
 ) public class ShowSignup extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
     *  Handles HTTP GET requests.
     *

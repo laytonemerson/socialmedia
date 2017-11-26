@@ -4,6 +4,7 @@ package edu.matc.controller;
 import edu.matc.entity.Friend;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,6 +27,9 @@ import java.util.Set;
         name = "showFriendManager",
         urlPatterns = {"/showFriendManager"}
 ) public class ShowFriendManager extends HttpServlet {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     /**
     *  Handles HTTP GET requests.
     *
@@ -44,7 +48,6 @@ import java.util.Set;
         User loggedIn = dao.getUser(request.getRemoteUser());
 
         Set<Friend> friendSet = loggedIn.getUserFriends();
-
         List<User> nonFriends = dao.getAllUsers();
         List<User> friends = new ArrayList<User>();
 
@@ -55,7 +58,6 @@ import java.util.Set;
         }
 
         nonFriends.remove(loggedIn);
-
         request.setAttribute("friends",friends);
         request.setAttribute("nonFriends",nonFriends);
 
