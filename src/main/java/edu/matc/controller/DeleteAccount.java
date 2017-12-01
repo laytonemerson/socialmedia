@@ -2,6 +2,7 @@ package edu.matc.controller;
 
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,8 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * This is the ShowEmployeeSearchServlet. It will set the page title and forward
- * to the employeeSearch.jsp page.
+ * This is the Delete Account servlet. It will delete the user from the database and send back to the home page.
  *
  *@author lemerson
  */
@@ -25,7 +25,7 @@ import java.io.IOException;
     private final Logger log = Logger.getLogger(this.getClass());
 
     /**
-    *  Handles HTTP GET requests.
+    *  Handles HTTP POST requests.
     *
     *@param  request               the HttpRequest
     *@param  response              the HttpResponse
@@ -35,21 +35,19 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
-        session.invalidate();
-
-        UserDao dao = new UserDao();
         String userName = request.getRemoteUser();
-        dao.deleteUser(request.getParameter("user_name"));
+        HttpSession session = request.getSession();
+
+        try {
+            UserDao dao = new UserDao();
+            dao.deleteUser(userName);
+            session.invalidate();
+        } catch (HibernateException he) {
+            log.error("Error while attempting to delete user " + userName, he);
+            session.setAttribute("ErrorMessage","Error while attempting to delete user " + userName);
+        }
 
         String url = "/";
         response.sendRedirect(url);
-
     }
 }
-
-
-
-
-
-

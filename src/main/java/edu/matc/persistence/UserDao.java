@@ -36,7 +36,7 @@ public class UserDao {
      * @param userName the userName for the user
      * @return user
      */
-    public User getUser(String userName) {
+    public User getUser(String userName) throws HibernateException {
         User user = null;
         Session session = null;
         try {
@@ -44,6 +44,7 @@ public class UserDao {
             user = (User) session.get(User.class, userName);
         } catch (HibernateException he) {
             log.error("Error getting user with userName: " + userName, he);
+            throw he;
         } finally {
             if (session != null) {
                 session.close();
@@ -58,7 +59,7 @@ public class UserDao {
      * @param user
      * @return the user name of the inserted record
      */
-    public String addUser(User user) {
+    public String addUser(User user) throws HibernateException {
         String userName = null;
         Transaction transaction = null;
         Session session = null;
@@ -72,8 +73,10 @@ public class UserDao {
                 try {
                     log.error("Error saving user: " + userName, he);
                     transaction.rollback();
+                    throw he;
                 } catch (HibernateException he2) {
                     log.error("Error rolling back save of user: " + userName, he2);
+                    throw he2;
                 }
             }
         } finally {
@@ -88,7 +91,7 @@ public class UserDao {
      * delete a user by userName
      * @param userName the user's user name
      */
-    public void deleteUser(String userName) {
+    public void deleteUser(String userName) throws HibernateException{
 
         User user = new User();
         user.setUserName(userName);
@@ -104,8 +107,10 @@ public class UserDao {
             if (transaction != null) {
                 try {
                     transaction.rollback();
+                    throw he;
                 } catch (HibernateException he2) {
                     log.error("Error rolling back delete of user name: " + userName, he2);
+                    throw he2;
                 }
             }
         } finally {
@@ -120,7 +125,7 @@ public class UserDao {
      * @param user
      */
 
-    public void updateUser(User user) {
+    public void updateUser(User user) throws HibernateException{
         Transaction transaction = null;
         Session session = null;
         try {
@@ -132,8 +137,10 @@ public class UserDao {
             if (transaction != null) {
                 try {
                     transaction.rollback();
+                    throw he;
                 } catch (HibernateException he2) {
                     log.error("Error rolling back save of user: " + user, he2);
+                    throw he2;
                 }
             }
         } finally {

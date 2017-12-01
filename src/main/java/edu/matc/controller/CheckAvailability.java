@@ -3,18 +3,20 @@ package edu.matc.controller;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * This is the ShowEmployeeSearchServlet. It will set the page title and forward
- * to the employeeSearch.jsp page.
+ * This is the Check Availability Servlet. It's called asynchronously when the user is creating an account to check if
+ * the username they entered is available.
  *
  *@author lemerson
  */
@@ -26,14 +28,13 @@ import java.io.PrintWriter;
     private final Logger log = Logger.getLogger(this.getClass());
 
     /**
-     *  Handles HTTP GET requests.
+     *  Handles HTTP POST requests.
      *
      *@param  request               the HttpRequest
      *@param  response              the HttpResponse
      *@exception  ServletException  if there is a general servlet exception
      *@exception  IOException       if there is a general I/O exception
      */
-
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -48,8 +49,10 @@ import java.io.PrintWriter;
             } else {
                 out.print("{\"valid\" : false }");
             }
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (HibernateException he) {
+            HttpSession session = request.getSession();
+            log.error("Error while checking user name availability", he);
+            session.setAttribute("ErrorMessage","Error while checking user name availability");
         } finally {
             out.close();
         }
