@@ -1,17 +1,9 @@
 package edu.matc.controller;
 
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.entity.Friend;
-import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
-import org.themoviedb.MovieResponse;
-import org.themoviedb.Response;
-import org.themoviedb.ResultsItem;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,19 +11,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
 import java.io.IOException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 
 /**
- * This is the ShowEmployeeSearchServlet. It will set the page title and forward
- * to the employeeSearch.jsp page.
+ * This is the ShowMyAccount servlet. It will load the user information to the request and forward to the
+ * myAccount.jsp page.
  *
  *@author lemerson
  */
@@ -53,33 +37,25 @@ import java.util.Set;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/myaccount.jsp";
-        request.setAttribute("title", "My SM Account");
         HttpSession session = request.getSession();
-        session.setAttribute("loggedIn", true);
+        String userName = request.getRemoteUser();
 
-        User user = null;
         try {
             UserDao dao = new UserDao();
-            user = dao.getUser(request.getRemoteUser());
-        } catch (HibernateException e) {
-            log.error("Error while attempting to load account details for " + request.getRemoteUser(), e);
-            session.setAttribute("Error Message","Error while attempting to load account details for " + request.getRemoteUser());
+            User user = dao.getUser(userName);
+            request.setAttribute("user",user);
+            request.setAttribute("movieCount",user.getUserMovies().size());
+            request.setAttribute("friendCount",user.getUserFriends().size());
+            request.setAttribute("movies",user.getUserMovies());
+            session.setAttribute("loggedIn", true);
+        } catch (HibernateException he) {
+            log.error("Error while attempting to load account details for " + userName, he);
+            session.setAttribute("Error Message","Error while attempting to load account details for " + userName);
         }
 
-        request.setAttribute("user",user);
-        request.setAttribute("movieCount",user.getUserMovies().size());
-        request.setAttribute("friendCount",user.getUserFriends().size());
-        request.setAttribute("movies",user.getUserMovies());
+        String url = "/myaccount.jsp";
+        request.setAttribute("title", "My SM Account");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
-
     }
-
 }
-
-
-
-
-
-

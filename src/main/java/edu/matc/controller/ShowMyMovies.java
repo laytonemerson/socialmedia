@@ -1,10 +1,10 @@
 package edu.matc.controller;
 
-
 import edu.matc.entity.Movie;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,12 +12,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Set;
 
 /**
- * This is the ShowEmployeeSearchServlet. It will set the page title and forward
- * to the employeeSearch.jsp page.
+ * This is the ShowMyMovies Servlet. It will load the user movies and forward to myMovies.jsp page.
  *
  *@author lemerson
  */
@@ -39,22 +39,22 @@ import java.util.Set;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        UserDao dao = new UserDao();
-        User user = dao.getUser(request.getRemoteUser());
-        Set<Movie> userMovies = user.getUserMovies();
-        request.setAttribute("movies",userMovies);
+        HttpSession session = request.getSession();
+        String userName = request.getRemoteUser();
+
+        try {
+            UserDao dao = new UserDao();
+            User user = dao.getUser(userName);
+            Set<Movie> userMovies = user.getUserMovies();
+            request.setAttribute("movies", userMovies);
+        } catch (HibernateException he) {
+            log.error("Error while attempting to load movies for " + userName, he);
+            session.setAttribute("Error Message","Error while attempting to load movies for " + userName);
+        }
 
         request.setAttribute("title", "My Movies");
         String url = "/myMovies.jsp";
-
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
-
     }
 }
-
-
-
-
-
-

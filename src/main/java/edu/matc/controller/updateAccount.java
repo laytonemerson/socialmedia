@@ -3,7 +3,7 @@ package edu.matc.controller;
 import edu.matc.entity.User;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
-
+import org.hibernate.HibernateException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * This is the ShowEmployeeSearchServlet. It will set the page title and forward
- * to the employeeSearch.jsp page.
+ * This is the UpdateAccount servlet. It will update the user on the database and redirect back to the
+ * showMyAccount servlet
  *
  *@author lemerson
  */
@@ -26,7 +26,7 @@ import java.io.IOException;
     private final Logger log = Logger.getLogger(this.getClass());
 
     /**
-    *  Handles HTTP GET requests.
+    *  Handles HTTP Post requests.
     *
     *@param  request               the HttpRequest
     *@param  response              the HttpResponse
@@ -36,33 +36,26 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userName = request.getParameter("user_name");
-        String emailAddress = request.getParameter("email");
-        String firstName = request.getParameter("first_name");
-        String lastName = request.getParameter("last_name");
-        String password = request.getParameter("password");
-        String picUrl = request.getParameter("picurl");
-        String bio = request.getParameter("bio");
-
         UserDao dao = new UserDao();
-        User user = dao.getUser(userName);
-        user.setEmailAddress(emailAddress);
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setPassword(password);
-        user.setUserPicture(picUrl);
-        user.setUserBio(bio);
-        user.setMovieCount(user.getMovieCount());
-        dao.updateUser(user);
+        String userName= request.getParameter("user_name");
+
+        try {
+            User user = dao.getUser(userName);
+            user.setEmailAddress(request.getParameter("email"));
+            user.setFirstName(request.getParameter("first_name"));
+            user.setLastName(request.getParameter("last_name"));
+            user.setPassword(request.getParameter("password"));
+            user.setUserPicture(request.getParameter("picurl"));
+            user.setUserBio(request.getParameter("bio"));
+            user.setMovieCount(user.getMovieCount());
+            dao.updateUser(user);
+        } catch (HibernateException he) {
+            log.error("Error while attempting to update user " + userName, he);
+            HttpSession session = request.getSession();
+            session.setAttribute("ErrorMessage","Error while attempting to add user " + userName);
+        }
 
         String url = "showMyAccount";
         response.sendRedirect(url);
-
     }
 }
-
-
-
-
-
-

@@ -4,7 +4,6 @@ import edu.matc.entity.User;
 import edu.matc.persistence.Mailer;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +13,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Thi
+ * This is the SendEmail servlet. It will send an email to the selected user with the text provided by the logged in
+ * user on the previous form.
  *
  *@author lemerson
  */
@@ -33,7 +33,6 @@ import java.io.IOException;
      * @throws ServletException if there is a general servlet exception
      * @throws IOException if there is a general I/O exception
      */
-
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -50,8 +49,7 @@ import java.io.IOException;
         } catch (Exception e) {
             log.error("Error while attempting to send email to " + toEmail, e);
             HttpSession session = request.getSession();
-            session.setAttribute("Error Location","Email1");
-            session.setAttribute("Error Message","Error while attempting to send email to " + toEmail);
+            session.setAttribute("ErrorMessage","Error while attempting to send email to " + toEmail);
         }
     }
 }
