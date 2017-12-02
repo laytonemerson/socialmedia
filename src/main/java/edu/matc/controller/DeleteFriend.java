@@ -94,8 +94,8 @@ import java.util.Set;
      * @return nonFriends the list of users that the logged in user is not friends with
      */
     private List<User> nonFriendList (Set<Friend> friendSet, User user) {
-        List<User> nonFriends = new ArrayList<User>();
         UserDao dao = new UserDao();
+        List<User> nonFriends = dao.getAllUsers();
         nonFriends.remove(user);
 
         for (Friend current: friendSet) {

@@ -28,7 +28,6 @@ public class UserDao {
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             users = session.createCriteria(User.class).list();
-            session.close();
         } catch (HibernateException he) {
             log.error("Error getting all users", he);
             throw he;

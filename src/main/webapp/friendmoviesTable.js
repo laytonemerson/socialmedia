@@ -41,14 +41,13 @@ $(document).ready(function() {
         var id = $(this).closest("tr").find("td:eq(0)").text();
         var title = $(this).closest("tr").find("td:eq(2)").text();
         var to_user = $(this).closest("tr").find("td:eq(5)").text();
-        var from_user = '${user.userName}';
         var mymodal = $('#emailFriendModal');
         mymodal.find('.modal-title').text("Send email to " + to_user);
         mymodal.find('#email_subject').val("Can I borrower " + title + "?");
         mymodal.find('#to_user').val(to_user);
         mymodal.find('#movie_id').val(id);
         mymodal.find('#email_body').val('Hello,\n\nI was browsing your movies and really want to borrow ' + title +
-            '.\n\nI promise to give it right back :)\n\nCheers!\n' + from_user );
+            '.\n\nI promise to give it right back :)\n\nCheers!\n');
         mymodal.modal('show');
     });
 } );

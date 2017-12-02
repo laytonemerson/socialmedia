@@ -27,7 +27,7 @@
                             <input id="movie_date" name ="movie_date" class="form-control"  type="text" readonly>
                         </div>
                     </div>
-                    <div class="row">editModal
+                    <div class="row">
                         <label class="col-md-2 control-label">Title</label>
                         <div class="col-lg-9 col-md-9 col-sm-9" style="padding-bottom: 10px;">
                             <input id="movie_title" name ="movie_title" class="form-control"  type="text" readonly>
