@@ -8,7 +8,7 @@
 
     <session-factory>
 
-        <!-- Database connection settings -->
+        <!-- Database connection settings  uBUs4XoxU9UsEw  -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/smdb_test</property>
         <property name="connection.username">root</property>
@@ -17,6 +17,12 @@
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">3000</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">300</property>
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
@@ -28,10 +34,9 @@
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.User"/>
-        <mapping class="edu.matc.entity.Movie"/>
         <mapping class="edu.matc.entity.UserRole"/>
+        <mapping class="edu.matc.entity.Movie"/>
         <mapping class="edu.matc.entity.Friend"/>
-
 
     </session-factory>
 

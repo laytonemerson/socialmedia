@@ -1,6 +1,6 @@
 <%@include file="taglib.jsp"%>
 
-<script type="text/javascript" class="init" src="friendmanagerTable.js"></script>
+<script type="text/javascript" class="init" src="Javascript/friendmanagerTable.js"></script>
 
 <div class="container-fluid">
 
@@ -66,7 +66,7 @@
         </table>
     </div>
 
-    <c:import url="addFriendModal.jsp" />
-    <c:import url="deleteFriendModal.jsp" />
+    <c:import url="Modals/addFriendModal.jsp" />
+    <c:import url="Modals/deleteFriendModal.jsp" />
 
 </div>

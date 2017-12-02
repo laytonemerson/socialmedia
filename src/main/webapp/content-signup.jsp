@@ -103,9 +103,8 @@
                     <label class="col-md-2 control-label">Profile Picture</label>
                     <div class="col-md-5  ">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                            <input name="picurl" placeholder="" class="form-control"  type="text">
+                            <input name="picurl" placeholder="Provide the URL to your profile picture" class="form-control"  type="text">
                         </div>
-                        <span class="help-block">Provide the URL to your profile picture</span>
                     </div>
                 </div>
 
@@ -123,4 +122,4 @@
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-<script type="text/javascript" src="validateSignUp.js"></script>
+<script type="text/javascript" src="Javascript/validateSignUp.js"></script>

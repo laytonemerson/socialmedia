@@ -6,45 +6,50 @@ import edu.matc.entity.User;
 import edu.matc.entity.UserRole;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import junitparams.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+@RunWith(JUnitParamsRunner.class)
 public class UserDaoTest {
 
     UserDao dao;
+    List<User> allUsers;
 
     @Before
     public void setup() {
         dao = new UserDao();
+        allUsers = dao.getAllUsers();
     }
 
     @Test
     public void getAllUsers() throws Exception {
         List<User> users = dao.getAllUsers();
-        assertTrue(users.size() == 2);
+        assertTrue(users.size() == allUsers.size());
     }
 
     @Test
-    public void getUser() throws Exception {
-        User user = dao.getUser("12345");
+    @Parameters({"12345"})
+    public void getUser(String userName) throws Exception {
+        User user = dao.getUser(userName);
         assertTrue(user.getEmailAddress().equals("laytonemerson@gmail.com"));
     }
 
     @Test
-    public void sendEmail() throws Exception {
-        Mailer.send("socialmedia.entjava@gmail.com","entjavaf2017","laytonemerson@gmail.com","Subject","Body");
+    @Parameters({"socialmedia.entjava@gmail.com,entjavaf2017,laytonemerson@gmail.com,Subject,Body"})
+    public void sendEmail(String from, String password, String to, String subject, String body) throws Exception {
+        Mailer.send(from, password, to, subject, body);
         assertTrue(1==1);
-
-
     }
 
     @Test
-    public void getFriends() throws Exception {
-        User loggedIn = dao.getUser("12345");
+    @Parameters({"12345"})
+    public void getFriends(String userName) throws Exception {
+        User loggedIn = dao.getUser(userName);
 
         Set<Friend> friendSet = loggedIn.getUserFriends();
         List<User> friends = new ArrayList<User>();
@@ -60,34 +65,37 @@ public class UserDaoTest {
     }
 
     @Test
-    public void addUser() throws Exception {
+    @Parameters({"newlayton, password, laytonemerson@gmail.com, Layton, Emerson, bioPictureUrl" +
+            ", This is my bio for newlaytonemerson,0,user,1234567890,2017-12-02" +
+            ",Aliens. Robots. Zombies...Oh My...,Totally Awesome Movie, moviePictureUrl"})
+    public void addUser(String userName, String password, String email, String firstName, String lastName,
+                        String picture, String bio, Integer movieCount, String userRole, Integer movieId,
+                        String movieDate, String moviePlot, String movieTitle, String moviePoster) throws Exception {
 
+        User beforeUser = new User(userName,password,email,firstName,lastName,picture,bio,movieCount);
+        UserRole role = new UserRole(userRole);
+        role.setUser(beforeUser);
+        Movie movie = new Movie(movieId,movieDate,moviePlot,movieTitle,moviePoster);
+        movie.setUser(beforeUser);
+        beforeUser.getUserRoles().add(role);
+        beforeUser.getUserMovies().add(movie);
+        String name = dao.addUser(beforeUser);
 
-        User user = new User("laytonemerson4","password","laytonemerson@gmail.com","Layton","Emerson","","hi",0);
+        User afterUser = dao.getUser(userName);
 
-        UserRole role = new UserRole("user");
-        Movie movie = new Movie(1234567890,"1","2","3","4");
-        role.setUser(user);
-        movie.setUser(user);
-
-        user.getUserRoles().add(role);
-        user.getUserMovies().add(movie);
-
-        String name = dao.addUser(user);
-
-        assertTrue(dao.getUser("laytonemerson4").equals("laytonemerson4"));
-
+        assertTrue(beforeUser.equals(afterUser));
 
     }
 
     @Test
-    public void deleteUser() throws Exception {
+    @Parameters({"laytonemerson"})
+    public void deleteUser(String userName) throws Exception {
 
-        User user = dao.getUser("laytonemerson2");
-        dao.deleteUser("laytonemerson2");
+        User userToDelete = dao.getUser(userName);
+        dao.deleteUser(userName);
+
         List<User> users = dao.getAllUsers();
-
-        assertFalse(users.contains(user));
+        assertFalse(users.contains(userToDelete));
     }
 
     @Test

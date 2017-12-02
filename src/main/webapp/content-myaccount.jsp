@@ -94,11 +94,11 @@
 
     </div>
 
-    <c:import url="editModal.jsp" />
-    <c:import url="deleteModal.jsp" />
+    <c:import url="Modals/editModal.jsp" />
+    <c:import url="Modals/deleteModal.jsp" />
 
 </div> <!-- End Container -->
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-<script type="text/javascript" src="validateAccountEdit.js"></script>
+<script type="text/javascript" src="Javascript/validateAccountEdit.js"></script>

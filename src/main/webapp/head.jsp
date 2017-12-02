@@ -8,9 +8,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="/custom.css">
-
     <!-- jQuery slim -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
             crossorigin="anonymous"></script>

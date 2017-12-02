@@ -1,7 +1,7 @@
 <%@include file="taglib.jsp"%>
 
-<script type="text/javascript" class="init" src="movieSearchTable.js"></script>
-<script type="text/javascript" src="movieSearchSubmit.js"></script>
+<script type="text/javascript" class="init" src="Javascript/movieSearchTable.js"></script>
+<script type="text/javascript" src="Javascript/movieSearchSubmit.js"></script>
 
 <div class="container-fluid">
     <br><br><br>
@@ -84,5 +84,5 @@
             </c:when>
         </c:choose>
     </div>
-    <c:import url="addMovieModal.jsp" />
+    <c:import url="Modals/addMovieModal.jsp" />
 </div> <!-- End Container -->

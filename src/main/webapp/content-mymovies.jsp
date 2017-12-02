@@ -1,6 +1,6 @@
 <%@include file="taglib.jsp"%>
 
-<script type="text/javascript" class="init" src="myMovieTable.js"></script>
+<script type="text/javascript" class="init" src="Javascript/myMovieTable.js"></script>
 
 <div class="container-fluid">
 
@@ -47,6 +47,6 @@
         </table>
     </div>
 
-    <c:import url="deleteMovieModal.jsp" />
+    <c:import url="Modals/deleteMovieModal.jsp" />
 
 </div>

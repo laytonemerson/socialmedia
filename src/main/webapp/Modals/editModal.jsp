@@ -113,10 +113,9 @@
                             <label class="col-md-2 control-label">Profile Picture</label>
                             <div class="col-md-9  ">
                                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                    <input name="picurl" id="picurl" placeholder="" class="form-control"  type="text"
+                                    <input name="picurl" id="picurl" placeholder="Provide the URL to your profile picture" class="form-control"  type="text"
                                            value="${user.userPicture}"  />
                                 </div>
-                                <span class="help-block">Provide the URL to your profile picture</span>
                             </div>
                         </div>
 

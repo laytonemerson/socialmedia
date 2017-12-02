@@ -50,4 +50,4 @@
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-<script type="text/javascript" src="validateLogIn.js"></script>
+<script type="text/javascript" src="Javascript/validateLogIn.js"></script>

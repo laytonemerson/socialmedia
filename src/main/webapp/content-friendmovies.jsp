@@ -1,7 +1,7 @@
 <%@include file="taglib.jsp"%>
 
-<script type="text/javascript" class="init" src="friendmoviesTable.js"></script>
-<script type="text/javascript" src="friendmoviesSubmit.js"></script>
+<script type="text/javascript" class="init" src="Javascript/friendmoviesTable.js"></script>
+<script type="text/javascript" src="Javascript/friendmoviesSubmit.js"></script>
 
 <div class="container-fluid">
 
@@ -65,5 +65,5 @@
             </tbody>
         </table>
     </div>
-    <c:import url="emailFriendModal.jsp" />
+    <c:import url="Modals/emailFriendModal.jsp" />
 </div>
