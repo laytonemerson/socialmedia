@@ -6,10 +6,7 @@ import edu.matc.entity.User;
 import edu.matc.entity.UserRole;
 import org.junit.Before;
 import org.junit.Test;
-
-import javax.transaction.Transactional;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 

@@ -3,7 +3,6 @@ package edu.matc.controller;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

@@ -5,14 +5,13 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * C
+ * This is the UserDao Class. It's used for all C-R-U-D access to the user related database tables.
+ *
+ *@author lemerson
  */
 public class UserDao {
 
@@ -21,20 +20,33 @@ public class UserDao {
     /** Return a list of all users
      *
      * @return All users
+     * @exception HibernateException he - Any hibernate exception encountered during database access
      */
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<User>();
-        Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        users = session.createCriteria(User.class).list();
-        session.close();
+        Session session = null;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            users = session.createCriteria(User.class).list();
+            session.close();
+        } catch (HibernateException he) {
+            log.error("Error getting all users", he);
+            throw he;
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
         return users;
     }
 
     /**
-     * retrieve a user given their user name
+     * Return a specific user given their user name
      *
      * @param userName the userName for the user
-     * @return user
+     * @return user the selected used from the database
+     * @exception HibernateException he - Any hibernate exception encountered during database access
      */
     public User getUser(String userName) throws HibernateException {
         User user = null;
@@ -54,10 +66,11 @@ public class UserDao {
     }
 
     /**
-     * add a user
+     * Add a user to the database.
      *
-     * @param user
+     * @param user the user object to add to the database
      * @return the user name of the inserted record
+     * @exception HibernateException he - Any hibernate exception encountered during database access
      */
     public String addUser(User user) throws HibernateException {
         String userName = null;
@@ -88,8 +101,10 @@ public class UserDao {
     }
 
     /**
-     * delete a user by userName
-     * @param userName the user's user name
+     * Delete a user by userName
+     *
+     * @param userName the user's user name to be deleted
+     * @exception HibernateException he - Any hibernate exception encountered during database access
      */
     public void deleteUser(String userName) throws HibernateException{
 
@@ -121,10 +136,11 @@ public class UserDao {
     }
 
     /**
-     * Update the user
-     * @param user
+     * Update the given user
+     *
+     * @param user the user object to update
+     * @exception HibernateException he - Any hibernate exception encountered during database access
      */
-
     public void updateUser(User user) throws HibernateException{
         Transaction transaction = null;
         Session session = null;

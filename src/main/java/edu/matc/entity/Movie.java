@@ -40,12 +40,12 @@ public class Movie implements java.io.Serializable {
     }
 
     /**
-     * Instantiates a
-     * @param movieId
-     * @param movieDate
-     * @param moviePlot
-     * @param movieTitle
-     * @param moviePoster
+     * Instantiates a new Movie
+     * @param movieId the ID of the movie
+     * @param movieDate the release date of the movie
+     * @param moviePlot the plot of the movie
+     * @param movieTitle the title of the movie
+     * @param moviePoster the poster url for the movie
      */
     public Movie(Integer movieId, String movieDate, String moviePlot, String movieTitle, String moviePoster) {
         this.movieId = movieId;
@@ -57,15 +57,15 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets movieId
-     * @return movieId
+     * @return movieId the ID of the movie
      */
     public Integer getMovieId() {
         return movieId;
     }
 
     /**
-     * Sets movieId.
-     * @param movieId the
+     * Sets movieId
+     * @param movieId the ID of the movie
      */
     public void setMovieId(Integer movieId) {
         this.movieId = movieId;
@@ -73,7 +73,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets movieTitle
-     * @return movieTitle
+     * @return movieTitle the title of the movie
      */
     public String getMovieTitle() {
         return movieTitle;
@@ -81,7 +81,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets movieTitle
-     * @param movieTitle the
+     * @param movieTitle the title of the movie
      */
     public void setMovieTitle(String movieTitle) {
         this.movieTitle = movieTitle;
@@ -89,7 +89,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets moviePlot
-     * @return moviePlot
+     * @return moviePlot the plot of the movie
      */
     public String getmoviePlot() {
         return moviePlot;
@@ -97,7 +97,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets moviePlot
-     * @param moviePlot the
+     * @param moviePlot the plot of the movie
      */
     public void setmoviePlot(String moviePlot) {
         this.moviePlot = moviePlot;
@@ -105,7 +105,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets movieDate
-     * @return movieDate
+     * @return movieDate the release date of the movie
      */
     public String getmovieDate() {
         return movieDate;
@@ -113,7 +113,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets movieDate
-     * @param movieDate the
+     * @param movieDate the release date of the movie
      */
     public void setmovieDate(String movieDate) {
         this.movieDate = movieDate;
@@ -121,7 +121,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets moviePoster
-     * @return moviePoster
+     * @return moviePoster the movie poster url
      */
     public String getmoviePoster() {
         return moviePoster;
@@ -129,7 +129,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets moviePoster
-     * @param moviePoster the
+     * @param moviePoster the movie poster url
      */
     public void setmoviePoster(String moviePoster) {
         this.moviePoster = moviePoster;
@@ -137,7 +137,7 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Gets the user
-     * @return the user for this
+     * @return the user for this movie
      */
     public User getUser() {
         return this.user;
@@ -145,20 +145,19 @@ public class Movie implements java.io.Serializable {
 
     /**
      * Sets the user
-     * @param user the user for this
+     * @param user the user for this movie
      */
     public void setUser(User user) {
         this.user = user;
     }
 
-
     /**
      * Return a string describing the object.
-     * @return the combined string to help identify the specific user object.
+     * @return the combined string to help identify the specific movie object.
      */
     @Override
     public String toString() {
-        return "Movie{" +
+        return "Movie {" +
                 "movieId='" + movieId + '\'' +
                 ", movieDate='" + movieDate + '\'' +
                 ", moviePlot='" + moviePlot + '\'' +
@@ -167,6 +166,10 @@ public class Movie implements java.io.Serializable {
                 '}';
     }
 
+    /**
+     * Return true if a Movie object matches.
+     * @return the boolean result of the Movie Match.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -180,6 +183,10 @@ public class Movie implements java.io.Serializable {
         return movieId.equals(movie.movieId);
     }
 
+    /**
+     * Used in tandem with the overriden equals method.
+     * @return unique value for object.
+     */
     @Override
     public int hashCode() {
         int result = movieId.hashCode();

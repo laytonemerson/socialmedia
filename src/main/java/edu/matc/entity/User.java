@@ -2,9 +2,7 @@ package edu.matc.entity;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
-
 import javax.persistence.*;
-import java.sql.Blob;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -58,6 +56,7 @@ public class User implements java.io.Serializable {
      * Instantiates a new User.
      */
     public User() {
+
     }
 
     /**
@@ -257,15 +256,24 @@ public class User implements java.io.Serializable {
         this.friends = friends;
     }
 
+    /**
+     * Return a string describing the object.
+     * @return the combined string to help identify the specific user object.
+     */
     @Override
     public String toString() {
         return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                "  userName  ='" + userName + '\'' +
+                ", firstName ='" + firstName + '\'' +
+                ", lastName  ='" + lastName + '\'' +
+                ", emailAddress  ='" + emailAddress + '\'' +
                 '}';
     }
 
-
+    /**
+     * Return true if a User object matches.
+     * @return the boolean result of the User Match.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -281,6 +289,10 @@ public class User implements java.io.Serializable {
         return userName.equals(user.userName);
     }
 
+    /**
+     * Used in tandem with the overriden equals method.
+     * @return unique value for object.
+     */
     @Override
     public int hashCode() {
         int result = firstName.hashCode();

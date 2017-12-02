@@ -3,7 +3,7 @@ package edu.matc.entity;
 import javax.persistence.*;
 
 /**
- * A class to represent a friend
+ * A class to represent a friend.
  *
  * @author lemerson
  */
@@ -28,7 +28,7 @@ public class Friend implements java.io.Serializable {
 
     /**
      * Instantiates a new friend
-     * @param friendUserName the
+     * @param friendUserName the username of the friend.
      */
     public Friend(String friendUserName) {
         this.friendUserName = friendUserName;
@@ -68,16 +68,19 @@ public class Friend implements java.io.Serializable {
 
     /**
      * Return a string describing the object.
-     * @return the combined string to help identify the specific user object.
+     * @return the combined string to help identify the specific friend object.
      */
-
     @Override
     public String toString() {
-        return "User{" +
-                ", friendUserName='" + friendUserName + '\'' +
+        return "Friend {" +
+                "friendUserName='" + friendUserName + '\'' +
                 '}';
     }
 
+    /**
+     * Return true if a Friend object matches.
+     * @return the boolean result of the Friend Match.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -85,10 +88,14 @@ public class Friend implements java.io.Serializable {
 
         Friend friend = (Friend) o;
 
-        if (!friendUserName.equals(friendUserName)) return false;
+        if (!friendUserName.equals(friend.friendUserName)) return false;
         return friendUserName.equals(friend.friendUserName);
     }
 
+    /**
+     * Used in tandem with the overriden equals method.
+     * @return unique value for object.
+     */
     @Override
     public int hashCode() {
         return friendUserName.hashCode();

@@ -1,11 +1,27 @@
 package edu.matc.persistence;
 
-import java.util.Properties;    
+import java.util.Properties;
 import javax.mail.*;    
 import javax.mail.internet.*;
 
+/**
+ * This is the Mailer Class. It's used to transport the message from user to friend.
+ *
+ *@author lemerson
+ */
 public class Mailer{
 
+    /**
+     * Send an email using smtp.gmail
+     *
+     * @param from Who the email is from
+     * @param password The password of the email account being used
+     * @param to The recipient of the email
+     * @param sub The subject of the email
+     * @param msg The email body text
+     *
+     * @exception RuntimeException re - Any runtime exception encountered during the sending of the email.
+     */
     public static void send(String from,String password,String to,String sub,String msg) {
 
         Properties props = new Properties();
@@ -27,8 +43,8 @@ public class Mailer{
             message.setSubject(sub);
             message.setText(msg);
             Transport.send(message);
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
+        } catch (MessagingException re) {
+            throw new RuntimeException(re);
         }
 
     }

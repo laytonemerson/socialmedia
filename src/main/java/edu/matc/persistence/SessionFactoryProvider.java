@@ -15,11 +15,9 @@ public class SessionFactoryProvider {
     private static SessionFactory sessionFactory;
 
     public static void createSessionFactory() {
-
         Configuration configuration = new Configuration();
         configuration.configure();
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
-
         sessionFactory = configuration.buildSessionFactory(serviceRegistry);
     }
 
@@ -28,6 +26,5 @@ public class SessionFactoryProvider {
             createSessionFactory();
         }
         return sessionFactory;
-
     }
 }

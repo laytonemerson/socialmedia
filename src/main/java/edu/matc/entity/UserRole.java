@@ -9,10 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "user_roles")
-
-
 public class UserRole implements java.io.Serializable {
-
 
     @Id
     @Column(name = "role_name")
@@ -24,13 +21,13 @@ public class UserRole implements java.io.Serializable {
     private User user;
 
     /**
-     * Instantiates a new User.
+     * Instantiates a new UserRole.
      */
     public UserRole() {
     }
 
     /**
-     * Instantiates a new User Role
+     * Instantiates a new UserRole
      * @param roleName the role being created
      */
     public UserRole(String roleName) {
@@ -71,13 +68,12 @@ public class UserRole implements java.io.Serializable {
 
     /**
      * Return a string describing the object.
-     * @return the combined string to help identify the specific user object.
+     * @return the combined string to help identify the specific UserRole object.
      */
-
     @Override
     public String toString() {
-        return "User{" +
-                ", roleName='" + roleName + '\'' +
+        return "User {" +
+                "roleName='" + roleName + '\'' +
                 '}';
     }
 
