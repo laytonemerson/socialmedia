@@ -31,6 +31,7 @@ import java.io.IOException;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name and invalidate the session.
         HttpSession session = request.getSession();
         String userName = request.getRemoteUser();
         session.invalidate();

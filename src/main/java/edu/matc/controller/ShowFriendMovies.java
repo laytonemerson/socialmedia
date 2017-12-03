@@ -39,8 +39,11 @@ import java.util.Set;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name
         String userName = request.getRemoteUser();
 
+        // Try to get a list of the friends to pass to the friendsmovies jsp page. This will allow the page
+        // to display all of the friends movies.
         try {
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);

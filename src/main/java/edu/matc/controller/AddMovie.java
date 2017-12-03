@@ -36,6 +36,7 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the movie parameters
         String userName = request.getRemoteUser();
         Integer movieId = Integer.parseInt(request.getParameter("movie_id"));
         String movieTitle = request.getParameter("movie_title");
@@ -44,6 +45,7 @@ import java.io.IOException;
         String posterPath = request.getParameter("poster_path");
 
         try {
+            // Get the user, create a movie object, and update the user on the database to have that movie
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);
             Movie movie = new Movie(movieId, movieDate, moviePlot, movieTitle, posterPath);

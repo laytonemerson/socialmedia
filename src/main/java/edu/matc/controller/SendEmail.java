@@ -36,11 +36,13 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Pull the email parameters from the jsp page.
         String subject = request.getParameter("email_subject");
         String body = request.getParameter("email_body");
         String toUserName = request.getParameter("to_user");
         String toEmail = "";
 
+        // Attempt to send the email that was drafted by the user.
         try {
             UserDao dao = new UserDao();
             User toUser = dao.getUser(toUserName);

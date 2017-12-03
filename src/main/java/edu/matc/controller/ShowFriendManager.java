@@ -41,7 +41,10 @@ import java.util.Set;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name
         String userName = request.getRemoteUser();
+
+        // Try to create a friends/non friends list for the Friend Manager page to display.
         try {
             UserDao dao = new UserDao();
             User loggedIn = dao.getUser(userName);

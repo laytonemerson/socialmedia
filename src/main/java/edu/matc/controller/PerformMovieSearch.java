@@ -47,6 +47,7 @@ import java.util.Set;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the username and keyword, then create the search string to send to the API.
         String keyword = request.getParameter("keyword");
         String userName = request.getRemoteUser();
 
@@ -55,13 +56,17 @@ import java.util.Set;
                 "&language=en-US&query=" + URLEncoder.encode(keyword, "UTF-8");
 
         try {
+            // Call the API
             Client client = ClientBuilder.newClient();
             WebTarget target = client.target(searchString);
 
+            // Create the user and work through the JSON response. We need the user, so we can see if
+            // they already own the movie.
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);
             String jsonResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
+            // Create the final movieList that will be shown on the JSP page.
             List<ResultsItem> movieList;
             movieList = createMovieList(jsonResponse, user);
             request.setAttribute("movies", movieList);

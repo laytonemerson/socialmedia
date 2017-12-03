@@ -21,7 +21,7 @@ import java.io.IOException;
 @WebServlet(
         name = "updateAccount",
         urlPatterns = {"/updateAccount"}
-) public class updateAccount extends HttpServlet {
+) public class UpdateAccount extends HttpServlet {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
@@ -36,9 +36,11 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name
         UserDao dao = new UserDao();
         String userName= request.getParameter("user_name");
 
+        // Attempt to update all the user fields from the form.
         try {
             User user = dao.getUser(userName);
             user.setEmailAddress(request.getParameter("email"));

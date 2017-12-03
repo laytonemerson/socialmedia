@@ -38,10 +38,12 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name and movie id to delete
         String userName = request.getRemoteUser();
         Integer movieId = Integer.parseInt(request.getParameter("movie_id"));
 
         try {
+            // Create the user and movie object. Remove from the user. Update ths user.
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);
             user.getUserMovies().remove(movieToDelete(request,movieId));

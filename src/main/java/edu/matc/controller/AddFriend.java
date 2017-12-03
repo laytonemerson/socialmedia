@@ -41,16 +41,19 @@ import java.util.Set;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user Name
         String userName = request.getRemoteUser();
         String friendUserName = request.getParameter("user_name_add");
         UserDao dao = new UserDao();
 
         try{
+            // Get the user, create friend and add to the User
             User user = dao.getUser(userName);
             Friend friend = new Friend(friendUserName);
             friend.setUser(user);
             user.getUserFriends().add(friend);
             dao.updateUser(user);
+            // Create new Friend/Non Friend list after the update
             Set<Friend> friendSet = user.getUserFriends();
             List<User> friends = friendList(friendSet);
             List<User> nonFriends = nonFriendList(friendSet,user);

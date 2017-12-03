@@ -39,11 +39,13 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Create a user ojbect based on all the parameters.
         User user = userToCreate(request);
         UserRole role = new UserRole("user");
         role.setUser(user);
         user.getUserRoles().add(role);
 
+        // Attempt to save the user to the database
         try {
             UserDao dao = new UserDao();
             String name = dao.addUser(user);
@@ -53,6 +55,7 @@ import java.io.IOException;
             session.setAttribute("ErrorMessage","Error while attempting to add user " + user.getUserName());
         }
 
+        // Set the user as logged in and Redirect to MyAccount Servlet.
         request.login(user.getUserName(),user.getPassword());
         String url = "showMyAccount";
         response.sendRedirect(url);

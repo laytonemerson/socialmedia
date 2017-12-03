@@ -42,16 +42,20 @@ import java.util.Set;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the logged in user name and the user name of the friend to delete
         String userName = request.getRemoteUser();
         String friendUserName = request.getParameter("user_name_del");
 
         try {
+            // Create the logged in user object and Friend
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);
             Set<Friend> userFriends = user.getUserFriends();
             Friend deleteFriend = findFriendToDelete(userFriends,friendUserName);
+            // Remove the Friend from the user, then update the user.
             user.getUserFriends().remove(deleteFriend);
             dao.updateUser(user);
+            // Create new Friend/Non Friend list after removing the friend.
             userFriends = user.getUserFriends();
             List<User> friends = friendList(userFriends);
             List<User> nonFriends = nonFriendList(userFriends,user);

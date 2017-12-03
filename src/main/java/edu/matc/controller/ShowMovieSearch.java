@@ -29,6 +29,7 @@ import java.io.IOException;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Forward to movieSearch.jsp page
         request.setAttribute("title", "Movie Search");
         String url = "/movieSearch.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

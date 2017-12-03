@@ -34,10 +34,12 @@ import java.io.IOException;
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name
         String userName = request.getRemoteUser();
         HttpSession session = request.getSession();
 
         try {
+            // Create and delete the user. Also invalidate the session to force the logout.
             UserDao dao = new UserDao();
             dao.deleteUser(userName);
             session.invalidate();

@@ -37,9 +37,11 @@ import java.io.IOException;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Get the user name
         HttpSession session = request.getSession();
         String userName = request.getRemoteUser();
 
+        // Get the user and try to set some attributes about the user to be used on the myaccount page
         try {
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);

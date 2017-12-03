@@ -26,6 +26,7 @@ import javax.servlet.http.*;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Forward to the signup.jsp page
         String url = "/signup.jsp";
         request.setAttribute("title", "Sign up for SM");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

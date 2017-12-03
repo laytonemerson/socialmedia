@@ -41,6 +41,8 @@ import java.io.PrintWriter;
         PrintWriter out = response.getWriter();
 
         try {
+            // Given the user name that was typed, check if the user name exists. If null, the user name
+            // doesnt exist, so return true (available0
             UserDao dao = new UserDao();
             User user2 = dao.getUser(request.getParameter("user_name"));
             if (user2 == null) {
