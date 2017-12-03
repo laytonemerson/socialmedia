@@ -35,12 +35,13 @@ DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (  `user_name` varchar(255) NOT NULL,  `email_addr` varchar(255) DEFAULT NULL,  `first_name` varchar(255) DEFAULT NULL,  `last_name` varchar(255) DEFAULT NULL,  `user_pass` varchar(255) DEFAULT NULL,  `user_picture` varchar(250) DEFAULT NULL,  `user_bio` varchar(250) DEFAULT NULL,  `user_movies` int(11) DEFAULT '0',  PRIMARY KEY (`user_name`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 CREATE TABLE `user_friends` (  `user_name` varchar(255) NOT NULL,  `friend_user_name` varchar(255) NOT NULL,  PRIMARY KEY (`user_name`,`friend_user_name`),  CONSTRAINT `user_friends_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 CREATE TABLE `user_movies` (  `user_name` varchar(255) NOT NULL,  `movie_id` int(11) NOT NULL,  `movie_plot` varchar(2000) DEFAULT NULL,  `movie_date` varchar(10) DEFAULT NULL,  `movie_poster` varchar(100) DEFAULT NULL,  `movie_title` varchar(100) DEFAULT NULL,  PRIMARY KEY (`user_name`,`movie_id`),  CONSTRAINT `user_movies_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-CREATE TABLE `user_roles` (  `user_name` varchar(15) NOT NULL,  `role_name` varchar(15) NOT NULL,  PRIMARY KEY (`user_name`,`role_name`),  CONSTRAINT `user_roles_users_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `users` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 
 
@@ -49,7 +50,11 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES ('12345','laytonemerson@gmail.com','Layton','Emerson','12345','','safgsfasdfasdfsdaf',0),('jamie','jamie.kruser@gmail.com','Jamie','Kruser','12345','','Lame',1),('laytonemerson1','11@11.com','11','11','12345','','',0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
-
+LOCK TABLES `user_roles` WRITE;
+/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
+INSERT INTO `user_roles` VALUES ('12345','user'),('jamie','user'),('laytonemerson1','user');
+/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
+UNLOCK TABLES;
 
 LOCK TABLES `user_friends` WRITE;
 /*!40000 ALTER TABLE `user_friends` DISABLE KEYS */;
@@ -60,15 +65,8 @@ UNLOCK TABLES;
 
 LOCK TABLES `user_movies` WRITE;
 /*!40000 ALTER TABLE `user_movies` DISABLE KEYS */;
-INSERT INTO `user_movies` VALUES ('jamie',280,'Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.','1991-07-01','/2y4dmgWYRMYXdD1UyJVcn2HSd1D.jpg','Terminator 2: Judgment Day'),('newlayton',1234567890,'Aliens. Robots. Zombies...Oh My...','2017-12-02','moviePictureUrl','Totally Awesome Movie');
+INSERT INTO `user_movies` VALUES ('jamie',280,'Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.','1991-07-01','/2y4dmgWYRMYXdD1UyJVcn2HSd1D.jpg','Terminator 2: Judgment Day'),('jamie',999,'plot 999','2017-12-03','poster 999','title 999');
 /*!40000 ALTER TABLE `user_movies` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
-LOCK TABLES `user_roles` WRITE;
-/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES ('12345','user'),('jamie','user'),('laytonemerson1','user'),('newlayton','user');
-/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

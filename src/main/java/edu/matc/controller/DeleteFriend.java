@@ -47,16 +47,15 @@ import java.util.Set;
         String friendUserName = request.getParameter("user_name_del");
 
         try {
-            // Create the logged in user object and Friend
+            // Create the logged in user object and Friend,r emove the Friend from the user, then update the user.
             UserDao dao = new UserDao();
             User user = dao.getUser(userName);
-            Set<Friend> userFriends = user.getUserFriends();
-            Friend deleteFriend = findFriendToDelete(userFriends,friendUserName);
-            // Remove the Friend from the user, then update the user.
+            Friend deleteFriend = new Friend(friendUserName);
+            deleteFriend.setUser(user);
             user.getUserFriends().remove(deleteFriend);
             dao.updateUser(user);
             // Create new Friend/Non Friend list after removing the friend.
-            userFriends = user.getUserFriends();
+            Set <Friend> userFriends = user.getUserFriends();
             List<User> friends = friendList(userFriends);
             List<User> nonFriends = nonFriendList(userFriends,user);
             request.setAttribute("friends",friends);
@@ -109,21 +108,4 @@ import java.util.Set;
         return nonFriends;
     }
 
-    /**
-     * Return a friend object to be deleted from the users friend list.
-     *
-     * @param friendSet  the list of friends that the user is friends with
-     * @param userName  the userName of the friend to delete
-     * @return deleteFriend the friend object to delete
-     */
-    private Friend findFriendToDelete (Set<Friend> friendSet, String userName) {
-        Friend deleteFriend = new Friend();
-
-        for(Friend current : friendSet) {
-            if (current.getFriendUserName().equals( userName)) {
-                deleteFriend = current;
-            }
-        }
-        return deleteFriend;
-    }
 }

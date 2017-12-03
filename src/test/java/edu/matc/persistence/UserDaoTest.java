@@ -8,11 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import junitparams.*;
-
-import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -90,26 +86,61 @@ public class UserDaoTest {
     }
 
     @Test
-    @Parameters({"jamie, NewFirst"})
-    public void addFriend() throws Exception {
+    @Parameters({"jamie, 12345"})
+    public void addFriend(String userName, String friendUserName) throws Exception {
+
+        User user = dao.getUser(userName);
+        Friend friend = new Friend(friendUserName);
+        friend.setUser(user);
+        user.getUserFriends().add(friend);
+        dao.updateUser(user);
+
+        User user2 = dao.getUser(userName);
+        assertTrue(user2.getUserFriends().contains(friend));
 
     }
 
     @Test
-    @Parameters({"jamie, NewFirst"})
-    public void deleteFriend() throws Exception {
+    @Parameters({"12345, jamie"})
+    public void deleteFriend(String userName, String friendUserName) throws Exception {
 
+        User user = dao.getUser(userName);
+        Friend deleteFriend = new Friend(friendUserName);
+        deleteFriend.setUser(user);
+        user.getUserFriends().remove(deleteFriend);
+        dao.updateUser(user);
+
+        User user2 = dao.getUser(userName);
+        assertFalse(user2.getUserFriends().contains(deleteFriend));
     }
 
     @Test
-    @Parameters({"jamie, NewFirst"})
-    public void addMovie() throws Exception {
+    @Parameters({"jamie, 11111, 2017-12-03, This is the plot, This is the title, This is the poster"})
+    public void addMovie(String userName, Integer movieId, String movieDate, String moviePlot,
+                         String movieTitle, String posterPath) throws Exception {
 
+        User user = dao.getUser(userName);
+        Movie addMovie = new Movie(movieId,movieDate,moviePlot,movieTitle,posterPath);
+        addMovie.setUser(user);
+        user.getUserMovies().add(addMovie);
+        dao.updateUser(user);
+
+        User user2 = dao.getUser(userName);
+        assertTrue(user2.getUserMovies().contains(addMovie));
     }
 
     @Test
-    @Parameters({"jamie, NewFirst"})
-    public void deleteMovie() throws Exception {
+    @Parameters({"jamie, 999, 2017-12-03, plot 999, title 999, poster 999"})
+    public void deleteMovie(String userName, Integer movieId, String movieDate, String moviePlot,
+                            String movieTitle, String posterPath) throws Exception {
+        User user = dao.getUser(userName);
+        Movie deleteMovie = new Movie(movieId,movieDate,moviePlot,movieTitle,posterPath);
+        deleteMovie.setUser(user);
+        user.getUserMovies().remove(deleteMovie);
+        dao.updateUser(user);
+
+        User user2 = dao.getUser(userName);
+        assertFalse(user2.getUserMovies().contains(deleteMovie));
 
     }
 
