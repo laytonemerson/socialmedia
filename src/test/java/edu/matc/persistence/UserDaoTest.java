@@ -18,18 +18,21 @@ public class UserDaoTest {
     UserDao dao;
     List<User> allUsers;
 
+    // Make a dao and an all Users list.
     @Before
     public void setup() {
         dao = new UserDao();
         allUsers = dao.getAllUsers();
     }
 
+    // Get a list of all users and make sure it matches the before list.
     @Test
     public void getAllUsers() throws Exception {
         List<User> users = dao.getAllUsers();
         assertTrue(users.size() == allUsers.size());
     }
 
+    // Get user from database. Then find the same user in the All Users list from @Before. Make sure they are equal.
     @Test
     @Parameters({"12345"})
     public void getUser(String userName) throws Exception {
@@ -44,6 +47,7 @@ public class UserDaoTest {
         assertTrue(user.equals(user2));
     }
 
+    // add new user to database.
     @Test
     @Parameters({"newlayton, password, laytonemerson@gmail.com, Layton, Emerson, bioPictureUrl" +
             ", This is my bio for newlaytonemerson,0,user"})
@@ -62,6 +66,7 @@ public class UserDaoTest {
 
     }
 
+    // delete user from database
     @Test
     @Parameters({"laytonemerson1"})
     public void deleteUser(String userName) throws Exception {
@@ -73,6 +78,7 @@ public class UserDaoTest {
         assertFalse(users.contains(userToDelete));
     }
 
+    // update a user on the datbase.
     @Test
     @Parameters({"jamie, NewFirst"})
     public void updateUser(String userName, String firstName) throws Exception {
@@ -85,6 +91,7 @@ public class UserDaoTest {
         assertTrue(user.getFirstName().equals(user2.getFirstName()));
     }
 
+    // add a friend to a user on the database
     @Test
     @Parameters({"jamie, 12345"})
     public void addFriend(String userName, String friendUserName) throws Exception {
@@ -100,6 +107,7 @@ public class UserDaoTest {
 
     }
 
+    // delete a friend from a user on the database
     @Test
     @Parameters({"12345, jamie"})
     public void deleteFriend(String userName, String friendUserName) throws Exception {
@@ -114,6 +122,7 @@ public class UserDaoTest {
         assertFalse(user2.getUserFriends().contains(deleteFriend));
     }
 
+    // add a movie to a user on the database
     @Test
     @Parameters({"jamie, 11111, 2017-12-03, This is the plot, This is the title, This is the poster"})
     public void addMovie(String userName, Integer movieId, String movieDate, String moviePlot,
@@ -129,6 +138,7 @@ public class UserDaoTest {
         assertTrue(user2.getUserMovies().contains(addMovie));
     }
 
+    // delete a movie from a user on the database
     @Test
     @Parameters({"jamie, 999, 2017-12-03, plot 999, title 999, poster 999"})
     public void deleteMovie(String userName, Integer movieId, String movieDate, String moviePlot,
@@ -144,6 +154,7 @@ public class UserDaoTest {
 
     }
 
+    // send an email using Mailer
     @Test
     @Parameters({"socialmedia.entjava@gmail.com,entjavaf2017,laytonemerson@gmail.com,Subject,Body"})
     public void sendEmail(String from, String password, String to, String subject, String body) throws Exception {
