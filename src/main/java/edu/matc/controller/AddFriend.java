@@ -63,7 +63,9 @@ import java.util.Set;
             HttpSession session = request.getSession();
             log.error("Error while attempting to save friend " + friendUserName, he);
             session.setAttribute("ErrorMessage","Error while attempting to save friend " + friendUserName);
-                    }
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
+        }
 
         request.setAttribute("title", "Friend Manager");
         String url = "/friendManager.jsp";

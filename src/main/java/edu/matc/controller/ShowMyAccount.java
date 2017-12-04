@@ -53,6 +53,8 @@ import java.io.IOException;
         } catch (HibernateException he) {
             log.error("Error while attempting to load account details for " + userName, he);
             session.setAttribute("Error Message","Error while attempting to load account details for " + userName);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         String url = "/myaccount.jsp";

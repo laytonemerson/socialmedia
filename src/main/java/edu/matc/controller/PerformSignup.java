@@ -53,6 +53,8 @@ import java.io.IOException;
             log.error("Error while attempting to add user " + user.getUserName(), he);
             HttpSession session = request.getSession();
             session.setAttribute("ErrorMessage","Error while attempting to add user " + user.getUserName());
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         // Set the user as logged in and Redirect to MyAccount Servlet.

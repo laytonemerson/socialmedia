@@ -64,6 +64,8 @@ import java.util.Set;
             HttpSession session = request.getSession();
             log.error("Error while attempting to delete friend " + friendUserName, he);
             session.setAttribute("ErrorMessage","Error while attempting to delete friend " + friendUserName);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         request.setAttribute("title", "Friend Manager");

@@ -52,6 +52,8 @@ import java.io.IOException;
             log.error("Error while attempting to send email to " + toEmail, e);
             HttpSession session = request.getSession();
             session.setAttribute("ErrorMessage","Error while attempting to send email to " + toEmail);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
     }
 }

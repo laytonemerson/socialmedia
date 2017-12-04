@@ -46,6 +46,8 @@ import java.io.IOException;
         } catch (HibernateException he) {
             log.error("Error while attempting to delete user " + userName, he);
             session.setAttribute("ErrorMessage","Error while attempting to delete user " + userName);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         String url = "/";

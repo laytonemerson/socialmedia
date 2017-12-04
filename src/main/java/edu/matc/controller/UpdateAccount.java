@@ -55,6 +55,8 @@ import java.io.IOException;
             log.error("Error while attempting to update user " + userName, he);
             HttpSession session = request.getSession();
             session.setAttribute("ErrorMessage","Error while attempting to add user " + userName);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         String url = "showMyAccount";

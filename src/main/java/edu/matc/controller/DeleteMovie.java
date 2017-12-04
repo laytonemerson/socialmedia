@@ -54,6 +54,8 @@ import java.io.IOException;
             log.error("Error while attempting to delete movie " + movieId, he);
             HttpSession session = request.getSession();
             session.setAttribute("ErrorMessage","Error while attempting to delete movie " + movieId);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         String url = "/myMovies.jsp";

@@ -73,6 +73,8 @@ import java.util.Set;
         } catch (Exception e) {
             log.error("Error while attempting to search for movie keyword " + keyword, e);
             session.setAttribute("ErrorMessage","Error while attempting to search for movie keyword " + keyword);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
 
         request.setAttribute("searchPerformed",true);

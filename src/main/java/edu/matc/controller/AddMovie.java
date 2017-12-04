@@ -58,6 +58,8 @@ import java.io.IOException;
             log.error("Error while attempting to save movie " + movieId, he);
             HttpSession session = request.getSession();
             session.setAttribute("ErrorMessage","Error while attempting to save movie " + movieId);
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         }
     }
 }

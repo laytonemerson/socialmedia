@@ -54,6 +54,8 @@ import java.io.PrintWriter;
             HttpSession session = request.getSession();
             log.error("Error while checking user name availability", he);
             session.setAttribute("ErrorMessage","Error while checking user name availability");
+            String url = "/generalError.jsp";
+            response.sendRedirect(url);
         } finally {
             out.close();
         }
