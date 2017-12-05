@@ -21,7 +21,8 @@ Each user will keep their own inventory up to date which all of their friends wi
   * Store friend lists
 * Web Services or APIs
   * OMDb API - The Open Movie Database
-* JSON (independent research topic)
+* JSON 
+* Bootstrap (Independent Research Topic)
 * Logging
   * Configurable logging using Log4J.
 * Site and database hosted on AWS
