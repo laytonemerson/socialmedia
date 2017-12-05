@@ -4,7 +4,7 @@ Layton Emerson Individual Project
 
 ### Problem Statement
 
-Have you ever walked through a store and stared at the new release movie for $29.99, but ultimately decided not to buy it? Movies, Games, Books - all forms of media are expensive.
+Have you ever walked through a store and stared at a new release movie for $29.99, but ultimately decided not to buy it? Movies, Games, Books - all forms of media are expensive.
 
 Social Media provides a user-friendly solution to this budget-busting dilema by harnessing the borrowing power of your friends' media purchases. Using this site allows you the ability to search friends' inventory for that game or movie you want to buy and ask them to borrow it instead of buying it.
 
