@@ -52,7 +52,7 @@ import java.io.IOException;
             session.setAttribute("loggedIn", true);
         } catch (HibernateException he) {
             log.error("Error while attempting to load account details for " + userName, he);
-            session.setAttribute("Error Message","Error while attempting to load account details for " + userName);
+            session.setAttribute("ErrorMessage","Error while attempting to load account details for " + userName);
             String url = "/generalError.jsp";
             response.sendRedirect(url);
         }

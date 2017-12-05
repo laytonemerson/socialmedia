@@ -51,7 +51,7 @@ import java.util.Set;
             request.setAttribute("movies", userMovies);
         } catch (HibernateException he) {
             log.error("Error while attempting to load movies for " + userName, he);
-            session.setAttribute("Error Message","Error while attempting to load movies for " + userName);
+            session.setAttribute("ErrorMessage","Error while attempting to load movies for " + userName);
             String url = "/generalError.jsp";
             response.sendRedirect(url);
         }
