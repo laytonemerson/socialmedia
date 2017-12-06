@@ -50,7 +50,7 @@ import java.io.IOException;
             response.sendRedirect(url);
         }
 
-        String url = "/";
+        String url = "/socialmedia";
         response.sendRedirect(url);
     }
 }
