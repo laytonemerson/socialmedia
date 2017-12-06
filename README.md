@@ -29,4 +29,4 @@ Each user keeps their own inventory up-to-date, which all of their friends are a
 * Unit Testing
   * JUnit tests to achieve 80% code coverage 
   
-[![Alt text](https://img.youtube.com/vi/8VYs3a3BSSM/0.jpg)](https://www.youtube.com/watch?v=8VYs3a3BSSM&feature=youtu.be)
+[![](http://img.youtube.com/vi/8VYs3a3BSSM/0.jpg)](http://www.youtube.com/watch?v=8VYs3a3BSSM "Social Media")
