@@ -1,4 +1,4 @@
-''# SocialMedia
+# SocialMedia
 
 Layton Emerson Individual Project
 
@@ -28,3 +28,5 @@ Each user keeps their own inventory up-to-date, which all of their friends are a
 * Site and database hosted on AWS
 * Unit Testing
   * JUnit tests to achieve 80% code coverage 
+  
+[Social Media Video Demo](http://www.youtube.com/watch?v=8VYs3a3BSSM)
