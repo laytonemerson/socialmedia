@@ -16,7 +16,7 @@
                     <label class="col-md-2 control-label">First Name*</label>
                     <div class="col-md-5  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="first_name" placeholder="First Name" class="form-control"  type="text">
+                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
