@@ -51,12 +51,6 @@ import java.util.Set;
             UserDao dao = new UserDao();
             dao.deleteUser(deleteUserName);
             List<User> users = dao.getAllUsers();
-            Friend friend = new Friend(deleteUserName);
-            for (User user: users) {
-                user.getUserFriends().remove(friend);
-                dao.updateUser(user);
-            }
-
             User user = dao.getUser(request.getRemoteUser());
             users.remove(user);
             request.setAttribute("users",users);
