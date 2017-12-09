@@ -91,9 +91,9 @@ import java.util.Set;
             if (role.getRoleName().equals("admin")) {
                 return "admin";
             } else {
-                return "User";
+                return "user";
             }
         }
-        return "User";
+        return "user";
     }
 }

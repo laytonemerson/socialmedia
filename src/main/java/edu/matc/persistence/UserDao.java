@@ -1,12 +1,14 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.entity.UserRole;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * This is the UserDao Class. It's used for all C-R-U-D access to the user related database tables.
@@ -37,7 +39,14 @@ public class UserDao {
             }
         }
 
-        return users;
+        // Remove admins
+        List<User> returnUsers = new ArrayList<User>();
+        for (User current: users) {
+            if (returnRoleName(current).equals("user")) {
+                returnUsers.add(current);
+            }
+        }
+        return returnUsers;
     }
 
     /**
@@ -163,5 +172,23 @@ public class UserDao {
                 session.close();
             }
         }
+    }
+
+    /**
+     * Return what role the user is currently in.
+     *
+     * @param user  the user logging in
+     * @return the role code of the user.
+     */
+    private String returnRoleName (User user) {
+        Set<UserRole> roles = user.getUserRoles();
+        for (UserRole role: roles ) {
+            if (role.getRoleName().equals("admin")) {
+                return "admin";
+            } else {
+                return "user";
+            }
+        }
+        return "user";
     }
 }
